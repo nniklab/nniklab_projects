@@ -3,7 +3,8 @@
 ## Estado
 
 - **2026-10-10:** estructura de carpetas creada.
-- **2026-10-10:** 5 propuestas de paleta en `01-marca/colores/propuestas-paleta.png`, en evaluación con el equipo.
+- **2026-10-10:** se exploraron 5 paletas; quedan como finalistas la 4 (grafito + lima) y la 5 (naranja). Ver `01-marca/colores/`.
+- **2026-10-10:** ejemplos de landing con las paletas finalistas en `05-web/`.
 
 ## Información base
 
@@ -13,14 +14,16 @@
   - **Automatizaciones:** integración de aplicaciones y flujos de trabajo automatizados.
   - **IA:** se usa de forma transversal en las soluciones de datos y en las automatizaciones.
 - **Público:** negocios de cualquier tamaño, desde pequeños hasta grandes.
+- **Contacto:** Juan Heredia T. · +593 99 578 4113 · nniklab@outlook.com
 
 ## Decisiones
 
 - **2026-10-10:** descriptor de marca: "nniklab — Datos y automatización". Ver `03-comunicacion/identidad-verbal.md`.
 - **2026-10-10:** la IA forma parte de la propuesta de valor en todas las soluciones.
+- **2026-10-10:** se descartan las paletas azules (1, 2 y 3) porque la mayoría de empresas del sector usan azul. Finalistas: 4 y 5.
 
 ## Próximos pasos
 
-1. Definir la información base de la empresa (nombre, a qué se dedica, público, estilo).
+1. Elegir la paleta final entre la 4 y la 5.
 2. Diseñar el logo (`01-marca/logo/`).
-3. Derivar paleta de colores y tipografía a partir del logo.
+3. Definir la tipografía.
