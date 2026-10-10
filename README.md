@@ -17,4 +17,4 @@ nniklab_projects/
 
 | Proyecto | Descripción | Estado |
 |----------|-------------|--------|
-| _(aún no hay proyectos)_ | | |
+| [Company](Company/) | Marca de la empresa y servicios que ofrece | En curso: logo |

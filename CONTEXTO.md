@@ -15,8 +15,9 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 
 ## Estado actual
 
-- **2026-10-10:** repositorio configurado con la estructura base. Sin proyectos todavía.
+- **2026-10-10:** repositorio configurado con la estructura base.
+- **2026-10-10:** creado el proyecto `Company/` (marca y servicios). Ver `Company/NOTAS.md`.
 
 ## Próximos pasos
 
-- Crear la carpeta del primer proyecto.
+- Company: definir información base de la empresa y diseñar el logo.
