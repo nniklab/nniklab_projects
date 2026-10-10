@@ -6,9 +6,11 @@
 
 ## Información base
 
+- **Nombre de la marca:** nniklab
 - **Actividad:** soluciones de datos y automatizaciones.
-- **Nombre:** _(por definir)_
-- **Público:** _(por definir)_
+  - **Datos:** análisis de datos, ingeniería de datos y arquitectura de datos.
+  - **Automatizaciones:** integración de aplicaciones y flujos de trabajo automatizados.
+- **Público:** negocios de cualquier tamaño, desde pequeños hasta grandes.
 
 ## Decisiones
 
