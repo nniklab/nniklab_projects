@@ -9,7 +9,10 @@
 Acompaña al logo y dice qué hace la empresa:
 
 > **nniklab**
-> Datos y automatización
+> IA, Data & Automation
+
+Se escribe exactamente así: "IA" primero, coma, y "&" en lugar de "y".
+Reemplaza al descriptor anterior, "Datos y automatización" (2026-10-10).
 
 ## Qué hacemos
 
