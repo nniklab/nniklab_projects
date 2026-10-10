@@ -4,6 +4,12 @@
 
 - **2026-10-10:** estructura de carpetas creada.
 
+## Información base
+
+- **Actividad:** soluciones de datos y automatizaciones.
+- **Nombre:** _(por definir)_
+- **Público:** _(por definir)_
+
 ## Decisiones
 
 _(ninguna todavía)_
