@@ -10,5 +10,6 @@ Paleta de la marca con sus códigos HEX, RGB y CMYK. Se define a partir del logo
 2. **Índigo + cian:** tecnología, IA, innovación (recomendada por encajar con la IA en la propuesta de valor).
 3. **Verde azulado:** datos, crecimiento, fluidez.
 4. **Grafito + acento eléctrico:** minimalista, técnico, distintivo.
+5. **Naranja energía:** audaz, dinámico, alto impacto. Naranja, negro, gris y blanco. Ver también `paleta-5-naranja.png`.
 
 Pendiente: decisión del equipo.

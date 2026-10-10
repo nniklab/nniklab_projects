@@ -3,7 +3,7 @@
 ## Estado
 
 - **2026-10-10:** estructura de carpetas creada.
-- **2026-10-10:** 4 propuestas de paleta en `01-marca/colores/propuestas-paleta.png`, en evaluación con el equipo.
+- **2026-10-10:** 5 propuestas de paleta en `01-marca/colores/propuestas-paleta.png`, en evaluación con el equipo.
 
 ## Información base
 
