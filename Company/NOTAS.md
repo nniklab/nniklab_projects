@@ -19,6 +19,7 @@
 ## Decisiones
 
 - **2026-10-10:** descriptor de marca: "nniklab — AI, Data & Automation" (reemplaza a "Datos y automatización"). Ver `03-comunicacion/identidad-verbal.md`.
+- **2026-10-10:** idioma: solo el descriptor va en inglés; todo lo demás de la marca va en español.
 - **2026-10-10:** la IA forma parte de la propuesta de valor en todas las soluciones.
 - **2026-10-10:** se descartan las paletas azules (1, 2 y 3) porque la mayoría de empresas del sector usan azul. Finalistas: 4 y 5.
 
