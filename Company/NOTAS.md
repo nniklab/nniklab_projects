@@ -7,6 +7,7 @@
 - **2026-10-10:** paleta naranja (5) guardada en `99-respaldo/paleta-naranja/` para una futura actualización.
 - **2026-10-10:** ejemplos de landing con la paleta oficial en `05-web/`.
 - **2026-10-10:** tipografía oficial definida: Space Grotesk + Inter + JetBrains Mono. Ver `01-marca/tipografia/`.
+- **2026-10-10:** logo final producido (SVG, PNG y favicon) en `01-marca/logo/final/`. Identidad visual básica completa.
 
 ## Información base
 
@@ -30,5 +31,6 @@
 
 ## Próximos pasos
 
-1. Producir el logo final en SVG y PNG (`01-marca/logo/final/`).
-2. Ajustar la tarjeta final con el logo.
+1. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
+2. Definir el catálogo de servicios (`02-servicios/`).
+3. Misión, visión, valores y slogan (`03-comunicacion/`).

@@ -22,4 +22,4 @@ Se exploró y descartó un ícono monograma "NL" a la izquierda del logotipo (v3
 
 Se exploraron y descartaron los íconos reducidos "nl." y "NL.". **Ícono reducido oficial: "ni"** con el punto lima.
 
-Pendiente: producir los archivos finales en SVG y PNG en `final/`.
+**Archivos finales listos (2026-10-10)** en `final/`: SVG con letras en trazos, PNG en varios tamaños y favicon. Guía de uso en `final/README.md`.
