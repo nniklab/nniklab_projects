@@ -24,6 +24,7 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-10:** company: creada `company/06-publicidad/` con el video intro de la marca (v2 vigente, Full HD con música) y dos pistas de audio de Pixabay para usar en videos.
 - **2026-10-11:** revisión del repositorio: carpeta `Company/` renombrada a `company/`, eliminados archivos de logo duplicados, documentación actualizada y añadido `.gitignore`.
 - **2026-10-11:** company: creada `company/06-publicidad/imagenes/` para las imágenes del video (vacía, con su README de criterios y licencias).
+- **2026-10-11:** company: cuatro gráficos de marca para el video (datos, IA, automatización, integración de apps) en `company/06-publicidad/imagenes/graficos/`.
 
 ## Próximos pasos
 
