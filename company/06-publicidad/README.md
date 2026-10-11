@@ -18,3 +18,7 @@ Video de presentación de la marca. La versión vigente es siempre la de número
 ## Audio
 
 Música y efectos en `audio/`. Ver `audio/README.md` con las pistas, su origen y su licencia.
+
+## Imágenes
+
+Fotos, ilustraciones, íconos y gráficos en `imagenes/`. Ver `imagenes/README.md` con los criterios de selección, las fuentes recomendadas y el registro de cada imagen con su licencia.

@@ -11,6 +11,7 @@
 - **2026-10-10:** creada `06-publicidad/` con el video intro de la marca: v1 y v2 (vigente, Full HD con audio) en `videos/`.
 - **2026-10-10:** dos pistas de música de Pixabay en `06-publicidad/audio/` (Minimal Technology y Tech Explainer Background Loop), ambas se conservan para futuros videos.
 - **2026-10-11:** revisión del repositorio: carpeta renombrada a `company/` (minúsculas), eliminado el logo `nniklab-logo-lima` por ser idéntico a `nniklab-logo-mono-negro`, documentación actualizada.
+- **2026-10-11:** creada `06-publicidad/imagenes/` para las imágenes de los videos, con criterios, fuentes recomendadas y registro de licencias.
 
 ## Información base
 
