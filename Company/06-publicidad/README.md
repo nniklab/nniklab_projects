@@ -4,9 +4,16 @@ Piezas publicitarias de nniklab: videos, anuncios y contenido para campañas y r
 
 ## Videos
 
-| Archivo | Descripción | Formato | Fecha |
-|---------|-------------|---------|-------|
-| `videos/nniklab-video.mp4` | Video de presentación: datos (análisis, ingeniería, arquitectura) e IA aplicada a documentos, con la paleta de marca | 1280 × 720 · 16,5 s · H.264 | 2026-10-10 |
+### Intro nniklab
+
+Video de presentación de la marca. La versión vigente es siempre la de número más alto.
+
+| Versión | Archivo | Cambios | Formato | Fecha |
+|---------|---------|---------|---------|-------|
+| **v2 (vigente)** | `videos/nniklab-intro-v2.mp4` | Full HD; añade música; nueva escena de automatización (integración de apps y flujos); cierre con el slogan "Datos que trabajan. Procesos que fluyen." | 1920 × 1080 · 30 fps · 16,5 s · H.264 + AAC | 2026-10-10 |
+| v1 | `videos/nniklab-intro-v1.mp4` | Primera versión: escenas de datos e IA, sin audio | 1280 × 720 · 16,5 s · H.264 | 2026-10-10 |
+
+**Convención de versiones:** `nombre-de-la-pieza-vN.mp4`. Cada nueva versión se añade con el número siguiente y se anota aquí qué cambió. Las anteriores se conservan.
 
 ## Audio
 
