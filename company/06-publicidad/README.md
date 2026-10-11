@@ -14,6 +14,8 @@ Video de presentación de la marca. La versión vigente es siempre la de número
 | v2 | `videos/nniklab-intro-v2.mp4` | Full HD; añade música; nueva escena de automatización (integración de apps y flujos); cierre con el slogan provisional "Datos que trabajan. Procesos que fluyen." | 1920 × 1080 · 30 fps · 16,5 s · H.264 + AAC | 2026-10-10 |
 | v1 | `videos/nniklab-intro-v1.mp4` | Primera versión: escenas de datos e IA, sin audio | 1280 × 720 · 16,5 s · H.264 | 2026-10-10 |
 
+**Fuentes del video:** `videos/nniklab-intro-v3-recursos.zip` contiene el proyecto editable de la v3: código de la animación (`intro-v3.jsx`, `animations-v3.jsx`), sistema de diseño de nniklab, y copias de los logos, fondos, gráficos y audio usados.
+
 **Convención de versiones:** `nombre-de-la-pieza-vN.mp4`. Cada nueva versión se añade con el número siguiente y se anota aquí qué cambió. Las anteriores se conservan.
 
 ## Audio
