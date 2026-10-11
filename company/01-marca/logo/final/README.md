@@ -10,9 +10,9 @@ Las letras de los SVG están convertidas a trazos: se ven igual en cualquier equ
 |-----------|---------|
 | Logo en web, presentaciones o documentos con fondo oscuro | `svg/nniklab-logo-oscuro.svg` |
 | Logo sobre fondo claro o blanco | `svg/nniklab-logo-claro.svg` |
-| Logo sobre fondo lima | `svg/nniklab-logo-lima.svg` |
+| Logo sobre fondo lima | `svg/nniklab-logo-mono-negro.svg` (todo en grafito) |
 | Logo con el descriptor "AI, Data & Automation" | `svg/nniklab-logo-descriptor-{oscuro,claro,lima}.svg` |
-| Impresión a una tinta, sellos, grabados | `svg/nniklab-logo-mono-{blanco,negro}.svg` |
+| Impresión a una tinta, sellos, grabados | `svg/nniklab-logo-mono-{blanco,negro}.svg` (blanco hueso `#F4F4F2` o grafito `#111418`) |
 | Ícono de app | `svg/nniklab-icono-ni.svg` |
 | Foto de perfil en redes (la plataforma lo recorta en círculo) | `png/nniklab-icono-ni-cuadrado-800.png` |
 | Ícono redondo | `svg/nniklab-icono-ni-redondo.svg` |

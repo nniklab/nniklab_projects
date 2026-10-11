@@ -1,7 +1,7 @@
 # Logo
 
-- `bocetos/` — propuestas y variantes en exploración
-- `final/` — versiones aprobadas (principal, horizontal, ícono, monocromo)
+- `bocetos/` — propuestas y presentación del logo elegido
+- `final/` — versiones aprobadas (logotipo, logotipo con descriptor, ícono "ni" y monocromo)
 
 Formatos finales: SVG (maestro) y PNG en varios tamaños.
 

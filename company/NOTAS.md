@@ -1,4 +1,4 @@
-# Notas — Company
+# Notas — company
 
 ## Estado
 
@@ -9,6 +9,8 @@
 - **2026-10-10:** tipografía oficial definida: Space Grotesk + Inter + JetBrains Mono. Ver `01-marca/tipografia/`.
 - **2026-10-10:** logo final producido (SVG, PNG y favicon) en `01-marca/logo/final/`. Identidad visual básica completa.
 - **2026-10-10:** creada `06-publicidad/` con el video intro de la marca: v1 y v2 (vigente, Full HD con audio) en `videos/`.
+- **2026-10-10:** dos pistas de música de Pixabay en `06-publicidad/audio/` (Minimal Technology y Tech Explainer Background Loop), ambas se conservan para futuros videos.
+- **2026-10-11:** revisión del repositorio: carpeta renombrada a `company/` (minúsculas), eliminado el logo `nniklab-logo-lima` por ser idéntico a `nniklab-logo-mono-negro`, documentación actualizada.
 
 ## Información base
 
@@ -34,4 +36,4 @@
 
 1. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
 2. Definir el catálogo de servicios (`02-servicios/`).
-3. Misión, visión, valores y slogan (`03-comunicacion/`).
+3. Misión, visión, valores y slogan (`03-comunicacion/`). El video intro v2 usa de forma provisional "Datos que trabajan. Procesos que fluyen.": si se elige otro slogan, hay que hacer una v3 del video.

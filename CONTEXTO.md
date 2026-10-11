@@ -9,17 +9,21 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 
 ## Convenciones
 
-- Una carpeta por proyecto, con nombre en minúsculas y guiones (ej. `mi-proyecto`).
-- Cada carpeta tiene su `README.md` y su `NOTAS.md`.
+- Una carpeta por proyecto, con nombre en minúsculas y guiones (ej. `mi-proyecto`). Lo mismo para subcarpetas y archivos.
+- Cada carpeta de proyecto tiene su `README.md` y su `NOTAS.md`.
+- Piezas con versiones: `nombre-de-la-pieza-vN.ext`; la vigente es la de número más alto y las anteriores se conservan.
+- Lo descartado se elimina (queda en el historial de git); lo guardado para el futuro va a `99-respaldo/`.
 - Al terminar una sesión se actualiza este archivo y el `NOTAS.md` del proyecto.
 
 ## Estado actual
 
 - **2026-10-10:** repositorio configurado con la estructura base.
-- **2026-10-10:** creado el proyecto `Company/` (marca y servicios). Ver `Company/NOTAS.md`.
-- **2026-10-10:** Company: definidos nombre (nniklab), descriptor (AI, Data & Automation), idioma (español salvo el descriptor) paleta oficial (grafito + lima) y tipografía oficial (Space Grotesk + Inter + JetBrains Mono).
-- **2026-10-10:** Company: logo final "Punto de dato" producido en `Company/01-marca/logo/final/`.
+- **2026-10-10:** creado el proyecto `company/` (marca y servicios). Ver `company/NOTAS.md`.
+- **2026-10-10:** company: definidos nombre (nniklab), descriptor (AI, Data & Automation), idioma (español salvo el descriptor), paleta oficial (grafito + lima) y tipografía oficial (Space Grotesk + Inter + JetBrains Mono).
+- **2026-10-10:** company: logo final "Punto de dato" producido en `company/01-marca/logo/final/`.
+- **2026-10-10:** company: creada `company/06-publicidad/` con el video intro de la marca (v2 vigente, Full HD con música) y dos pistas de audio de Pixabay para usar en videos.
+- **2026-10-11:** revisión del repositorio: carpeta `Company/` renombrada a `company/`, eliminados archivos de logo duplicados, documentación actualizada y añadido `.gitignore`.
 
 ## Próximos pasos
 
-- Company: tarjeta final, catálogo de servicios y textos de marca.
+- company: tarjeta final, catálogo de servicios y textos de marca (incluido el slogan oficial).

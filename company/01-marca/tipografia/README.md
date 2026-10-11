@@ -70,4 +70,4 @@ Para que documentos y presentaciones se vean igual en todos los equipos, convien
 
 ## Logotipo
 
-El logotipo de nniklab partirá de Space Grotesk, pero se ajustará a mano en el diseño del logo para que sea único (ver `../logo/`).
+El logotipo de nniklab (Punto de dato) parte de Space Grotesk, con las letras convertidas a trazos y el punto de la i como cuadrado lima. Ver `../logo/final/`.

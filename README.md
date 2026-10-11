@@ -17,4 +17,4 @@ nniklab_projects/
 
 | Proyecto | Descripción | Estado |
 |----------|-------------|--------|
-| [Company](Company/) | Marca de la empresa y servicios que ofrece | En curso: logo |
+| [company](company/) | Marca de la empresa y servicios que ofrece | Identidad visual completa; en curso: publicidad |

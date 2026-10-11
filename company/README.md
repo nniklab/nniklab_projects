@@ -1,4 +1,4 @@
-# Company
+# company
 
 Construcción de la marca de la empresa y de los servicios que ofrece.
 

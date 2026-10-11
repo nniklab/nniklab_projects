@@ -1,0 +1,10 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales de editores y programas
+*.tmp
+*.bak
+~$*
+.~lock.*

@@ -35,3 +35,5 @@ _(por definir; opciones exploradas el 2026-10-10)_
 - Del dato a la decisión.
 - Tus datos, trabajando por ti.
 - Datos claros, decisiones seguras.
+
+**En uso provisional:** "Datos que trabajan. Procesos que fluyen." aparece en el cierre del video intro v2 (`../06-publicidad/videos/nniklab-intro-v2.mp4`). Si se elige otro slogan, hay que actualizar el video.
