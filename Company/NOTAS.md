@@ -6,6 +6,7 @@
 - **2026-10-10:** paleta oficial definida: 4, grafito + lima. Ficha y reglas de uso en `01-marca/colores/`.
 - **2026-10-10:** paleta naranja (5) guardada en `99-respaldo/paleta-naranja/` para una futura actualización.
 - **2026-10-10:** ejemplos de landing con la paleta oficial en `05-web/`.
+- **2026-10-10:** tipografía oficial definida: Space Grotesk + Inter + JetBrains Mono. Ver `01-marca/tipografia/`.
 
 ## Información base
 
@@ -24,9 +25,9 @@
 - **2026-10-10:** la IA forma parte de la propuesta de valor en todas las soluciones.
 - **2026-10-10:** se descartan las paletas azules (1, 2 y 3) porque la mayoría de empresas del sector usan azul. Finalistas: 4 y 5.
 - **2026-10-10:** paleta oficial: **4, grafito + acento eléctrico** (lima `#C6F432` sobre grafito `#111418`). La 5 (naranja) queda de respaldo.
+- **2026-10-10:** tipografía oficial: **combinación técnica**. Títulos en Space Grotesk, texto en Inter, detalles técnicos en JetBrains Mono.
 
 ## Próximos pasos
 
-1. Diseñar el logo con la paleta oficial (`01-marca/logo/`).
-2. Definir la tipografía.
-3. Ajustar la tarjeta final con el logo.
+1. Diseñar el logo con la paleta y tipografía oficiales (`01-marca/logo/`).
+2. Ajustar la tarjeta final con el logo.
