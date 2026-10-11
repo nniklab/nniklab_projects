@@ -14,11 +14,8 @@ Formatos finales: SVG (maestro) y PNG en varios tamaños.
 
 Se exploró y descartó la escritura "NnikLab" con íconos separados (v2). Se mantiene la escritura en minúsculas.
 
-**Decisión (2026-10-10):** logotipo **Punto de dato** (v1, concepto 1), acompañado de un ícono a la izquierda.
+Se exploró y descartó un ícono monograma "NL" a la izquierda del logotipo (v3).
 
-- `bocetos/propuestas-icono-nl-v3.png` (2026-10-10): ícono monograma "NL" con inspiración tecnológica, en tres variantes.
-  - **A. Ligadura:** N y L comparten el trazo vertical y terminan en el nodo lima (recomendado).
-  - **B. Circuito:** el monograma como pistas de placa electrónica con terminales.
-  - **C. Píxel:** NL construido con píxeles, como matriz LED.
+**Decisión (2026-10-10):** logotipo **Punto de dato** (v1, concepto 1), solo, sin ícono adicional. Para tamaños pequeños (redes, app, favicon) se usa su reducción "ni" con el punto lima, incluida en el mismo boceto.
 
-Pendiente: elegir variante del ícono.
+Pendiente: producir los archivos finales en SVG y PNG en `final/`.
