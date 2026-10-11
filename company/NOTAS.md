@@ -13,6 +13,7 @@
 - **2026-10-11:** revisión del repositorio: carpeta renombrada a `company/` (minúsculas), eliminado el logo `nniklab-logo-lima` por ser idéntico a `nniklab-logo-mono-negro`, documentación actualizada.
 - **2026-10-11:** creada `06-publicidad/imagenes/` para las imágenes de los videos, con criterios, fuentes recomendadas y registro de licencias.
 - **2026-10-11:** cuatro gráficos propios para el video (datos, IA, automatización e integración de apps) en `06-publicidad/imagenes/graficos/`, en PNG y SVG Full HD.
+- **2026-10-11:** tres fondos fotográficos (partículas, cubos conectados y circuito verde) en `06-publicidad/imagenes/fondos/`, con autor y licencia registrados; otras candidatas anotadas en el README de imágenes.
 
 ## Información base
 

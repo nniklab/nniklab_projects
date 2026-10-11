@@ -6,7 +6,7 @@ Fotos, ilustraciones, íconos y gráficos para los videos y anuncios de nniklab.
 
 - **Nombres de archivo:** en minúsculas y con guiones, describiendo el contenido (ej. `servidores-oscuro.jpg`, `dashboard-ventas.png`).
 - **Gráficos propios** (dashboards, flujos, diagramas hechos con la marca): en `graficos/`, con prefijo `nniklab-grafico-` y separados en `png/` y `svg/`, igual que el logo.
-- **Imágenes externas** (fotos, ilustraciones de bancos de imágenes): directamente en esta carpeta.
+- **Fondos fotográficos** (de bancos de imágenes): en `fondos/`, con el nombre `contenido-autor.jpg` (ej. `circuito-verde-vishnu-mohanan.jpg`).
 - **Formato:** PNG o SVG para gráficos e ilustraciones; JPG para fotos. Mínimo 1920 × 1080 para usar en video Full HD.
 - Cada imagen que se añade se registra en la tabla de abajo con su fuente y licencia.
 
@@ -44,8 +44,26 @@ Creados el 2026-10-11 con la paleta y la tipografía oficiales, 1920 × 1080, un
 - **Para el video usa los PNG.** Los SVG sirven para editar; sus textos usan las fuentes de la marca, así que se ven bien solo en equipos que las tienen instaladas.
 - **Para cambiar textos o cifras:** edita `graficos/generar-graficos.py` y vuelve a generarlos (`python3 generar-graficos.py <carpeta-de-salida>`), o pídeselo a Claude.
 
-## Imágenes externas
+## Fondos fotográficos
 
-| Archivo | Descripción | Fuente | Autor | Licencia | Usada en |
-|---------|-------------|--------|-------|----------|----------|
-| _(ninguna todavía)_ | | | | | |
+Elegidos el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay. Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.
+
+| Archivo | Descripción | Uso sugerido | Tamaño | Fuente | Autor | Licencia |
+|---------|-------------|--------------|--------|--------|-------|----------|
+| `fondos/particulas-oscuras-cottonbro.jpg` | Partículas de polvo sobre negro | Fondo neutro para títulos y cierre | 4262 × 2842 | [Pexels](https://www.pexels.com/photo/9665214/) | cottonbro studio | Pexels License |
+| `fondos/cubos-conectados-shubham-dhage.jpg` | Cubos conectados en red sobre negro | Escenas de datos e integración | 3840 × 2160 | [Unsplash](https://unsplash.com/photos/T9rKvI3N0NM) | Shubham Dhage | Unsplash License |
+| `fondos/circuito-verde-vishnu-mohanan.jpg` | Circuito con pistas verdes en la oscuridad | Escenas de tecnología y automatización | 4592 × 3448 | [Unsplash](https://unsplash.com/photos/M0yAcynJr6M) | Vishnu Mohanan | Unsplash License |
+
+Ambas licencias permiten uso comercial sin atribución obligatoria.
+
+### Otras candidatas de la selección (no descargadas)
+
+| Descripción | Fuente |
+|-------------|--------|
+| Líneas diagonales sobre negro | [Unsplash · Jr Korpa](https://unsplash.com/photos/mwYTmjpcxIc) |
+| Red de nodos con tono verde | [Pixabay](https://pixabay.com/illustrations/communication-digital-computer-4871245/) |
+| Esfera de puntos | [Unsplash · BoliviaInteligente](https://unsplash.com/photos/5-GgBB4W5h0) |
+| Estelas de luz verde | [Pexels](https://www.pexels.com/photo/14146609/) |
+| Fibra óptica verde desenfocada | [Unsplash · Sander Weeteling](https://unsplash.com/photos/FZY6AarjY08) |
+| Líneas que se cruzan y conectan | [Unsplash · Gábor Szűts](https://unsplash.com/photos/X6prM41CTsM) |
+| Servidores con luz verde | [Unsplash · Tyler](https://unsplash.com/photos/OnI_TNcIv9U) |
