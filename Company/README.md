@@ -13,5 +13,6 @@ Construcción de la marca de la empresa y de los servicios que ofrece.
 | `03-comunicacion/` | Misión, visión, valores, tono de voz y textos clave |
 | `04-materiales/` | Tarjetas, presentaciones, plantillas para redes sociales |
 | `05-web/` | Sitio web o landing page de la empresa |
+| `99-respaldo/` | Propuestas descartadas o guardadas para el futuro (no en uso) |
 
 El orden numérico refleja el orden de trabajo: primero la identidad visual, luego el resto se construye sobre ella.
