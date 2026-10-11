@@ -8,6 +8,7 @@
 - **2026-10-10:** ejemplos de landing con la paleta oficial en `05-web/`.
 - **2026-10-10:** tipografía oficial definida: Space Grotesk + Inter + JetBrains Mono. Ver `01-marca/tipografia/`.
 - **2026-10-10:** logo final producido (SVG, PNG y favicon) en `01-marca/logo/final/`. Identidad visual básica completa.
+- **2026-10-10:** creada `06-publicidad/` con el primer video de la marca (`videos/nniklab-video.mp4`).
 
 ## Información base
 
