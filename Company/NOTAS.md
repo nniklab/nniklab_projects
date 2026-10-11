@@ -27,7 +27,9 @@
 - **2026-10-10:** paleta oficial: **4, grafito + acento eléctrico** (lima `#C6F432` sobre grafito `#111418`). La 5 (naranja) queda de respaldo.
 - **2026-10-10:** tipografía oficial: **combinación técnica**. Títulos en Space Grotesk, texto en Inter, detalles técnicos en JetBrains Mono.
 
+- **2026-10-10:** logotipo: **Punto de dato** (nniklab en minúsculas, con el punto de la i como cuadrado lima). Llevará un ícono monograma "NL" a la izquierda.
+
 ## Próximos pasos
 
-1. Diseñar el logo con la paleta y tipografía oficiales (`01-marca/logo/`).
+1. Elegir la variante del ícono NL y producir el logo final en SVG (`01-marca/logo/`).
 2. Ajustar la tarjeta final con el logo.
