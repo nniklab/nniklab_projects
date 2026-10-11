@@ -26,7 +26,6 @@
 - **2026-10-10:** se descartan las paletas azules (1, 2 y 3) porque la mayoría de empresas del sector usan azul. Finalistas: 4 y 5.
 - **2026-10-10:** paleta oficial: **4, grafito + acento eléctrico** (lima `#C6F432` sobre grafito `#111418`). La 5 (naranja) queda de respaldo.
 - **2026-10-10:** tipografía oficial: **combinación técnica**. Títulos en Space Grotesk, texto en Inter, detalles técnicos en JetBrains Mono.
-
 - **2026-10-10:** logotipo: **Punto de dato** (nniklab en minúsculas, con el punto de la i como cuadrado lima). Llevará un ícono monograma "NL" a la izquierda.
 
 ## Próximos pasos
