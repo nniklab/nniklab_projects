@@ -22,4 +22,6 @@ Se exploró y descartó un ícono monograma "NL" a la izquierda del logotipo (v3
 
 - `bocetos/presentacion-punto-de-dato-icono-nl.png` (2026-10-10): la misma presentación con ícono "nl." (punto lima al final) en lugar de "ni".
 
-Pendiente: elegir ícono reducido ("ni" o "nl.") y producir los archivos finales en SVG y PNG en `final/`.
+- `bocetos/presentacion-punto-de-dato-icono-NL-mayus.png` (2026-10-10): ícono "NL." en mayúsculas (N de nnik, L de lab) con el punto lima al final.
+
+Pendiente: elegir ícono reducido ("ni", "nl." o "NL.") y producir los archivos finales en SVG y PNG en `final/`.
