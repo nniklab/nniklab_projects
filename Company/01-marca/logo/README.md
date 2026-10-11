@@ -18,4 +18,6 @@ Se exploró y descartó un ícono monograma "NL" a la izquierda del logotipo (v3
 
 **Decisión (2026-10-10):** logotipo **Punto de dato** (v1, concepto 1), solo, sin ícono adicional. Para tamaños pequeños (redes, app, favicon) se usa su reducción "ni" con el punto lima, incluida en el mismo boceto.
 
+- `bocetos/presentacion-punto-de-dato.png` (2026-10-10): vista previa del logo elegido con sus versiones, ícono reducido y aplicaciones.
+
 Pendiente: producir los archivos finales en SVG y PNG en `final/`.
