@@ -16,6 +16,9 @@
 - **2026-10-11:** tres fondos fotográficos (partículas, cubos conectados y circuito verde) en `06-publicidad/imagenes/fondos/`, con autor y licencia registrados; otras candidatas anotadas en el README de imágenes.
 - **2026-10-11:** video intro v3 (vertical 9:16 para redes, 22 s) en `06-publicidad/videos/`, ahora la versión vigente; sus recursos editables en `nniklab-intro-v3-recursos.zip`.
 - **2026-10-17:** se inicia el sitio web en `05-web/`. Primero se completa el contexto de la empresa: servicios, slogan, misión, visión y valores.
+- **2026-10-17:** eliminados los borradores de landing de `05-web/`. Nueva estructura del sitio en `05-web/estructura.md`.
+- **2026-10-17:** catálogo de servicios inicial (tres líneas y tecnologías) en `02-servicios/README.md`.
+- **2026-10-17:** perfil de Juan Heredia T. para la sección "Nosotros" en `03-comunicacion/perfil-fundador.md`.
 
 ## Información base
 
@@ -26,6 +29,7 @@
   - **IA:** se usa de forma transversal en las soluciones de datos y en las automatizaciones.
 - **Público:** negocios de cualquier tamaño, desde pequeños hasta grandes.
 - **Contacto:** Juan Heredia T. · +593 99 578 4113 · nniklab@outlook.com
+- **LinkedIn de Juan:** https://www.linkedin.com/in/juanherediat/
 
 ## Decisiones
 
@@ -36,11 +40,19 @@
 - **2026-10-10:** paleta oficial: **4, grafito + acento eléctrico** (lima `#C6F432` sobre grafito `#111418`). La 5 (naranja) queda de respaldo.
 - **2026-10-10:** tipografía oficial: **combinación técnica**. Títulos en Space Grotesk, texto en Inter, detalles técnicos en JetBrains Mono.
 - **2026-10-10:** logotipo: **Punto de dato** (nniklab en minúsculas, con el punto de la i como cuadrado lima). Sin ícono adicional (se exploró y descartó un monograma "NL"). Versión reducida para redes y favicon: "ni" con el punto lima.
+- **2026-10-17:** slogan oficial: **"Datos que trabajan. Procesos que fluyen."**
+- **2026-10-17:** web de una sola página. Estructura en `05-web/estructura.md`.
+- **2026-10-17:** el botón "Agenda una reunión" llevará a un formulario de n8n; por ahora queda sin acción.
+- **2026-10-17:** sin casos de clientes todavía: la web muestra procesos de ejemplo por línea de servicio.
+- **2026-10-17:** sección "Nosotros" en plural, con Juan Heredia T. como representante y su trayectoria.
+- **2026-10-17:** tecnologías a mostrar: Azure, Azure Databricks, Azure SQL, Data Factory, Microsoft Fabric, Power BI, Oracle, SQL Server, PostgreSQL, n8n, Power Automate, SharePoint, Microsoft 365, Azure OpenAI, API de OpenAI, API de Claude (Anthropic), Python, APIs REST y Git / GitHub. Lista agrupada en `02-servicios/README.md`.
 
 ## Próximos pasos
 
-1. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
-2. Definir el catálogo de servicios (`02-servicios/`).
-3. Misión, visión, valores y slogan (`03-comunicacion/`). Los videos intro v2 y v3 usan de forma provisional "Datos que trabajan. Procesos que fluyen.": si se elige otro slogan, hay que hacer una v4 del video.
-4. Datos prácticos para la web: dominio, canales de contacto (WhatsApp, formulario, correo), redes sociales y ubicación.
-5. Construir el sitio web en `05-web/`.
+1. Revisar y aprobar `05-web/estructura.md` y los textos en borrador.
+2. Diseñar la nueva propuesta visual del sitio y construirlo en `05-web/`.
+3. Formulario de n8n para "Agenda una reunión".
+4. Foto de Juan para "Nosotros", redes sociales, dominio y hosting.
+5. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
+6. Misión, visión y valores (`03-comunicacion/`).
+7. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.

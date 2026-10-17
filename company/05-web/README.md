@@ -1,12 +1,11 @@
 # Web
 
-Sitio web o landing page de la empresa.
+Sitio web de nniklab: una sola página con las secciones definidas en `estructura.md`.
 
-## Ejemplos
+## Archivos
 
-Landings de ejemplo con la paleta oficial, para ver la distribución de colores. Textos provisionales.
+- `estructura.md`: estructura del sitio, sección por sección, con objetivos y textos en borrador.
 
-- `landing-ejemplo-paleta4.png`: diseño base.
-- `landing-ejemplo-paleta4-v2.png`: segundo diseño, de estilo técnico (cuadrícula, tipografía monoespaciada, flujo de datos).
+## Historial
 
-Los ejemplos con la paleta naranja están en `../99-respaldo/paleta-naranja/`.
+- **2026-10-17:** eliminados los borradores de landing (`landing-ejemplo-paleta4.png` y `-v2.png`); se rediseña desde la nueva estructura. Quedan en el historial de git.

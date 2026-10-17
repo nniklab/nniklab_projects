@@ -29,11 +29,8 @@ nniklab crea soluciones de **datos** y **automatización** para negocios de cual
 
 ## Slogan
 
-_(por definir; opciones exploradas el 2026-10-10)_
+**Oficial (2026-10-17):** **Datos que trabajan. Procesos que fluyen.**
 
-- Datos que trabajan. Procesos que fluyen.
-- Del dato a la decisión.
-- Tus datos, trabajando por ti.
-- Datos claros, decisiones seguras.
+Se usa en la portada de la web y en el cierre de los videos intro v2 y v3 (`../06-publicidad/videos/`).
 
-**En uso provisional:** "Datos que trabajan. Procesos que fluyen." aparece en el cierre de los videos intro v2 y v3 (`../06-publicidad/videos/`). Si se elige otro slogan, hay que hacer una nueva versión del video.
+Opciones exploradas y descartadas (2026-10-10): "Del dato a la decisión.", "Tus datos, trabajando por ti.", "Datos claros, decisiones seguras."
