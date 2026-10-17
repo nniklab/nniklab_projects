@@ -104,18 +104,20 @@ Franja de logos o etiquetas con las herramientas con las que se trabaja (confirm
 ### 10. Pie de página
 
 - Logo con descriptor (`nniklab-logo-descriptor-oscuro.svg`).
-- Contacto: +593 99 578 4113 · nniklab@outlook.com
-- LinkedIn y redes (por definir).
-- © año · nniklab.
+- Teléfono: +593 99 578 4113
+- Correo: nniklab@outlook.com
+- Por ahora solo estos tres elementos. Las redes sociales se añadirán cuando estén definidas.
 
 ## Llamado a la acción
 
 - Todos los botones "Agenda una reunión" llevarán a un **formulario de n8n**.
-- **Por ahora quedan sin acción** hasta que el formulario esté listo.
+- **Por ahora quedan sin acción.** El formulario y su conector de n8n se enlazarán más adelante.
 
 ## Pendiente
 
+Queda para más adelante:
+
 - Foto de Juan para "Nosotros".
-- Redes sociales de la empresa.
+- Redes sociales de la empresa (y su lugar en el pie de página).
 - Dominio y hosting.
-- Formulario de n8n para el llamado a la acción.
+- Formulario y conector de n8n para el llamado a la acción.

@@ -35,7 +35,6 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-11:** company: video intro v3 (vertical 9:16, 22 s), ahora la versión vigente, con su proyecto editable en `company/06-publicidad/videos/`.
 - **2026-10-17:** se trabaja desde la copia local del repositorio (ver "Cómo sincronizar").
 - **2026-10-17:** company: se inicia el sitio web de la empresa en `company/05-web/`. Antes de construirlo se afina el contexto de la empresa (servicios, slogan, misión y visión).
-
 - **2026-10-17:** company: slogan oficial, catálogo de servicios, perfil del fundador y nueva estructura del sitio web (`company/05-web/estructura.md`). Borradores de landing eliminados. Estructura cerrada por ahora: pie de página solo con logo, teléfono y correo.
 
 ## Próximos pasos

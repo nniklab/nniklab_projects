@@ -13,6 +13,8 @@ Tratamiento de datos: ingeniería, análisis y arquitectura.
 - **Análisis de datos:** indicadores, modelos y hallazgos para entender el negocio.
 - **Dashboards:** tableros para la toma de decisiones.
 
+Conectamos ERP, sistemas contables, facturación electrónica, CRM, Excel, bases de datos, correo y más (ver "Fuentes de datos que conectamos").
+
 **Resultado:** información centralizada, confiable y visible para decidir.
 
 ## 2. Automatización de procesos
@@ -28,6 +30,20 @@ Tratamiento de datos: ingeniería, análisis y arquitectura.
 - Agentes que trabajan dentro de los procesos de automatización: leen documentos, responden consultas y toman decisiones simples.
 
 **Resultado:** procesos que van más allá de las reglas fijas.
+
+## Fuentes de datos que conectamos
+
+Lista de referencia para la web y las propuestas comerciales.
+
+| Grupo | Fuentes |
+|-------|---------|
+| Sistemas de gestión | ERP (SAP, Oracle, Microsoft Dynamics, Odoo o sistemas propios), sistemas contables, CRM (Salesforce, HubSpot, Dynamics) |
+| Facturación electrónica | XML de facturas electrónicas del SRI (Ecuador) |
+| Archivos y documentos | Excel, CSV, Google Sheets, PDF (facturas, contratos, órdenes de compra), SharePoint, OneDrive, Google Drive |
+| Bases de datos | SQL Server, Oracle, PostgreSQL, MySQL |
+| Canales | Correo electrónico, WhatsApp, formularios web |
+| Ventas en línea y marketing | Shopify, WooCommerce, Google Analytics, Meta Ads, Google Ads |
+| Otros | APIs de terceros (bancos, pasarelas de pago, proveedores), datos de la web pública, sensores y equipos (IoT) |
 
 ## Tecnologías
 

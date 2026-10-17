@@ -42,7 +42,9 @@
 - **2026-10-10:** logotipo: **Punto de dato** (nniklab en minúsculas, con el punto de la i como cuadrado lima). Sin ícono adicional (se exploró y descartó un monograma "NL"). Versión reducida para redes y favicon: "ni" con el punto lima.
 - **2026-10-17:** slogan oficial: **"Datos que trabajan. Procesos que fluyen."**
 - **2026-10-17:** web de una sola página. Estructura en `05-web/estructura.md`.
-- **2026-10-17:** el botón "Agenda una reunión" llevará a un formulario de n8n; por ahora queda sin acción.
+- **2026-10-17:** el botón "Agenda una reunión" llevará a un formulario de n8n; por ahora queda sin acción y el formulario con su conector se enlazarán más adelante.
+- **2026-10-17:** pie de página por ahora solo con logo y descriptor, teléfono y correo. Redes sociales, dominio y hosting quedan pendientes.
+- **2026-10-17:** la web muestra las fuentes de datos que se conectan (lista en `02-servicios/README.md`): en la portada y en "Cómo se conectan" como diagrama, y en la tarjeta de Datos como una línea.
 - **2026-10-17:** sin casos de clientes todavía: la web muestra procesos de ejemplo por línea de servicio.
 - **2026-10-17:** sección "Nosotros" en plural, con Juan Heredia T. como representante y su trayectoria.
 - **2026-10-17:** tecnologías a mostrar: Azure, Azure Databricks, Azure SQL, Data Factory, Microsoft Fabric, Power BI, Oracle, SQL Server, PostgreSQL, n8n, Power Automate, SharePoint, Microsoft 365, Azure OpenAI, API de OpenAI, API de Claude (Anthropic), Python, APIs REST y Git / GitHub. Lista agrupada en `02-servicios/README.md`.
@@ -51,8 +53,8 @@
 
 1. Revisar y aprobar `05-web/estructura.md` y los textos en borrador.
 2. Diseñar la nueva propuesta visual del sitio y construirlo en `05-web/`.
-3. Formulario de n8n para "Agenda una reunión".
-4. Foto de Juan para "Nosotros", redes sociales, dominio y hosting.
+3. Más adelante: formulario y conector de n8n para "Agenda una reunión".
+4. Pendientes: foto de Juan para "Nosotros", redes sociales, dominio y hosting.
 5. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
 6. Misión, visión y valores (`03-comunicacion/`).
 7. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
