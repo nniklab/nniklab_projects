@@ -58,6 +58,7 @@ En la tarjeta de **Datos** se añade la línea: "Conectamos ERP, sistemas contab
   - **Entradas (fuentes):** sistemas de gestión (ERP, contabilidad, CRM), facturación electrónica del SRI, archivos y documentos (Excel, PDF), bases de datos, canales (correo, WhatsApp, formularios), ventas en línea y marketing.
   - **Centro (nniklab):** Datos → Automatización → IA, conectados.
   - **Salidas (resultados):** dashboards para decidir, procesos automáticos, agentes que responden y actúan.
+- **Logos de tecnologías:** este es el único lugar del sitio donde se usan logos de terceros (de `recursos/tecnologias/`). Los de Microsoft van sin modificar y siempre con el nombre del producto al lado, como permiten sus términos.
 
 ### 5. Cómo trabajamos
 
@@ -88,7 +89,7 @@ Todavía no hay casos de clientes: se muestran **procesos de ejemplo** que se pu
 
 ### 8. Tecnologías
 
-Franja de logos o etiquetas con las herramientas con las que se trabaja (confirmadas), agrupadas:
+Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **Solo texto, sin logos:** etiquetas en JetBrains Mono. Así se evita usar marcas de terceros fuera de lo que permiten sus términos.
 
 - **Datos y nube:** Azure · Azure Databricks · Azure SQL · Data Factory · Microsoft Fabric · Power BI
 - **Bases de datos:** Oracle · SQL Server · PostgreSQL
@@ -106,7 +107,8 @@ Franja de logos o etiquetas con las herramientas con las que se trabaja (confirm
 - Logo con descriptor (`nniklab-logo-descriptor-oscuro.svg`).
 - Teléfono: +593 99 578 4113
 - Correo: nniklab@outlook.com
-- Por ahora solo estos tres elementos. Las redes sociales se añadirán cuando estén definidas.
+- Aviso legal, en texto pequeño: "Los nombres y logos de terceros son marcas registradas de sus respectivos propietarios. Su uso no implica asociación ni respaldo."
+- Por ahora solo estos elementos. Las redes sociales se añadirán cuando estén definidas.
 
 ## Llamado a la acción
 

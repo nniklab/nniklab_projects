@@ -5,6 +5,7 @@ Sitio web de nniklab: una sola página con las secciones definidas en `estructur
 ## Archivos
 
 - `estructura.md`: estructura del sitio, sección por sección, con objetivos y textos en borrador.
+- `recursos/tecnologias/`: logos de las tecnologías (SVG) con su fuente, licencia y reglas de uso.
 
 ## Historial
 

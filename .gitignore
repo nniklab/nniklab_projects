@@ -8,3 +8,6 @@ desktop.ini
 *.bak
 ~$*
 .~lock.*
+
+# ZIP de íconos de terceros (solo para extraer logos)
+company/05-web/recursos/tecnologias/*.zip

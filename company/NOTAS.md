@@ -44,6 +44,7 @@
 - **2026-10-17:** web de una sola página. Estructura en `05-web/estructura.md`.
 - **2026-10-17:** el botón "Agenda una reunión" llevará a un formulario de n8n; por ahora queda sin acción y el formulario con su conector se enlazarán más adelante.
 - **2026-10-17:** pie de página por ahora solo con logo y descriptor, teléfono y correo. Redes sociales, dominio y hosting quedan pendientes.
+- **2026-10-17:** marcas de terceros: la franja de tecnologías va solo en texto; los logos se usan solo en el diagrama "Cómo se conectan" (los de Microsoft sin modificar y con su nombre al lado); el pie de página lleva un aviso de marcas registradas. Logos en `05-web/recursos/tecnologias/`.
 - **2026-10-17:** la web muestra las fuentes de datos que se conectan (lista en `02-servicios/README.md`): en la portada y en "Cómo se conectan" como diagrama, y en la tarjeta de Datos como una línea.
 - **2026-10-17:** sin casos de clientes todavía: la web muestra procesos de ejemplo por línea de servicio.
 - **2026-10-17:** sección "Nosotros" en plural, con Juan Heredia T. como representante y su trayectoria.
