@@ -1,0 +1,42 @@
+# Publica el sitio web de nniklab (company/05-web/sitio) en GitHub Pages.
+# Se ejecuta solo cuando cambia algo del sitio en la rama main, o a mano desde la pestaña Actions.
+name: Publicar sitio web
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "company/05-web/sitio/**"
+      - ".github/workflows/publicar-web.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacion.outputs.page_url }}
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Empaquetar la carpeta del sitio
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: company/05-web/sitio
+
+      - name: Publicar
+        id: publicacion
+        uses: actions/deploy-pages@v4
