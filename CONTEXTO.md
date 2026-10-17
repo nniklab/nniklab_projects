@@ -38,9 +38,11 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-17:** company: slogan oficial, catálogo de servicios, perfil del fundador y nueva estructura del sitio web (`company/05-web/estructura.md`). Borradores de landing eliminados. Estructura cerrada por ahora: pie de página solo con logo, teléfono y correo.
 - **2026-10-17:** company: logos de tecnologías para el diagrama de la web (`company/05-web/recursos/tecnologias/`); la franja de tecnologías va solo en texto y el pie lleva un aviso de marcas registradas.
 - **2026-10-17:** company: cuatro fondos de Pexels para la web en `company/06-publicidad/imagenes/fondos/`.
+- **2026-10-17:** company: propuesta de diseño v1 del sitio en Claude Design (enlace en `company/05-web/README.md`).
+- **2026-10-17:** company: sitio web v1.0 construido en `company/05-web/sitio/`.
 
 ## Próximos pasos
 
-- company: diseñar la nueva propuesta visual y construir la web en `company/05-web/` a partir de `estructura.md`.
+- company: revisar y ajustar el sitio v1.0 (`company/05-web/sitio/`), elegir hosting y dominio, y publicarlo.
 - company (más adelante): formulario y conector de n8n, foto para "Nosotros", redes sociales, dominio y hosting.
 - company: detalle de cada servicio, misión, visión y valores, tarjeta de presentación final.

@@ -1,6 +1,6 @@
 # Estructura del sitio web — nniklab
 
-Definida el 2026-10-17. Reemplaza a los borradores de landing anteriores (eliminados).
+Definida el 2026-10-17. Reemplaza a los borradores de landing anteriores (eliminados). Actualizada el mismo día con lo decidido en el diseño v1 y construido en el sitio v1.0 (`sitio/`).
 
 ## Formato
 
@@ -18,8 +18,9 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
 ### 0. Menú fijo
 
 - Logo (`nniklab-logo-oscuro.svg`).
-- Enlaces: Servicios · Cómo trabajamos · Ejemplos · Nosotros.
+- Enlaces: Servicios · Cómo trabajamos · Ejemplos · Nosotros · Tecnologías.
 - Botón: **Agenda una reunión** (ver "Llamado a la acción").
+- En celular, los enlaces van en un menú desplegable.
 
 ### 1. Portada
 
@@ -28,19 +29,26 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
 - **Título (slogan oficial):** Datos que trabajan. Procesos que fluyen.
 - **Frase de apoyo (borrador):** Diseñamos el flujo de tu información, automatizamos tus procesos y sumamos agentes de IA para que tu negocio decida mejor y trabaje menos.
 - **Botones:** Agenda una reunión · Ver servicios.
-- **Visual:** esquema animado del flujo dato → proceso → decisión: íconos de fuentes (ERP, Excel, facturación electrónica, CRM, bases de datos, correo / WhatsApp) que entran a nniklab y salen como dashboards, automatizaciones y agentes.
-- **Fondo:** `../06-publicidad/imagenes/fondos/ondas-verdes-engin-akyurt.jpg` (alternativa: `particulas-oscuras-cottonbro.jpg`).
+- **Visual:** animación en tres escenas, como el video intro v2, en un ciclo de 12 s y sin recuadro, fundida con el fondo:
+  1. **Datos:** "Ordenamos tus datos para decidir mejor." Barras que crecen (la última en lima) y "dashboard actualizado".
+  2. **Automatización:** "Conectamos tus apps y automatizamos el trabajo." Formulario → Validar → Registrar, con registros `[ok]`.
+  3. **IA:** "Incorporamos IA en cada decisión." Una factura escaneada de la que salen tipo, proveedor y total.
+  Debajo, una barra de progreso de tres tramos (Datos · Automatización · IA).
+- **Fondo:** grafito liso (sin foto) con fondo animado: líneas de flujo de datos por las que corren segmentos lima y un halo lima suave que sigue el mouse. Se descartó la foto de ondas verdes en el diseño (2026-10-17).
 
 ### 2. El problema
 
 - **Objetivo:** que el visitante se reconozca.
-- **Situaciones (borrador):**
+- **Situaciones:**
   - Tu información está repartida entre Excel, sistemas y correos.
   - Cada semana alguien arma reportes a mano.
   - Tu equipo pierde horas en tareas repetitivas.
   - Las decisiones se toman sin datos confiables o a destiempo.
+- **Visual:** cuatro tarjetas con foto de una escena de oficina (fotos de Pexels con personas, en `../06-publicidad/imagenes/fondos/`), velo grafito, etiqueta corta (DISPERSIÓN, TRABAJO MANUAL, TAREAS REPETITIVAS, DECISIONES A CIEGAS) y una "ventanita" de interfaz que cuenta el problema (archivos duplicados, reporte pendiente, factura 128 de 340, "¿cuánto vendimos este mes?"). Las cifras de las ventanitas son ilustrativas.
 
 ### 3. Servicios
+
+Fondo: grafito liso.
 
 Tres líneas. Detalle en `../02-servicios/README.md`.
 
@@ -54,6 +62,7 @@ En la tarjeta de **Datos** se añade la línea: "Conectamos ERP, sistemas contab
 
 ### 4. Cómo se conectan (propuesta diferencial)
 
+- **Fondo:** gris superficie liso (igual que "El problema", "Nosotros" y el cierre).
 - **Mensaje:** las tres líneas forman un solo sistema. Los datos alimentan las automatizaciones y los agentes de IA trabajan sobre ambos.
 - **Visual:** diagrama de izquierda a derecha:
   - **Entradas (fuentes):** sistemas de gestión (ERP, contabilidad, CRM), facturación electrónica del SRI, archivos y documentos (Excel, PDF), bases de datos, canales (correo, WhatsApp, formularios), ventas en línea y marketing.
@@ -63,10 +72,14 @@ En la tarjeta de **Datos** se añade la línea: "Conectamos ERP, sistemas contab
 
 ### 5. Cómo trabajamos
 
-1. **Diagnóstico:** entendemos tu negocio, tus procesos y tus datos.
-2. **Diseño:** definimos la solución y la arquitectura a tu medida.
-3. **Construcción:** desarrollamos, probamos y entregamos.
-4. **Acompañamiento:** medimos resultados y mejoramos.
+Sección clara (blanco hueso). Cuatro tarjetas con número grande, ícono, un riel que las une y lo que el cliente **recibe** en cada paso. El paso 04 va en grafito con el número en lima.
+
+1. **Diagnóstico:** entendemos tu negocio, tus procesos y tus datos. *Recibes:* un mapa de tus procesos y fuentes de datos, con las oportunidades priorizadas.
+2. **Diseño:** definimos la solución y la arquitectura a tu medida. *Recibes:* la propuesta de solución: arquitectura, alcance y plan de trabajo.
+3. **Construcción:** desarrollamos, probamos y entregamos. *Recibes:* la solución funcionando, probada con tus datos reales.
+4. **Acompañamiento:** medimos resultados y mejoramos. *Recibes:* seguimiento de resultados y mejoras continuas.
+
+Los textos de "Recibes" son un borrador para revisar.
 
 ### 6. Ejemplos de lo que podemos hacer
 
@@ -100,9 +113,11 @@ Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **S
 
 ### 9. Cierre
 
-- **Título (borrador):** ¿Hablamos de tus datos?
+- **Etiqueta:** "> siguiente_paso" tipo terminal, con cursor.
+- **Título:** ¿Hablamos de tus datos? ("datos" resaltado en lima).
 - **Botón:** Agenda una reunión.
-- **Fondo:** `../06-publicidad/imagenes/fondos/espacio-oscuro-ijoxi-studios.jpg`.
+- **Contacto directo:** "o escríbenos: nniklab@outlook.com · +593 99 578 4113".
+- **Fondo:** gris superficie liso con fondo animado: flujos de datos que convergen hacia el centro, ondas cuadradas lima que salen del botón y un halo suave. Se descartó la foto de espacio oscuro en el diseño (2026-10-17).
 
 ### 10. Pie de página
 
@@ -114,15 +129,16 @@ Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **S
 
 ## Recursos visuales
 
-- **Fondos fotográficos** (en `../06-publicidad/imagenes/fondos/`): portada y cierre como se indica arriba; `lineas-de-luz-dennis-ariel.jpg` para automatización o "Cómo se conectan"; `microchips-jakub-pabis.jpg` para datos (oscurecida o desenfocada). Usar 3 o 4 fotos como máximo en todo el sitio.
+- **Fotos:** solo las cuatro escenas de oficina de "El problema" (en `../06-publicidad/imagenes/fondos/`). Las secciones usan fondos lisos que alternan grafito y gris superficie; la portada y el cierre llevan fondos animados en lugar de fotos. Los fondos de ondas, espacio oscuro, líneas de luz y microchips no se usan en la v1 y quedan guardados.
 - **Gráficos propios** (en `../06-publicidad/imagenes/graficos/svg/`): datos, IA, automatización e integración; se pueden reutilizar en servicios y ejemplos.
 - **Logos de tecnologías** (en `recursos/tecnologias/`): solo en el diagrama "Cómo se conectan".
-- **Pendiente:** foto de Juan para "Nosotros" e imagen para compartir en redes (1200 × 630), que irán en `recursos/imagenes/`.
+- **Imagen para compartir en redes:** `sitio/assets/img/marca/og-nniklab.jpg` (1200 × 630).
+- **Pendiente:** foto de Juan para "Nosotros".
 
 ## Llamado a la acción
 
 - Todos los botones "Agenda una reunión" llevarán a un **formulario de n8n**.
-- **Por ahora quedan sin acción.** El formulario y su conector de n8n se enlazarán más adelante.
+- **Por ahora:** el botón del menú y el de la portada bajan hasta el cierre; el del cierre queda sin acción. El formulario y su conector de n8n se enlazarán más adelante.
 
 ## Pendiente
 

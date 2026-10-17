@@ -1,0 +1,147 @@
+/* nniklab · sitio web v1 — estilos
+   Diseño base en los estilos en línea de index.html (exportado de la propuesta v1 en Claude Design);
+   aquí: base, estados, animaciones y ajustes de celular. Colores y tipografías: design system nniklab. */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #111418; color: #f4f4f2; }
+img, svg { max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 2px solid #c6f432; outline-offset: 3px; }
+section[id], main[id] { scroll-margin-top: 80px; }
+
+/* Enlace para saltar al contenido (accesibilidad) */
+.nk-saltar { position: absolute; left: 16px; top: -64px; z-index: 50; background: #c6f432; color: #111418; padding: 10px 16px; font-family: Inter, Arial, sans-serif; font-weight: 600; text-decoration: none; }
+.nk-saltar:focus { top: 16px; }
+html { scroll-behavior: smooth; }
+.nk-root { -webkit-font-smoothing: antialiased; }
+.nk-root ::selection { background: #c6f432; color: #111418; }
+
+/* Grilla técnica de fondo */
+.nk-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(46, 51, 59, 0.55) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(46, 51, 59, 0.55) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Fondos fotográficos */
+/* Portada: grafito liso, igual que Servicios (sin foto ni cuadrícula) */
+.nk-bg-ondas { background-color: #111418; background-image: none; }
+.nk-bg-ondas .nk-grid-bg { display: none; }
+/* El problema y Cómo se conectan: superficie lisa, igual que Nosotros */
+.nk-bg-lineas { background-color: #1a1d22; background-image: none; }
+/* Servicios: grafito liso, igual que Ejemplos */
+.nk-bg-chips { background-color: #111418; background-image: none; }
+.nk-sin-fotos .nk-bg-ondas, .nk-sin-fotos 
+/* Botones y enlaces */
+.nk-btn-primario { transition: background-color .2s ease, transform .2s ease; }
+.nk-btn-primario:hover { background-color: #d8ff52 !important; transform: translateY(-1px); }
+.nk-btn-secundario { transition: border-color .2s ease, color .2s ease; }
+.nk-btn-secundario:hover { border-color: #c6f432 !important; color: #c6f432 !important; }
+.nk-nav a { transition: color .2s ease; }
+.nk-nav a:hover { color: #f4f4f2 !important; }
+.nk-link:hover { color: #d8ff52 !important; }
+
+/* Tarjetas */
+.nk-card { transition: border-color .25s ease, transform .25s ease; }
+.nk-card:hover { border-color: #c6f432 !important; transform: translateY(-4px); }
+.nk-card-claro { transition: border-color .25s ease, transform .25s ease; }
+.nk-card-claro:hover { border-color: #5e7a0e !important; transform: translateY(-4px); }
+
+/* Animaciones */
+@keyframes nk-viaje { 0% { left: -6px; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { left: calc(100% - 2px); opacity: 0; } }
+@keyframes nk-viaje-v { 0% { top: -6px; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 2px); opacity: 0; } }
+@keyframes nk-latido { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+@keyframes nk-brillo { 0%, 100% { box-shadow: 0 0 0 0 rgba(198, 244, 50, 0); } 50% { box-shadow: 0 0 0 6px rgba(198, 244, 50, 0.12); } }
+@keyframes nk-entra { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes nk-cursor { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+.nk-pulso { position: absolute; top: -3px; width: 7px; height: 7px; background: #c6f432; animation: nk-viaje 2.8s linear infinite; }
+.nk-pulso-v { position: absolute; left: -3px; width: 7px; height: 7px; background: #c6f432; animation: nk-viaje-v 2.8s linear infinite; }
+.nk-d1 { animation-delay: .4s; } .nk-d2 { animation-delay: .9s; } .nk-d3 { animation-delay: 1.4s; } .nk-d4 { animation-delay: 1.9s; } .nk-d5 { animation-delay: 2.3s; }
+.nk-latido { animation: nk-latido 2.4s ease-in-out infinite; }
+.nk-brillo { animation: nk-brillo 3s ease-in-out infinite; }
+.nk-entra { animation: nk-entra .8s cubic-bezier(.2, .7, .2, 1) both; }
+.nk-entra-2 { animation: nk-entra .8s .15s cubic-bezier(.2, .7, .2, 1) both; }
+.nk-entra-3 { animation: nk-entra .8s .3s cubic-bezier(.2, .7, .2, 1) both; }
+.nk-cursor { animation: nk-cursor 1s steps(1) infinite; }
+
+/* Interruptor de movimiento y preferencia del sistema */
+.nk-quieto *, .nk-quieto { animation: none !important; transition: none !important; }
+.nk-quieto .nk-pulso, .nk-quieto .nk-pulso-v { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .nk-root *, .nk-root { animation: none !important; transition: none !important; }
+  .nk-pulso, .nk-pulso-v { display: none; }
+}
+
+/* Cómo trabajamos: riel entre pasos */
+.nk-pulso-oscuro { background: #5e7a0e; top: -2px; width: 6px; height: 6px; }
+
+/* El problema: ilustraciones */
+@keyframes nk-flota { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes nk-gira { to { transform: rotate(360deg); } }
+.nk-flota { animation: nk-flota 3.2s ease-in-out infinite; transform-box: fill-box; }
+.nk-gira { animation: nk-gira 6s linear infinite; transform-box: fill-box; transform-origin: center; }
+
+/* Portada: animación en tres escenas (ciclo de 12 s: datos 0-4 s, automatización 4-8 s, IA 8-12 s) */
+@keyframes nk-escena { 0% { opacity: 0; transform: translateY(14px); } 3% { opacity: 1; transform: none; } 30% { opacity: 1; transform: none; } 33.3% { opacity: 0; transform: translateY(-14px); } 100% { opacity: 0; transform: translateY(-14px); } }
+@keyframes nk-crece { 0% { transform: scaleY(0.04); } 9% { transform: scaleY(1); } 100% { transform: scaleY(1); } }
+@keyframes nk-aparece { 0% { opacity: 0; transform: translateY(6px); } 4% { opacity: 1; transform: none; } 100% { opacity: 1; transform: none; } }
+@keyframes nk-recorre { 0%, 4% { left: 0%; } 12% { left: 50%; } 20% { left: 100%; } 100% { left: 100%; } }
+@keyframes nk-escanea { 0% { top: 0%; } 24% { top: 100%; } 100% { top: 100%; } }
+@keyframes nk-progreso { 0% { width: 0; } 33.2% { width: 100%; } 33.3% { width: 0; } 100% { width: 0; } }
+.nk-escena { animation: nk-escena 12s linear infinite both; }
+.nk-esc-2, .nk-esc-3 { opacity: 0; }
+.nk-esc-2 { animation-delay: 4s; }
+.nk-esc-3 { animation-delay: 8s; }
+.nk-barra { transform-origin: bottom; animation: nk-crece 12s cubic-bezier(.2, .7, .2, 1) infinite both; }
+.nk-aparece { animation: nk-aparece 12s ease-out infinite both; }
+.nk-recorre { animation: nk-recorre 12s ease-in-out 4s infinite both; }
+.nk-escanea { animation: nk-escanea 12s linear 8s infinite both; }
+.nk-progreso { animation: nk-progreso 12s linear infinite both; }
+.nk-prog-2 { animation-delay: 4s; }
+.nk-prog-3 { animation-delay: 8s; }
+.nk-quieto .nk-esc-2, .nk-quieto .nk-esc-3 { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .nk-esc-2, .nk-esc-3 { opacity: 0; } }
+
+/* Portada: fondo animado — flujos de datos + halo que sigue el mouse */
+.nk-flujo-capa { -webkit-mask-image: radial-gradient(ellipse 75% 70% at 60% 50%, #000 30%, transparent 85%); mask-image: radial-gradient(ellipse 75% 70% at 60% 50%, #000 30%, transparent 85%); }
+.nk-flujo-linea { position: absolute; left: 0; right: 0; height: 1px; background: rgba(46, 51, 59, 0.55); }
+@keyframes nk-corre { from { left: -20%; } to { left: 110%; } }
+.nk-flujo-seg { position: absolute; top: 0; height: 1px; left: -20%; background: linear-gradient(to right, rgba(198, 244, 50, 0), rgba(198, 244, 50, 0.9)); animation: nk-corre 9s linear infinite; }
+.nk-flujo-seg::after { content: ""; position: absolute; right: -2px; top: -2px; width: 5px; height: 5px; background: #c6f432; }
+@keyframes nk-deriva { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(-60px, 30px); } 66% { transform: translate(40px, -40px); } }
+.nk-halo { transform: translate(calc(100vw * 0.62 - 360px), 40px); transition: transform .9s cubic-bezier(.2, .7, .2, 1); will-change: transform; }
+.nk-halo-luz { animation: nk-deriva 14s ease-in-out infinite; }
+.nk-quieto .nk-flujo-seg, .nk-quieto .nk-flujo-seg::after { display: none; }
+@media (prefers-reduced-motion: reduce) { .nk-flujo-seg { display: none; } .nk-halo { transition: none; } }
+
+/* Cierre: flujos que convergen al centro + ondas cuadradas que salen del botón */
+.nk-cierre-flujos { -webkit-mask-image: radial-gradient(ellipse 42% 48% at 50% 50%, transparent 35%, #000 80%); mask-image: radial-gradient(ellipse 42% 48% at 50% 50%, transparent 35%, #000 80%); }
+@keyframes nk-corre-izq { from { left: 110%; } to { left: -20%; } }
+.nk-hacia-centro-der { background: linear-gradient(to left, rgba(198, 244, 50, 0), rgba(198, 244, 50, 0.9)); animation-name: nk-corre-izq; }
+.nk-hacia-centro-der::after { right: auto; left: -2px; }
+@keyframes nk-onda { 0% { transform: scale(0.35); opacity: 0.7; } 100% { transform: scale(4.2); opacity: 0; } }
+.nk-onda { position: absolute; left: -110px; top: -110px; width: 220px; height: 220px; box-sizing: border-box; border: 1px solid rgba(198, 244, 50, 0.45); opacity: 0.15; animation: nk-onda 6s cubic-bezier(.2, .6, .3, 1) infinite both; }
+.nk-quieto .nk-onda { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .nk-onda { opacity: 0; } }
+
+/* Menú: botón de celular */
+.nk-nav-acciones { display: flex; align-items: center; gap: 12px; }
+.nk-menu-btn { display: none; width: 44px; height: 44px; background: transparent; border: 1px solid #2e333b; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 0; }
+.nk-menu-btn span { display: block; width: 18px; height: 2px; background: #f4f4f2; transition: transform .2s ease; }
+.nk-menu-btn[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
+.nk-menu-btn[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
+
+/* Celular */
+@media (max-width: 760px) {
+  .nk-nav { flex-wrap: wrap; }
+  .nk-menu-btn { display: inline-flex; }
+  .nk-nav-cta { padding: 10px 14px !important; font-size: 14px !important; }
+  .nk-nav-links { display: none !important; order: 3; width: 100%; flex-direction: column; gap: 0 !important; padding: 8px 0 4px; border-top: 1px solid #2e333b; }
+  .nk-nav-links.nk-abierto { display: flex !important; }
+  .nk-nav-links a { padding: 14px 0; border-bottom: 1px solid #2e333b; font-size: 16px; }
+  .nk-flechas { transform: rotate(90deg); }
+  .nk-flujo { flex-direction: column !important; align-items: stretch !important; }
+  .nk-riel { display: none !important; }
+}

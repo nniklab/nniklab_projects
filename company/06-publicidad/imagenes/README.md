@@ -14,7 +14,7 @@ Fotos, ilustraciones, íconos y gráficos para los videos, anuncios y la web de 
 
 - Tonos oscuros que combinen con el grafito `#111418`; el lima `#C6F432` como acento.
 - Temas: datos, IA, automatización, integración de aplicaciones, negocios.
-- Evitar personas reconocibles y marcas o logos visibles (las plataformas gratuitas no incluyen permisos de modelo ni de propiedad).
+- Personas: sí, en escenas de trabajo reales (decisión del 2026-10-17, para mostrar los problemas del cliente en la web), nunca ridiculizadas ni en situaciones ofensivas, y sin dar a entender que respaldan a nniklab. Evitar marcas o logos visibles.
 - Las ilustraciones e íconos, recoloreados con la paleta oficial (ver `../../01-marca/colores/`).
 
 ## Fuentes recomendadas
@@ -46,17 +46,21 @@ Creados el 2026-10-11 con la paleta y la tipografía oficiales, 1920 × 1080, un
 
 ## Fondos fotográficos
 
-Los tres primeros se eligieron el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay; los cuatro siguientes, el 2026-10-17 entre unas 110 de Pexels, para la web. Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.
+Los tres primeros se eligieron el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay; los cuatro siguientes, el 2026-10-17 entre unas 110 de Pexels, para la web; y las cuatro escenas de oficina (con personas), también el 2026-10-17, para las tarjetas de "El problema" (versión web de 1600 px). Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.
 
 | Archivo | Descripción | Uso sugerido | Tamaño | Fuente | Autor | Licencia |
 |---------|-------------|--------------|--------|--------|-------|----------|
 | `fondos/particulas-oscuras-cottonbro.jpg` | Partículas de polvo sobre negro | Fondo neutro para títulos y cierre | 4262 × 2842 | [Pexels](https://www.pexels.com/photo/9665214/) | cottonbro studio | Pexels License |
 | `fondos/cubos-conectados-shubham-dhage.jpg` | Cubos conectados en red sobre negro | Escenas de datos e integración | 3840 × 2160 | [Unsplash](https://unsplash.com/photos/T9rKvI3N0NM) | Shubham Dhage | Unsplash License |
 | `fondos/circuito-verde-vishnu-mohanan.jpg` | Circuito con pistas verdes en la oscuridad | Escenas de tecnología y automatización | 4592 × 3448 | [Unsplash](https://unsplash.com/photos/M0yAcynJr6M) | Vishnu Mohanan | Unsplash License |
-| `fondos/ondas-verdes-engin-akyurt.jpg` | Ondas verdes en la parte baja, el resto negro | Portada de la web | 7500 × 5000 | [Pexels](https://www.pexels.com/photo/5200063/) | Engin Akyurt | Pexels License |
-| `fondos/espacio-oscuro-ijoxi-studios.jpg` | Espacio oscuro verde azulado con líneas de luz | Cierre de la web (llamado a la acción) | 4500 × 2532 | [Pexels](https://www.pexels.com/photo/13027585/) | iJoxi Studios | Pexels License |
-| `fondos/lineas-de-luz-dennis-ariel.jpg` | Líneas finas de luz en diagonal (estelas) | Automatización y flujo de datos | 4096 × 2731 | [Pexels](https://www.pexels.com/photo/17106977/) | Dennis Ariel | Pexels License |
-| `fondos/microchips-jakub-pabis.jpg` | Microchips en primer plano sobre placa oscura | Datos y tecnología (usar oscurecida o desenfocada: los chips llevan códigos impresos) | 7008 × 4672 | [Pexels](https://www.pexels.com/photo/36169770/) | Jakub Pabis | Pexels License |
+| `fondos/ondas-verdes-engin-akyurt.jpg` | Ondas verdes en la parte baja, el resto negro | Portada de la web (propuesta inicial; no se usa en la web v1) | 7500 × 5000 | [Pexels](https://www.pexels.com/photo/5200063/) | Engin Akyurt | Pexels License |
+| `fondos/espacio-oscuro-ijoxi-studios.jpg` | Espacio oscuro verde azulado con líneas de luz | Cierre de la web (propuesta inicial; no se usa en la web v1) | 4500 × 2532 | [Pexels](https://www.pexels.com/photo/13027585/) | iJoxi Studios | Pexels License |
+| `fondos/lineas-de-luz-dennis-ariel.jpg` | Líneas finas de luz en diagonal (estelas) | Automatización y flujo de datos (no se usa en la web v1) | 4096 × 2731 | [Pexels](https://www.pexels.com/photo/17106977/) | Dennis Ariel | Pexels License |
+| `fondos/microchips-jakub-pabis.jpg` | Microchips en primer plano sobre placa oscura | Datos y tecnología, oscurecida o desenfocada por los códigos de los chips (no se usa en la web v1) | 7008 × 4672 | [Pexels](https://www.pexels.com/photo/36169770/) | Jakub Pabis | Pexels License |
+| `fondos/papeles-escritorio-tima-miroshnichenko.jpg` | Escritorio cubierto de reportes impresos junto a una laptop | Web, problema 01 (dispersión) | 1600 × 1067 | [Pexels](https://www.pexels.com/photo/6694878/) | Tima Miroshnichenko | Pexels License |
+| `fondos/trabajo-nocturno-oktay-koseoglu.jpg` | Persona trabajando sola de noche en la laptop | Web, problema 02 (trabajo manual) | 1600 × 1061 | [Pexels](https://www.pexels.com/photo/30215681/) | Oktay Köseoğlu | Pexels License |
+| `fondos/digitando-documento-vanessa-garcia.jpg` | Hombre digitando un documento impreso en la laptop | Web, problema 03 (tareas repetitivas) | 1600 × 1067 | [Pexels](https://www.pexels.com/photo/6326031/) | Vanessa Garcia | Pexels License |
+| `fondos/duda-documento-kaboompics.jpg` | Hombre revisando un documento con duda | Web, problema 04 (decisiones a ciegas) | 1600 × 1067 | [Pexels](https://www.pexels.com/photo/7877111/) | Kaboompics | Pexels License |
 
 Las licencias de Pexels y Unsplash permiten uso comercial sin atribución obligatoria.
 

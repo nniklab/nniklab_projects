@@ -20,6 +20,9 @@
 - **2026-10-17:** catálogo de servicios inicial (tres líneas y tecnologías) en `02-servicios/README.md`.
 - **2026-10-17:** perfil de Juan Heredia T. para la sección "Nosotros" en `03-comunicacion/perfil-fundador.md`.
 - **2026-10-17:** logos de tecnologías en `05-web/recursos/tecnologias/` (18 SVG con fuente y licencia).
+- **2026-10-17:** propuesta de diseño v1 del sitio en Claude Design (escritorio y celular). Enlace en `05-web/README.md`.
+- **2026-10-17:** design system "nniklab" de Claude actualizado: slogan oficial, líneas de servicio, reglas de fotografía y de marcas de terceros, rutas `company/` y landings de referencia marcadas como descartadas.
+- **2026-10-17:** sitio web v1.0 construido desde el diseño v1 en `05-web/sitio/` (HTML, CSS y JS sin dependencias, fuentes propias, imagen para redes).
 - **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
 
 ## Información base
@@ -54,7 +57,7 @@
 
 ## Próximos pasos
 
-1. Diseñar la nueva propuesta visual del sitio y construirlo en `05-web/` a partir de `estructura.md` (revisar de paso los textos en borrador).
+1. Revisar el sitio v1.0 (`05-web/sitio/`) y seguir ajustándolo; publicar en hosting cuando esté listo.
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
 3. Pendientes: foto de Juan para "Nosotros", redes sociales, dominio y hosting.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.

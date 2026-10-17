@@ -17,4 +17,4 @@ nniklab_projects/
 
 | Proyecto | Descripción | Estado |
 |----------|-------------|--------|
-| [company](company/) | Marca de la empresa y servicios que ofrece | Identidad visual completa; en curso: sitio web y textos de marca |
+| [company](company/) | Marca de la empresa y servicios que ofrece | Identidad visual completa; sitio web v1.0 construido (por publicar) |
