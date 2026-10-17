@@ -29,6 +29,7 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
 - **Frase de apoyo (borrador):** Diseñamos el flujo de tu información, automatizamos tus procesos y sumamos agentes de IA para que tu negocio decida mejor y trabaje menos.
 - **Botones:** Agenda una reunión · Ver servicios.
 - **Visual:** esquema animado del flujo dato → proceso → decisión: íconos de fuentes (ERP, Excel, facturación electrónica, CRM, bases de datos, correo / WhatsApp) que entran a nniklab y salen como dashboards, automatizaciones y agentes.
+- **Fondo:** `../06-publicidad/imagenes/fondos/ondas-verdes-engin-akyurt.jpg` (alternativa: `particulas-oscuras-cottonbro.jpg`).
 
 ### 2. El problema
 
@@ -101,6 +102,7 @@ Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **S
 
 - **Título (borrador):** ¿Hablamos de tus datos?
 - **Botón:** Agenda una reunión.
+- **Fondo:** `../06-publicidad/imagenes/fondos/espacio-oscuro-ijoxi-studios.jpg`.
 
 ### 10. Pie de página
 
@@ -109,6 +111,13 @@ Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **S
 - Correo: nniklab@outlook.com
 - Aviso legal, en texto pequeño: "Los nombres y logos de terceros son marcas registradas de sus respectivos propietarios. Su uso no implica asociación ni respaldo."
 - Por ahora solo estos elementos. Las redes sociales se añadirán cuando estén definidas.
+
+## Recursos visuales
+
+- **Fondos fotográficos** (en `../06-publicidad/imagenes/fondos/`): portada y cierre como se indica arriba; `lineas-de-luz-dennis-ariel.jpg` para automatización o "Cómo se conectan"; `microchips-jakub-pabis.jpg` para datos (oscurecida o desenfocada). Usar 3 o 4 fotos como máximo en todo el sitio.
+- **Gráficos propios** (en `../06-publicidad/imagenes/graficos/svg/`): datos, IA, automatización e integración; se pueden reutilizar en servicios y ejemplos.
+- **Logos de tecnologías** (en `recursos/tecnologias/`): solo en el diagrama "Cómo se conectan".
+- **Pendiente:** foto de Juan para "Nosotros" e imagen para compartir en redes (1200 × 630), que irán en `recursos/imagenes/`.
 
 ## Llamado a la acción
 

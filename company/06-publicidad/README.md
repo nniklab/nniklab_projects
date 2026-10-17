@@ -24,4 +24,4 @@ Música y efectos en `audio/`. Ver `audio/README.md` con las pistas, su origen y
 
 ## Imágenes
 
-Fotos, ilustraciones, íconos y gráficos en `imagenes/`. Ver `imagenes/README.md` con los criterios de selección, las fuentes recomendadas y el registro de cada imagen con su licencia.
+Fotos, ilustraciones, íconos y gráficos en `imagenes/`. Se usan en los videos y también en la web (`../05-web/`). Ver `imagenes/README.md` con los criterios de selección, las fuentes recomendadas y el registro de cada imagen con su licencia.

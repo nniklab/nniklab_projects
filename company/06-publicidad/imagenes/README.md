@@ -1,6 +1,6 @@
 # Imágenes
 
-Fotos, ilustraciones, íconos y gráficos para los videos y anuncios de nniklab.
+Fotos, ilustraciones, íconos y gráficos para los videos, anuncios y la web de nniklab.
 
 ## Organización
 
@@ -46,15 +46,19 @@ Creados el 2026-10-11 con la paleta y la tipografía oficiales, 1920 × 1080, un
 
 ## Fondos fotográficos
 
-Elegidos el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay. Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.
+Los tres primeros se eligieron el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay; los cuatro siguientes, el 2026-10-17 entre unas 110 de Pexels, para la web. Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.
 
 | Archivo | Descripción | Uso sugerido | Tamaño | Fuente | Autor | Licencia |
 |---------|-------------|--------------|--------|--------|-------|----------|
 | `fondos/particulas-oscuras-cottonbro.jpg` | Partículas de polvo sobre negro | Fondo neutro para títulos y cierre | 4262 × 2842 | [Pexels](https://www.pexels.com/photo/9665214/) | cottonbro studio | Pexels License |
 | `fondos/cubos-conectados-shubham-dhage.jpg` | Cubos conectados en red sobre negro | Escenas de datos e integración | 3840 × 2160 | [Unsplash](https://unsplash.com/photos/T9rKvI3N0NM) | Shubham Dhage | Unsplash License |
 | `fondos/circuito-verde-vishnu-mohanan.jpg` | Circuito con pistas verdes en la oscuridad | Escenas de tecnología y automatización | 4592 × 3448 | [Unsplash](https://unsplash.com/photos/M0yAcynJr6M) | Vishnu Mohanan | Unsplash License |
+| `fondos/ondas-verdes-engin-akyurt.jpg` | Ondas verdes en la parte baja, el resto negro | Portada de la web | 7500 × 5000 | [Pexels](https://www.pexels.com/photo/5200063/) | Engin Akyurt | Pexels License |
+| `fondos/espacio-oscuro-ijoxi-studios.jpg` | Espacio oscuro verde azulado con líneas de luz | Cierre de la web (llamado a la acción) | 4500 × 2532 | [Pexels](https://www.pexels.com/photo/13027585/) | iJoxi Studios | Pexels License |
+| `fondos/lineas-de-luz-dennis-ariel.jpg` | Líneas finas de luz en diagonal (estelas) | Automatización y flujo de datos | 4096 × 2731 | [Pexels](https://www.pexels.com/photo/17106977/) | Dennis Ariel | Pexels License |
+| `fondos/microchips-jakub-pabis.jpg` | Microchips en primer plano sobre placa oscura | Datos y tecnología (usar oscurecida o desenfocada: los chips llevan códigos impresos) | 7008 × 4672 | [Pexels](https://www.pexels.com/photo/36169770/) | Jakub Pabis | Pexels License |
 
-Ambas licencias permiten uso comercial sin atribución obligatoria.
+Las licencias de Pexels y Unsplash permiten uso comercial sin atribución obligatoria.
 
 ### Otras candidatas de la selección (no descargadas)
 

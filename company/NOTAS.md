@@ -5,7 +5,7 @@
 - **2026-10-10:** estructura de carpetas creada.
 - **2026-10-10:** paleta oficial definida: 4, grafito + lima. Ficha y reglas de uso en `01-marca/colores/`.
 - **2026-10-10:** paleta naranja (5) guardada en `99-respaldo/paleta-naranja/` para una futura actualización.
-- **2026-10-10:** ejemplos de landing con la paleta oficial en `05-web/`.
+- **2026-10-10:** ejemplos de landing con la paleta oficial en `05-web/` (eliminados el 2026-10-17).
 - **2026-10-10:** tipografía oficial definida: Space Grotesk + Inter + JetBrains Mono. Ver `01-marca/tipografia/`.
 - **2026-10-10:** logo final producido (SVG, PNG y favicon) en `01-marca/logo/final/`. Identidad visual básica completa.
 - **2026-10-10:** creada `06-publicidad/` con el video intro de la marca: v1 y v2 (vigente, Full HD con audio) en `videos/`.
@@ -19,6 +19,8 @@
 - **2026-10-17:** eliminados los borradores de landing de `05-web/`. Nueva estructura del sitio en `05-web/estructura.md`.
 - **2026-10-17:** catálogo de servicios inicial (tres líneas y tecnologías) en `02-servicios/README.md`.
 - **2026-10-17:** perfil de Juan Heredia T. para la sección "Nosotros" en `03-comunicacion/perfil-fundador.md`.
+- **2026-10-17:** logos de tecnologías en `05-web/recursos/tecnologias/` (18 SVG con fuente y licencia).
+- **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
 
 ## Información base
 
@@ -52,10 +54,9 @@
 
 ## Próximos pasos
 
-1. Revisar y aprobar `05-web/estructura.md` y los textos en borrador.
-2. Diseñar la nueva propuesta visual del sitio y construirlo en `05-web/`.
-3. Más adelante: formulario y conector de n8n para "Agenda una reunión".
-4. Pendientes: foto de Juan para "Nosotros", redes sociales, dominio y hosting.
-5. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
-6. Misión, visión y valores (`03-comunicacion/`).
-7. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
+1. Diseñar la nueva propuesta visual del sitio y construirlo en `05-web/` a partir de `estructura.md` (revisar de paso los textos en borrador).
+2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
+3. Pendientes: foto de Juan para "Nosotros", redes sociales, dominio y hosting.
+4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
+5. Misión, visión y valores (`03-comunicacion/`).
+6. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.

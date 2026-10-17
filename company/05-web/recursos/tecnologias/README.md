@@ -32,7 +32,7 @@ Descargados el 2026-10-17. Formato: SVG.
 
 ## ZIP originales
 
-Los ZIP de Microsoft (`Power-Platform-icons-scalable.zip`, `Azure_Public_Service_Icons_V24.zip` y `2024-microsoft-365-content-icons.zip`) se descargaron en esta carpeta solo para extraer los íconos. Están excluidos del repositorio en `.gitignore` y se pueden borrar.
+Los ZIP de Microsoft (`Power-Platform-icons-scalable.zip`, `Azure_Public_Service_Icons_V24.zip` y `2024-microsoft-365-content-icons.zip`) se descargaron solo para extraer los íconos y se borraron después (2026-10-17). Si hace falta otro ícono, se vuelven a descargar de learn.microsoft.com. La regla de `.gitignore` evita que se suban si se descargan de nuevo en esta carpeta.
 
 ## Reglas de uso
 

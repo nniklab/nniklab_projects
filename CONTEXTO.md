@@ -36,9 +36,11 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-17:** se trabaja desde la copia local del repositorio (ver "Cómo sincronizar").
 - **2026-10-17:** company: se inicia el sitio web de la empresa en `company/05-web/`. Antes de construirlo se afina el contexto de la empresa (servicios, slogan, misión y visión).
 - **2026-10-17:** company: slogan oficial, catálogo de servicios, perfil del fundador y nueva estructura del sitio web (`company/05-web/estructura.md`). Borradores de landing eliminados. Estructura cerrada por ahora: pie de página solo con logo, teléfono y correo.
+- **2026-10-17:** company: logos de tecnologías para el diagrama de la web (`company/05-web/recursos/tecnologias/`); la franja de tecnologías va solo en texto y el pie lleva un aviso de marcas registradas.
+- **2026-10-17:** company: cuatro fondos de Pexels para la web en `company/06-publicidad/imagenes/fondos/`.
 
 ## Próximos pasos
 
-- company: aprobar la estructura del sitio, diseñar la nueva propuesta visual y construir la web en `company/05-web/`.
+- company: diseñar la nueva propuesta visual y construir la web en `company/05-web/` a partir de `estructura.md`.
 - company (más adelante): formulario y conector de n8n, foto para "Nosotros", redes sociales, dominio y hosting.
 - company: detalle de cada servicio, misión, visión y valores, tarjeta de presentación final.
