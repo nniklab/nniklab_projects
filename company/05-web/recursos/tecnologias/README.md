@@ -1,6 +1,6 @@
 # Logos de tecnologías
 
-Logos de las herramientas con las que trabaja nniklab, para la web (franja de tecnologías y diagrama "Cómo se conectan").
+Logos de las herramientas con las que trabaja nniklab, para el diagrama "Cómo se conectan" de la web. La franja de tecnologías va solo en texto.
 Descargados el 2026-10-17. Formato: SVG.
 
 ## Registro
