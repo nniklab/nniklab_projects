@@ -14,6 +14,8 @@
 - **2026-10-11:** creada `06-publicidad/imagenes/` para las imágenes de los videos, con criterios, fuentes recomendadas y registro de licencias.
 - **2026-10-11:** cuatro gráficos propios para el video (datos, IA, automatización e integración de apps) en `06-publicidad/imagenes/graficos/`, en PNG y SVG Full HD.
 - **2026-10-11:** tres fondos fotográficos (partículas, cubos conectados y circuito verde) en `06-publicidad/imagenes/fondos/`, con autor y licencia registrados; otras candidatas anotadas en el README de imágenes.
+- **2026-10-11:** video intro v3 (vertical 9:16 para redes, 22 s) en `06-publicidad/videos/`, ahora la versión vigente; sus recursos editables en `nniklab-intro-v3-recursos.zip`.
+- **2026-10-17:** se inicia el sitio web en `05-web/`. Primero se completa el contexto de la empresa: servicios, slogan, misión, visión y valores.
 
 ## Información base
 
@@ -39,4 +41,6 @@
 
 1. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
 2. Definir el catálogo de servicios (`02-servicios/`).
-3. Misión, visión, valores y slogan (`03-comunicacion/`). El video intro v2 usa de forma provisional "Datos que trabajan. Procesos que fluyen.": si se elige otro slogan, hay que hacer una v3 del video.
+3. Misión, visión, valores y slogan (`03-comunicacion/`). Los videos intro v2 y v3 usan de forma provisional "Datos que trabajan. Procesos que fluyen.": si se elige otro slogan, hay que hacer una v4 del video.
+4. Datos prácticos para la web: dominio, canales de contacto (WhatsApp, formulario, correo), redes sociales y ubicación.
+5. Construir el sitio web en `05-web/`.

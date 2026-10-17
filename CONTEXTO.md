@@ -7,6 +7,12 @@ Se actualiza al final de cada sesión.
 
 En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_projects y lee CONTEXTO.md".
 
+## Cómo sincronizar
+
+- Copia local de trabajo: `C:\Users\jheredia\Documents\nniklab_Project` (rama `main`).
+- Claude edita los archivos en la copia local; el commit y el push se hacen desde ese equipo para que GitHub y la copia local no se desfasen.
+- Antes de empezar una sesión: `git pull`.
+
 ## Convenciones
 
 - Una carpeta por proyecto, con nombre en minúsculas y guiones (ej. `mi-proyecto`). Lo mismo para subcarpetas y archivos.
@@ -26,7 +32,12 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-11:** company: creada `company/06-publicidad/imagenes/` para las imágenes del video (vacía, con su README de criterios y licencias).
 - **2026-10-11:** company: cuatro gráficos de marca para el video (datos, IA, automatización, integración de apps) en `company/06-publicidad/imagenes/graficos/`.
 - **2026-10-11:** company: tres fondos fotográficos de Pexels y Unsplash en `company/06-publicidad/imagenes/fondos/`.
+- **2026-10-11:** company: video intro v3 (vertical 9:16, 22 s), ahora la versión vigente, con su proyecto editable en `company/06-publicidad/videos/`.
+- **2026-10-17:** se trabaja desde la copia local del repositorio (ver "Cómo sincronizar").
+- **2026-10-17:** company: se inicia el sitio web de la empresa en `company/05-web/`. Antes de construirlo se afina el contexto de la empresa (servicios, slogan, misión y visión).
 
 ## Próximos pasos
 
-- company: tarjeta final, catálogo de servicios y textos de marca (incluido el slogan oficial).
+- company: catálogo de servicios, textos de marca (slogan oficial, misión, visión y valores) y datos prácticos de la web (dominio, canales de contacto, redes).
+- company: construir el sitio web en `company/05-web/` con la identidad visual y los textos definidos.
+- company: tarjeta de presentación final.
