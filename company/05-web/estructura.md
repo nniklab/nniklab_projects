@@ -146,5 +146,5 @@ Queda para más adelante:
 
 - Foto de Juan para "Nosotros".
 - Redes sociales de la empresa (y su lugar en el pie de página).
-- Dominio y hosting.
+- Dominio propio (el sitio ya está publicado en GitHub Pages).
 - Formulario y conector de n8n para el llamado a la acción.

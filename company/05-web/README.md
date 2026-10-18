@@ -25,7 +25,13 @@ Sitio web de nniklab: una sola página con las secciones definidas en `estructur
 |---------|-------|---------|
 | **v1.0** | 2026-10-17 | Primera versión, construida desde la propuesta de diseño v1: portada con animación en tres escenas (datos, automatización, IA), flujos de datos y halo que sigue el mouse; "El problema" con fotos; servicios; "Cómo se conectan"; proceso; ejemplos; nosotros; tecnologías; cierre animado. Fuentes propias, menú de celular e imagen para compartir en redes. |
 
-Cada versión nueva se anota aquí. Para publicar una versión se usa una etiqueta de git (por ejemplo `web-v1.0`).
+Cada versión nueva se anota aquí y se marca con una etiqueta de git (por ejemplo `web-v1.0`).
+
+## Publicación
+
+- **En línea:** https://nniklab.github.io/nniklab_projects/ (GitHub Pages, desde el 2026-10-17).
+- **Cómo se publica:** `.github/workflows/publicar-web.yml` publica la carpeta `sitio/` cada vez que un push a `main` cambia algo dentro de ella. También se puede lanzar a mano desde la pestaña Actions → "Publicar sitio web".
+- **Dominio propio:** pendiente; se configura en Settings → Pages. Al tenerlo, poner la URL completa en `og:image`, `og:url` y `canonical` de `index.html`.
 
 ## Historial
 

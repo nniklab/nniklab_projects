@@ -43,5 +43,5 @@ sitio/
 
 - Botón "Agenda una reunión" del cierre: conectar el formulario de n8n (los demás botones bajan hasta el cierre).
 - Foto de Juan en "Nosotros" (hoy es un recuadro "[FOTO DE JUAN]").
-- Dominio y hosting. Al publicar, poner la URL completa en `og:image` y añadir `og:url` y `canonical` en `index.html`.
+- Dominio propio (el sitio ya está publicado en GitHub Pages). Poner la URL completa en `og:image` y añadir `og:url` y `canonical` en `index.html`.
 - Redes sociales en el pie de página.

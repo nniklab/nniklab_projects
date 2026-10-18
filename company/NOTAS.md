@@ -22,7 +22,7 @@
 - **2026-10-17:** logos de tecnologías en `05-web/recursos/tecnologias/` (18 SVG con fuente y licencia).
 - **2026-10-17:** propuesta de diseño v1 del sitio en Claude Design (escritorio y celular). Enlace en `05-web/README.md`.
 - **2026-10-17:** design system "nniklab" de Claude actualizado: slogan oficial, líneas de servicio, reglas de fotografía y de marcas de terceros, rutas `company/` y landings de referencia marcadas como descartadas.
-- **2026-10-17:** sitio web v1.0 construido desde el diseño v1 en `05-web/sitio/` (HTML, CSS y JS sin dependencias, fuentes propias, imagen para redes).
+- **2026-10-17:** sitio web v1.0 construido desde el diseño v1 en `05-web/sitio/` (HTML, CSS y JS sin dependencias, fuentes propias, imagen para redes), etiquetado `web-v1.0` y publicado en GitHub Pages: https://nniklab.github.io/nniklab_projects/
 - **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
 
 ## Información base
@@ -57,9 +57,9 @@
 
 ## Próximos pasos
 
-1. Revisar el sitio v1.0 (`05-web/sitio/`) y seguir ajustándolo; publicar en hosting cuando esté listo.
+1. Mejoras al sitio para la v1.1 y dominio propio (se configura en Settings → Pages del repositorio).
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
-3. Pendientes: foto de Juan para "Nosotros", redes sociales, dominio y hosting.
+3. Pendientes: foto de Juan para "Nosotros" y redes sociales.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
 5. Misión, visión y valores (`03-comunicacion/`).
 6. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
