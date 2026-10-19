@@ -183,4 +183,14 @@ html { scroll-behavior: smooth; }
   .nk-nav-cta { white-space: nowrap; padding: 10px 12px !important; font-size: 13px !important; min-height: 44px !important; }
   .nk-portada-visual, .nk-portada-fondo { display: none !important; }
   .nk-portada-contenido { padding: 40px 24px 56px !important; gap: 0 !important; }
+  /* Tarjetas más bajas en los carruseles de celular */
+  .nk-bg-lineas .nk-carrusel-riel > article { min-height: 380px !important; }
+  #servicios .nk-carrusel-riel > article { padding: 24px !important; gap: 16px !important; }
+  #servicios .nk-carrusel-riel h3 { font-size: 24px !important; }
+  #servicios .nk-carrusel-riel ul { font-size: 15px !important; gap: 6px !important; }
+  #servicios .nk-carrusel-riel p { font-size: 15px !important; }
+  #como-trabajamos .nk-carrusel-riel > li { padding: 24px 20px !important; gap: 12px !important; }
+  #como-trabajamos .nk-carrusel-riel > li span[style*="font-size: 56px"] { font-size: 44px !important; }
+  #tecnologias .nk-carrusel-riel > article { padding: 22px !important; gap: 12px !important; }
+  #tecnologias .nk-carrusel-riel h3 { font-size: 22px !important; }
 }

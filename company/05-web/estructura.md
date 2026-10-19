@@ -8,10 +8,10 @@ Definida el 2026-10-17. Reemplaza a los borradores de landing anteriores (elimin
 - Más adelante se pueden sumar páginas propias por servicio.
 - Idioma: español. Solo el descriptor "AI, Data & Automation" va en inglés.
 - Identidad visual: ver `../01-marca/` (paleta grafito + lima, Space Grotesk + Inter + JetBrains Mono, logo Punto de dato).
-- Etiquetas de sección: en JetBrains Mono, lima, con una sola barra al inicio, como una ruta web: `/lo_que_te_frena`, `/servicios`, `/qué_puedes_lograr`, `/cómo_trabajamos`, `/tecnologías`, `/conoce_a_nuestro_equipo`. Tamaño: 16 px en escritorio y 18 px en celular (clase `.nk-etiqueta`); en celular deben caber en una línea de 342 px, así que conviene que no pasen de unos 28 caracteres. Unificadas el 2026-10-19 (antes mezclaban `//` y `/`).
+- Etiquetas de sección: en JetBrains Mono, lima, con una sola barra al inicio, como una ruta web: `/lo_que_te_frena`, `/lo_que_hacemos`, `/qué_puedes_lograr`, `/cómo_trabajamos`, `/tecnologías`, `/conoce_a_nuestro_equipo`. Tamaño: 16 px en escritorio y 18 px en celular (clase `.nk-etiqueta`); en celular deben caber en una línea de 342 px, así que conviene que no pasen de unos 28 caracteres. Unificadas el 2026-10-19 (antes mezclaban `//` y `/`).
 - **Orden de las secciones (desde la v1.3):** portada → lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → conoce a nuestro equipo → cierre. Cada sección responde la pregunta que deja la anterior: qué hacemos, qué puedes lograr con eso, cómo lo hacemos, con qué y quiénes.
 - **Fondos que se alternan (desde la v1.3):** grafito (#111418) y gris superficie (#1a1d22), sin dos secciones seguidas con el mismo fondo: portada grafito · lo que te frena gris · servicios grafito · qué puedes lograr gris · cómo trabajamos clara (blanco hueso) · tecnologías grafito · equipo gris · cierre grafito. La portada y "Cómo trabajamos" no cambian. Las tarjetas sobre fondo gris van en grafito, y al revés.
-- **Carruseles en celular (desde la v1.3):** lo que te frena, servicios, qué puedes lograr, cómo trabajamos y tecnologías. En escritorio siguen como grilla. En celular se ve una tarjeta y asoma la siguiente; avanza sola (5 s; 6 s en cómo trabajamos; 7 s en servicios, que tiene más texto), con flechas ← → de 44 px, indicadores con barra de tiempo y deslizamiento con el dedo. Se pausa mientras el usuario toca, solo avanza con la sección en pantalla y no avanza solo si el sistema pide reducir el movimiento. Mismo código para todos (`.nk-carrusel` en `nniklab.js`); el tiempo va en `data-duracion`.
+- **Carruseles en celular (desde la v1.3):** lo que te frena, servicios, qué puedes lograr, cómo trabajamos y tecnologías. En escritorio siguen como grilla. En celular se ve una tarjeta y asoma la siguiente; avanza sola (5 s; 6 s en cómo trabajamos; 7 s en servicios, que tiene más texto), con flechas ← → de 44 px, indicadores con barra de tiempo y deslizamiento con el dedo. Se pausa mientras el usuario toca, solo avanza con la sección en pantalla y no avanza solo si el sistema pide reducir el movimiento. Mismo código para todos (`.nk-carrusel` en `nniklab.js`); el tiempo va en `data-duracion`. Desde la v1.4, en celular las tarjetas de los carruseles usan menos relleno y títulos un poco más chicos para que sean más bajas (a 390 px: lo que hacemos 482 px, lo que te frena 380, cómo trabajamos 348, tecnologías 318, qué puedes lograr 274).
 
 ## Recorrido del visitante
 
@@ -22,7 +22,7 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
 ### 0. Menú fijo
 
 - Logo (`nniklab-logo-oscuro.svg`).
-- Enlaces: Servicios · Qué puedes lograr · Cómo trabajamos · Tecnologías · Nuestro equipo.
+- Enlaces: Servicios · Qué puedes lograr · Cómo trabajamos · Tecnologías · Nuestro equipo. El menú usa "Servicios" aunque la etiqueta de la sección sea `/lo_que_hacemos`: en el menú el visitante busca la palabra que ya conoce; la etiqueta y el título son los que venden (decidido el 2026-10-19).
 - Botón: **Agenda una reunión** (ver "Llamado a la acción").
 - En celular y tablet (hasta 1080 px), los enlaces van en un menú desplegable: con cinco enlaces el menú no cabe en una línea por debajo de unos 1050 px. En celular el encabezado es compacto (logo de 22 px y botón "Agenda una reunión" de 13 px, en una sola línea); por debajo de 340 px el botón se oculta, porque la portada ya tiene el suyo.
 
@@ -54,13 +54,22 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
   - Las decisiones se toman sin datos confiables o a destiempo.
 - **Visual:** cuatro tarjetas con foto de una escena de oficina (fotos de Pexels con personas, en `../06-publicidad/imagenes/fondos/`), velo grafito, etiqueta corta (DISPERSIÓN, TRABAJO MANUAL, TAREAS REPETITIVAS, DECISIONES A CIEGAS) y una "ventanita" de interfaz que cuenta el problema (archivos duplicados, reporte pendiente, factura 128 de 340, "¿cuánto vendimos este mes?"). Las cifras de las ventanitas son ilustrativas.
 
-### 3. Servicios
+### 3. Lo que hacemos (servicios)
 
-Fondo: grafito liso.
+- **Etiqueta:** `/lo_que_hacemos` (antes `/servicios`, cambiada el 2026-10-19). Ancla `#servicios` y enlace del menú "Servicios", sin cambios.
+- **Título:** "Te ayudamos en tres frentes: datos, automatización e IA." (antes "Tres líneas. Un solo sistema.", que no decía de entrada qué ofrecemos).
+- **Subtítulo:** "Contrátalos por separado o juntos: tus datos alimentan las automatizaciones y la IA trabaja sobre ambos."
+- **Fondo:** grafito liso.
 
 Tres líneas. Detalle en `../02-servicios/README.md`.
 
-En la tarjeta de **Datos** se añade la línea: "Conectamos ERP, sistemas contables, facturación electrónica, CRM, Excel, bases de datos, correo y más." Lista completa de fuentes en `../02-servicios/README.md`.
+Textos de las tarjetas, acortados en la v1.4 para que en celular las tarjetas sean más bajas:
+
+- **Datos:** Arquitectura del flujo de información · ETL e ingeniería de datos · Análisis de datos · Dashboards para decidir. Recuadro: "Conectamos ERP, contabilidad, facturación electrónica, CRM, Excel y más." Resultado: "Información centralizada y confiable para decidir."
+- **Automatización:** Automatizaciones que eliminan procesos manuales · Integración de aplicaciones: tus sistemas se hablan · Flujos que generan resultados solos. Resultado: "Menos trabajo manual y menos errores."
+- **IA:** Agentes que gestionan tu información · Agentes en tus automatizaciones: leen documentos, responden y deciden. Resultado: "Procesos que van más allá de las reglas fijas."
+
+Lista completa de fuentes de datos en `../02-servicios/README.md`. Descripción general de cada línea:
 
 | Línea | Qué incluye | Resultado para el cliente |
 |-------|-------------|---------------------------|

@@ -28,6 +28,7 @@
 - **2026-10-19:** sitio web v1.2: se quita la sección "Cómo se conectan". Su contexto (textos, capturas y código) queda en `06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio. "Tecnologías" pasa a seis tarjetas, con carrusel en celular (avanza cada 5 s, flechas ← → e indicadores). Etiqueta de git `web-v1.2`.
 - **2026-10-19:** sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta de git `web-v1.3`.
 - **2026-10-19:** sitio web v1.3.1: el ancla de "Conoce a nuestro equipo" pasa de `#nosotros` a `#equipo`. Etiqueta de git `web-v1.3.1`.
+- **2026-10-19:** sitio web v1.4: "Servicios" con etiqueta `/lo_que_hacemos`, título "Te ayudamos en tres frentes: datos, automatización e IA." y textos de tarjetas más cortos; en celular, tarjetas de los carruseles más bajas. El menú sigue diciendo "Servicios". Etiqueta de git `web-v1.4`.
 
 ## Información base
 
@@ -64,7 +65,7 @@
 
 ## Próximos pasos
 
-1. Mejoras al sitio para la v1.4 y dominio propio (se configura en Settings → Pages del repositorio).
+1. Mejoras al sitio para la v1.5 y dominio propio (se configura en Settings → Pages del repositorio).
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
 3. Pendientes: foto de Juan para "Conoce a nuestro equipo" y redes sociales.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.

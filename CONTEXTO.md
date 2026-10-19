@@ -45,10 +45,11 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-19:** company: sitio web v1.2: se quita la sección "Cómo se conectan" (su contexto queda en `company/06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio) y "Tecnologías" pasa a seis tarjetas, con carrusel en celular (5 s por tarjeta, flechas ← → e indicadores). Etiqueta `web-v1.2`.
 - **2026-10-19:** company: sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta `web-v1.3`.
 - **2026-10-19:** company: sitio web v1.3.1: ancla `#nosotros` → `#equipo`. Etiqueta `web-v1.3.1`.
+- **2026-10-19:** company: sitio web v1.4: "Servicios" con etiqueta `/lo_que_hacemos`, título "Te ayudamos en tres frentes: datos, automatización e IA." y textos de tarjetas más cortos; en celular, tarjetas de los carruseles más bajas. El menú sigue diciendo "Servicios". Etiqueta `web-v1.4`.
 
 ## Próximos pasos
 
-- company: mejoras al sitio (próxima versión v1.4), dominio propio, formulario de n8n y foto para "Conoce a nuestro equipo".
+- company: mejoras al sitio (próxima versión v1.5), dominio propio, formulario de n8n y foto para "Conoce a nuestro equipo".
 - company (más adelante): conector de n8n para el formulario y redes sociales.
 - company (más adelante): video publicitario "Cómo se conectan" (ver `company/06-publicidad/ideas/video-como-se-conectan/`).
 - company: detalle de cada servicio, misión, visión y valores, tarjeta de presentación final.
