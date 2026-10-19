@@ -49,14 +49,12 @@ html { scroll-behavior: smooth; }
 
 /* Animaciones */
 @keyframes nk-viaje { 0% { left: -6px; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { left: calc(100% - 2px); opacity: 0; } }
-@keyframes nk-viaje-v { 0% { top: -6px; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 2px); opacity: 0; } }
 @keyframes nk-latido { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
 @keyframes nk-brillo { 0%, 100% { box-shadow: 0 0 0 0 rgba(198, 244, 50, 0); } 50% { box-shadow: 0 0 0 6px rgba(198, 244, 50, 0.12); } }
 @keyframes nk-entra { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 @keyframes nk-cursor { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
 
 .nk-pulso { position: absolute; top: -3px; width: 7px; height: 7px; background: #c6f432; animation: nk-viaje 2.8s linear infinite; }
-.nk-pulso-v { position: absolute; left: -3px; width: 7px; height: 7px; background: #c6f432; animation: nk-viaje-v 2.8s linear infinite; }
 .nk-d1 { animation-delay: .4s; } .nk-d2 { animation-delay: .9s; } .nk-d3 { animation-delay: 1.4s; } .nk-d4 { animation-delay: 1.9s; } .nk-d5 { animation-delay: 2.3s; }
 .nk-latido { animation: nk-latido 2.4s ease-in-out infinite; }
 .nk-brillo { animation: nk-brillo 3s ease-in-out infinite; }
@@ -67,11 +65,11 @@ html { scroll-behavior: smooth; }
 
 /* Interruptor de movimiento y preferencia del sistema */
 .nk-quieto *, .nk-quieto { animation: none !important; transition: none !important; }
-.nk-quieto .nk-pulso, .nk-quieto .nk-pulso-v { display: none; }
+.nk-quieto .nk-pulso { display: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .nk-root *, .nk-root { animation: none !important; transition: none !important; }
-  .nk-pulso, .nk-pulso-v { display: none; }
+  .nk-pulso { display: none; }
 }
 
 /* Cómo trabajamos: riel entre pasos */
@@ -136,6 +134,15 @@ html { scroll-behavior: smooth; }
 /* Etiquetas de sección (/el_problema, /servicios…) */
 .nk-etiqueta { font-size: 16px; letter-spacing: 1.5px; }
 
+/* Tecnologías: tarjetas (escritorio) y carrusel (celular) */
+.nk-tec-riel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.nk-tec-card { min-width: 0; }
+.nk-tec-cta { transition: transform .2s ease; }
+.nk-tec-cta:hover { transform: translateX(3px); }
+.nk-tec-controles { display: none; }
+@media (max-width: 1000px) { .nk-tec-riel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@keyframes nk-llena { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
 /* Celular */
 @media (max-width: 760px) {
   .nk-nav { flex-wrap: wrap; }
@@ -144,8 +151,21 @@ html { scroll-behavior: smooth; }
   .nk-nav-links { display: none !important; order: 3; width: 100%; flex-direction: column; gap: 0 !important; padding: 8px 0 4px; border-top: 1px solid #2e333b; }
   .nk-nav-links.nk-abierto { display: flex !important; }
   .nk-nav-links a { padding: 14px 0; border-bottom: 1px solid #2e333b; font-size: 16px; }
-  .nk-flechas { transform: rotate(90deg); }
-  .nk-flujo { flex-direction: column !important; align-items: stretch !important; }
   .nk-riel { display: none !important; }
   .nk-etiqueta { font-size: 18px; }
+  .nk-tec-riel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; margin: 0 -24px; padding: 0 24px 8px; scroll-padding: 0 24px; scrollbar-width: none; overscroll-behavior-x: contain; }
+  .nk-tec-riel::-webkit-scrollbar { display: none; }
+  .nk-tec-card { flex: 0 0 86%; scroll-snap-align: start; }
+  .nk-tec-card.nk-card:hover { transform: none; }
+  .nk-tec-controles { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
+  .nk-tec-puntos { display: flex; justify-content: center; gap: 2px; }
+  .nk-tec-flecha { width: 44px; height: 44px; flex: 0 0 44px; padding: 0; background: transparent; border: 1px solid #2e333b; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: border-color .2s ease; }
+  .nk-tec-flecha:hover, .nk-tec-flecha:focus-visible { border-color: #c6f432; }
+  .nk-tec-flecha:active { background: #1a1d22; }
+  .nk-tec-punto { width: 28px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .nk-tec-punto span { position: relative; display: block; width: 8px; height: 8px; background: #2e333b; overflow: hidden; transition: width .3s ease; }
+  .nk-tec-punto.nk-activo span { width: 28px; }
+  .nk-tec-punto.nk-activo span::after { content: ""; position: absolute; inset: 0; background: #c6f432; transform-origin: left; animation: nk-llena 5s linear both; }
+  .nk-tec-pausa .nk-tec-punto.nk-activo span::after { animation-play-state: paused; }
+  .nk-tec-quieto .nk-tec-punto.nk-activo span::after { animation: none; transform: none; }
 }

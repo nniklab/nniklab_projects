@@ -22,6 +22,12 @@ Video de presentación de la marca. La versión vigente es siempre la de número
 
 Música y efectos en `audio/`. Ver `audio/README.md` con las pistas, su origen y su licencia.
 
+## Ideas para piezas futuras
+
+Piezas que todavía no se producen, con su contexto guardado en `ideas/`:
+
+- `ideas/video-como-se-conectan/`: video sobre cómo se conectan datos, automatización e IA (la propuesta diferencial). Viene de la sección del mismo nombre que tuvo el sitio web hasta la v1.1.
+
 ## Imágenes
 
 Fotos, ilustraciones, íconos y gráficos en `imagenes/`. Se usan en los videos y también en la web (`../05-web/`). Ver `imagenes/README.md` con los criterios de selección, las fuentes recomendadas y el registro de cada imagen con su licencia.

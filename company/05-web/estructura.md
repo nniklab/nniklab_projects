@@ -8,7 +8,7 @@ Definida el 2026-10-17. Reemplaza a los borradores de landing anteriores (elimin
 - Más adelante se pueden sumar páginas propias por servicio.
 - Idioma: español. Solo el descriptor "AI, Data & Automation" va en inglés.
 - Identidad visual: ver `../01-marca/` (paleta grafito + lima, Space Grotesk + Inter + JetBrains Mono, logo Punto de dato).
-- Etiquetas de sección: en JetBrains Mono, lima, con una sola barra al inicio, como una ruta web: `/el_problema`, `/servicios`, `/cómo_se_conectan`, `/cómo_trabajamos`, `/soluciones`, `/nosotros`, `/tecnologías`. Tamaño: 16 px en escritorio y 18 px en celular (clase `.nk-etiqueta`). Unificadas el 2026-10-19 (antes mezclaban `//` y `/`).
+- Etiquetas de sección: en JetBrains Mono, lima, con una sola barra al inicio, como una ruta web: `/el_problema`, `/servicios`, `/cómo_trabajamos`, `/soluciones`, `/nosotros`, `/tecnologías`. Tamaño: 16 px en escritorio y 18 px en celular (clase `.nk-etiqueta`). Unificadas el 2026-10-19 (antes mezclaban `//` y `/`).
 
 ## Recorrido del visitante
 
@@ -61,7 +61,9 @@ En la tarjeta de **Datos** se añade la línea: "Conectamos ERP, sistemas contab
 | **Automatización** | Diseño e implementación de automatizaciones que eliminan procesos manuales e integran aplicaciones | Menos trabajo manual, menos errores, resultados que se generan solos |
 | **IA** | Agentes que gestionan información y trabajan dentro de las automatizaciones | Procesos que leen documentos, responden consultas y toman decisiones simples |
 
-### 4. Cómo se conectan (propuesta diferencial)
+### 4. Cómo se conectan (propuesta diferencial): quitada en la v1.2
+
+**Quitada del sitio el 2026-10-19 (v1.2)** porque ocupaba mucho espacio, sobre todo en el celular. El mensaje se reserva para un video publicitario propio: contexto, textos y capturas en `../06-publicidad/ideas/video-como-se-conectan/`. Lo que sigue es cómo era la sección.
 
 - **Fondo:** gris superficie liso (igual que "El problema", "Nosotros" y el cierre).
 - **Mensaje:** las tres líneas forman un solo sistema. Los datos alimentan las automatizaciones y los agentes de IA trabajan sobre ambos.
@@ -106,13 +108,21 @@ Etiqueta de la sección: `/soluciones` (antes `/ejemplos`, cambiada el 2026-10-1
 
 ### 8. Tecnologías
 
-Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **Solo texto, sin logos:** etiquetas en JetBrains Mono. Así se evita usar marcas de terceros fuera de lo que permiten sus términos.
+**Desde la v1.2 (2026-10-19): tarjetas.** Antes era una lista de texto por filas; se cambió porque se veía muy simple.
 
-- **Datos y nube:** Azure · Azure Databricks · Azure SQL · Data Factory · Microsoft Fabric · Power BI
-- **Bases de datos:** Oracle · SQL Server · PostgreSQL
-- **Automatización:** n8n · Power Automate · SharePoint · Microsoft 365
-- **IA:** Azure OpenAI · API de OpenAI · API de Claude (Anthropic)
-- **Desarrollo e integración:** Python · APIs REST · Git / GitHub
+- **Escritorio:** seis tarjetas en una grilla de 3 × 2 (2 columnas en tablet), con el estilo de las tarjetas de Servicios: ícono lima, número, nombre del área, una frase de para qué sirve y las tecnologías como etiquetas en JetBrains Mono.
+- **Celular:** carrusel de una tarjeta a la vez, con el borde de la siguiente asomando. Avanza solo cada 5 segundos y vuelve a la primera al llegar al final. Debajo: flecha ← (anterior), seis indicadores y flecha → (siguiente). El indicador activo es una barra lima que se llena en los 5 segundos. Se pausa mientras el usuario toca el carrusel; al deslizar, tocar una flecha o un indicador, el conteo vuelve a empezar. Solo avanza con la sección en pantalla, y no avanza solo si el sistema pide reducir el movimiento.
+- **Sin logos:** las tecnologías van solo en texto, para no usar marcas de terceros fuera de lo que permiten sus términos.
+- **Subtítulo:** "Plataformas líderes del mercado, y nos adaptamos a las que ya usa tu empresa."
+
+Tarjetas:
+
+1. **Datos y nube** ("Donde se guardan, procesan y visualizan tus datos."): Azure · Azure Databricks · Azure SQL · Data Factory · Microsoft Fabric · Power BI
+2. **Bases de datos** ("Nos conectamos a las bases que tu empresa ya usa."): Oracle · SQL Server · PostgreSQL
+3. **Automatización** ("Flujos que conectan las aplicaciones de tu día a día."): n8n · Power Automate · SharePoint · Microsoft 365
+4. **Inteligencia artificial** ("Modelos para agentes que leen, responden y deciden."): Azure OpenAI · API de OpenAI · API de Claude (Anthropic)
+5. **Desarrollo e integración** ("Código a la medida cuando una herramienta no alcanza."): Python · APIs REST · Git / GitHub
+6. **¿Usas otra herramienta?** (tarjeta lima): "Si tu empresa trabaja con otra plataforma, la evaluamos y la sumamos al flujo." Botón "Conversemos →" que baja al cierre.
 
 ### 9. Cierre
 
@@ -134,7 +144,7 @@ Franja con las herramientas con las que se trabaja (confirmadas), agrupadas. **S
 
 - **Fotos:** solo las cuatro escenas de oficina de "El problema" (en `../06-publicidad/imagenes/fondos/`). Las secciones usan fondos lisos que alternan grafito y gris superficie; la portada y el cierre llevan fondos animados en lugar de fotos. Los fondos de ondas, espacio oscuro, líneas de luz y microchips no se usan en la v1 y quedan guardados.
 - **Gráficos propios** (en `../06-publicidad/imagenes/graficos/svg/`): datos, IA, automatización e integración; se pueden reutilizar en servicios y ejemplos.
-- **Logos de tecnologías** (en `recursos/tecnologias/`): solo en el diagrama "Cómo se conectan".
+- **Logos de tecnologías** (en `recursos/tecnologias/`): se usaban solo en el diagrama "Cómo se conectan"; desde la v1.2 el sitio no muestra logos de terceros. Quedan para el video de esa sección.
 - **Imagen para compartir en redes:** `sitio/assets/img/marca/og-nniklab.jpg` (1200 × 630).
 - **Pendiente:** foto de Juan para "Nosotros".
 

@@ -25,6 +25,7 @@
 - **2026-10-17:** sitio web v1.0 construido desde el diseño v1 en `05-web/sitio/` (HTML, CSS y JS sin dependencias, fuentes propias, imagen para redes), etiquetado `web-v1.0` y publicado en GitHub Pages: https://nniklab.github.io/nniklab_projects/
 - **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
 - **2026-10-19:** sitio web v1.1: etiquetas de sección más grandes (16 px escritorio, 18 px celular, para que se lean en el celular) y unificadas con una sola barra; `/ejemplos` pasa a `/soluciones` (también en el menú y el ancla `#soluciones`); `// stack` pasa a `/tecnologías`. Etiqueta de git `web-v1.1`.
+- **2026-10-19:** sitio web v1.2: se quita la sección "Cómo se conectan". Su contexto (textos, capturas y código) queda en `06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio. "Tecnologías" pasa a seis tarjetas, con carrusel en celular (avanza cada 5 s, flechas ← → e indicadores). Etiqueta de git `web-v1.2`.
 
 ## Información base
 
@@ -52,13 +53,15 @@
 - **2026-10-17:** pie de página por ahora solo con logo y descriptor, teléfono y correo. Redes sociales, dominio y hosting quedan pendientes.
 - **2026-10-17:** marcas de terceros: la franja de tecnologías va solo en texto; los logos se usan solo en el diagrama "Cómo se conectan" (los de Microsoft sin modificar y con su nombre al lado); el pie de página lleva un aviso de marcas registradas. Logos en `05-web/recursos/tecnologias/`.
 - **2026-10-17:** la web muestra las fuentes de datos que se conectan (lista en `02-servicios/README.md`): en la portada y en "Cómo se conectan" como diagrama, y en la tarjeta de Datos como una línea.
+- **2026-10-19:** la sección "Cómo se conectan" sale de la web por espacio y pasa a ser un video publicitario propio (pendiente). Con eso, la web ya no muestra logos de terceros.
+- **2026-10-19:** "Tecnologías" en tarjetas por área, con una sexta tarjeta que invita a contactar si el cliente usa otra herramienta. En celular, carrusel automático (5 s por tarjeta) que el usuario también controla con flechas, indicadores o deslizando.
 - **2026-10-17:** sin casos de clientes todavía: la web muestra procesos de ejemplo por línea de servicio.
 - **2026-10-17:** sección "Nosotros" en plural, con Juan Heredia T. como representante y su trayectoria.
 - **2026-10-17:** tecnologías a mostrar: Azure, Azure Databricks, Azure SQL, Data Factory, Microsoft Fabric, Power BI, Oracle, SQL Server, PostgreSQL, n8n, Power Automate, SharePoint, Microsoft 365, Azure OpenAI, API de OpenAI, API de Claude (Anthropic), Python, APIs REST y Git / GitHub. Lista agrupada en `02-servicios/README.md`.
 
 ## Próximos pasos
 
-1. Mejoras al sitio para la v1.2 y dominio propio (se configura en Settings → Pages del repositorio).
+1. Mejoras al sitio para la v1.3 y dominio propio (se configura en Settings → Pages del repositorio).
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
 3. Pendientes: foto de Juan para "Nosotros" y redes sociales.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.

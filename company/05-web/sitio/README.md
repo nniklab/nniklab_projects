@@ -5,7 +5,7 @@ HTML, CSS y JavaScript sin dependencias ni paso de compilación: se puede abrir 
 
 ## Versión
 
-**v1.1** (2026-10-19): etiquetas de sección más grandes y unificadas; `/ejemplos` pasa a `/soluciones`. v1.0 (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
+**v1.2** (2026-10-19): sin la sección "Cómo se conectan"; "Tecnologías" en tarjetas, con carrusel en celular. v1.1 (2026-10-19): etiquetas de sección más grandes y unificadas; `/ejemplos` pasa a `/soluciones`. v1.0 (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
 
 ## Estructura
 
@@ -19,12 +19,11 @@ sitio/
     ├── css/
     │   ├── fuentes.css     ← @font-face de las tres fuentes de la marca
     │   └── nniklab.css     ← estados, animaciones, menú de celular
-    ├── js/nniklab.js       ← menú de celular y halo que sigue el mouse
+    ├── js/nniklab.js       ← menú de celular, halo que sigue el mouse y carrusel de Tecnologías
     ├── fonts/              ← Space Grotesk, Inter, JetBrains Mono (woff2, licencia OFL)
     └── img/
         ├── marca/          ← logos, íconos e imagen para compartir en redes (og-nniklab.jpg)
-        ├── fotos/          ← fotos de "El problema" (JPG + WebP, 900 px)
-        └── tecnologias/    ← logos del diagrama "Cómo se conectan"
+        └── fotos/          ← fotos de "El problema" (JPG + WebP, 900 px)
 ```
 
 ## Cómo verlo
