@@ -134,38 +134,53 @@ html { scroll-behavior: smooth; }
 /* Etiquetas de sección (/el_problema, /servicios…) */
 .nk-etiqueta { font-size: 16px; letter-spacing: 1.5px; }
 
-/* Tecnologías: tarjetas (escritorio) y carrusel (celular) */
+/* Carruseles en celular (El problema, Servicios, Qué puedes lograr, Cómo trabajamos, Tecnologías) */
+.nk-carrusel-controles { display: none; }
 .nk-tec-riel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .nk-tec-card { min-width: 0; }
 .nk-tec-cta { transition: transform .2s ease; }
 .nk-tec-cta:hover { transform: translateX(3px); }
-.nk-tec-controles { display: none; }
 @media (max-width: 1000px) { .nk-tec-riel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @keyframes nk-llena { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
-/* Celular */
-@media (max-width: 760px) {
+/* Menú desplegable: tablet y celular (con 5 enlaces el menú no cabe en una línea por debajo de unos 1050 px) */
+.nk-nav-cta { white-space: nowrap; }
+@media (max-width: 1080px) {
   .nk-nav { flex-wrap: wrap; }
   .nk-menu-btn { display: inline-flex; }
-  .nk-nav-cta { padding: 10px 14px !important; font-size: 14px !important; }
   .nk-nav-links { display: none !important; order: 3; width: 100%; flex-direction: column; gap: 0 !important; padding: 8px 0 4px; border-top: 1px solid #2e333b; }
   .nk-nav-links.nk-abierto { display: flex !important; }
   .nk-nav-links a { padding: 14px 0; border-bottom: 1px solid #2e333b; font-size: 16px; }
+}
+@media (max-width: 340px) { .nk-nav-cta { display: none !important; } }
+
+/* Celular */
+@media (max-width: 760px) {
+  .nk-nav-cta { padding: 10px 14px !important; font-size: 14px !important; }
   .nk-riel { display: none !important; }
   .nk-etiqueta { font-size: 18px; }
-  .nk-tec-riel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; margin: 0 -24px; padding: 0 24px 8px; scroll-padding: 0 24px; scrollbar-width: none; overscroll-behavior-x: contain; }
-  .nk-tec-riel::-webkit-scrollbar { display: none; }
-  .nk-tec-card { flex: 0 0 86%; scroll-snap-align: start; }
-  .nk-tec-card.nk-card:hover { transform: none; }
-  .nk-tec-controles { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
-  .nk-tec-puntos { display: flex; justify-content: center; gap: 2px; }
-  .nk-tec-flecha { width: 44px; height: 44px; flex: 0 0 44px; padding: 0; background: transparent; border: 1px solid #2e333b; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: border-color .2s ease; }
-  .nk-tec-flecha:hover, .nk-tec-flecha:focus-visible { border-color: #c6f432; }
-  .nk-tec-flecha:active { background: #1a1d22; }
-  .nk-tec-punto { width: 28px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
-  .nk-tec-punto span { position: relative; display: block; width: 8px; height: 8px; background: #2e333b; overflow: hidden; transition: width .3s ease; }
-  .nk-tec-punto.nk-activo span { width: 28px; }
-  .nk-tec-punto.nk-activo span::after { content: ""; position: absolute; inset: 0; background: #c6f432; transform-origin: left; animation: nk-llena 5s linear both; }
-  .nk-tec-pausa .nk-tec-punto.nk-activo span::after { animation-play-state: paused; }
-  .nk-tec-quieto .nk-tec-punto.nk-activo span::after { animation: none; transform: none; }
+  .nk-carrusel-riel { display: flex !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px !important; margin: 0 -24px !important; padding: 0 24px 8px !important; scroll-padding: 0 24px; scrollbar-width: none; overscroll-behavior-x: contain; list-style: none; }
+  .nk-carrusel-riel::-webkit-scrollbar { display: none; }
+  .nk-carrusel-riel > * { flex: 0 0 86%; scroll-snap-align: start; min-width: 0; }
+  .nk-carrusel-riel > *:hover { transform: none !important; }
+  .nk-carrusel-controles { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; }
+  .nk-carrusel-puntos { display: flex; justify-content: center; gap: 2px; }
+  .nk-carrusel-flecha { width: 44px; height: 44px; flex: 0 0 44px; padding: 0; color: #c6f432; background: transparent; border: 1px solid #2e333b; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: border-color .2s ease; }
+  .nk-carrusel-flecha:hover, .nk-carrusel-flecha:focus-visible { border-color: #c6f432; }
+  .nk-carrusel-punto { width: 28px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .nk-carrusel-punto span { position: relative; display: block; width: 8px; height: 8px; background: #2e333b; overflow: hidden; transition: width .3s ease; }
+  .nk-carrusel-punto.nk-activo span { width: 28px; }
+  .nk-carrusel-punto.nk-activo span::after { content: ""; position: absolute; inset: 0; background: #c6f432; transform-origin: left; animation: nk-llena var(--nk-dur, 5s) linear both; }
+  .nk-carrusel-pausa .nk-carrusel-punto.nk-activo span::after { animation-play-state: paused; }
+  .nk-carrusel-quieto .nk-carrusel-punto.nk-activo span::after { animation: none; transform: none; }
+  .nk-carrusel-claro .nk-carrusel-flecha { color: #5e7a0e; border-color: #c9ccc4; }
+  .nk-carrusel-claro .nk-carrusel-flecha:hover, .nk-carrusel-claro .nk-carrusel-flecha:focus-visible { border-color: #5e7a0e; }
+  .nk-carrusel-claro .nk-carrusel-punto span { background: #c9ccc4; }
+  .nk-carrusel-claro .nk-carrusel-punto.nk-activo span::after { background: #5e7a0e; }
+  .nk-nav { padding: 12px 16px !important; gap: 12px !important; }
+  .nk-nav img { height: 22px !important; }
+  .nk-nav-acciones { gap: 8px !important; }
+  .nk-nav-cta { white-space: nowrap; padding: 10px 12px !important; font-size: 13px !important; min-height: 44px !important; }
+  .nk-portada-visual, .nk-portada-fondo { display: none !important; }
+  .nk-portada-contenido { padding: 40px 24px 56px !important; gap: 0 !important; }
 }

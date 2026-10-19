@@ -26,6 +26,7 @@
 - **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
 - **2026-10-19:** sitio web v1.1: etiquetas de sección más grandes (16 px escritorio, 18 px celular, para que se lean en el celular) y unificadas con una sola barra; `/ejemplos` pasa a `/soluciones` (también en el menú y el ancla `#soluciones`); `// stack` pasa a `/tecnologías`. Etiqueta de git `web-v1.1`.
 - **2026-10-19:** sitio web v1.2: se quita la sección "Cómo se conectan". Su contexto (textos, capturas y código) queda en `06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio. "Tecnologías" pasa a seis tarjetas, con carrusel en celular (avanza cada 5 s, flechas ← → e indicadores). Etiqueta de git `web-v1.2`.
+- **2026-10-19:** sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta de git `web-v1.3`.
 
 ## Información base
 
@@ -55,15 +56,16 @@
 - **2026-10-17:** la web muestra las fuentes de datos que se conectan (lista en `02-servicios/README.md`): en la portada y en "Cómo se conectan" como diagrama, y en la tarjeta de Datos como una línea.
 - **2026-10-19:** la sección "Cómo se conectan" sale de la web por espacio y pasa a ser un video publicitario propio (pendiente). Con eso, la web ya no muestra logos de terceros.
 - **2026-10-19:** "Tecnologías" en tarjetas por área, con una sexta tarjeta que invita a contactar si el cliente usa otra herramienta. En celular, carrusel automático (5 s por tarjeta) que el usuario también controla con flechas, indicadores o deslizando.
+- **2026-10-19:** la web sigue un orden que responde las preguntas del cliente (qué hacemos, qué puedes lograr, cómo, con qué y quiénes) y alterna fondos grafito / gris. En celular, las secciones con tarjetas son carruseles para acortar la página. "Nosotros" pasa a "Conoce a nuestro equipo"; por ahora agrupa al equipo técnico.
 - **2026-10-17:** sin casos de clientes todavía: la web muestra procesos de ejemplo por línea de servicio.
 - **2026-10-17:** sección "Nosotros" en plural, con Juan Heredia T. como representante y su trayectoria.
 - **2026-10-17:** tecnologías a mostrar: Azure, Azure Databricks, Azure SQL, Data Factory, Microsoft Fabric, Power BI, Oracle, SQL Server, PostgreSQL, n8n, Power Automate, SharePoint, Microsoft 365, Azure OpenAI, API de OpenAI, API de Claude (Anthropic), Python, APIs REST y Git / GitHub. Lista agrupada en `02-servicios/README.md`.
 
 ## Próximos pasos
 
-1. Mejoras al sitio para la v1.3 y dominio propio (se configura en Settings → Pages del repositorio).
+1. Mejoras al sitio para la v1.4 y dominio propio (se configura en Settings → Pages del repositorio).
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
-3. Pendientes: foto de Juan para "Nosotros" y redes sociales.
+3. Pendientes: foto de Juan para "Conoce a nuestro equipo" y redes sociales.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
 5. Misión, visión y valores (`03-comunicacion/`).
 6. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
