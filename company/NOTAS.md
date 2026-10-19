@@ -27,6 +27,7 @@
 - **2026-10-19:** sitio web v1.1: etiquetas de sección más grandes (16 px escritorio, 18 px celular, para que se lean en el celular) y unificadas con una sola barra; `/ejemplos` pasa a `/soluciones` (también en el menú y el ancla `#soluciones`); `// stack` pasa a `/tecnologías`. Etiqueta de git `web-v1.1`.
 - **2026-10-19:** sitio web v1.2: se quita la sección "Cómo se conectan". Su contexto (textos, capturas y código) queda en `06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio. "Tecnologías" pasa a seis tarjetas, con carrusel en celular (avanza cada 5 s, flechas ← → e indicadores). Etiqueta de git `web-v1.2`.
 - **2026-10-19:** sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta de git `web-v1.3`.
+- **2026-10-19:** sitio web v1.3.1: el ancla de "Conoce a nuestro equipo" pasa de `#nosotros` a `#equipo`. Etiqueta de git `web-v1.3.1`.
 
 ## Información base
 

@@ -44,6 +44,7 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-19:** company: el lienzo de Claude Design se actualiza junto con el código en cada ajuste, para revisar los cambios antes de publicar.
 - **2026-10-19:** company: sitio web v1.2: se quita la sección "Cómo se conectan" (su contexto queda en `company/06-publicidad/ideas/video-como-se-conectan/` para un video publicitario propio) y "Tecnologías" pasa a seis tarjetas, con carrusel en celular (5 s por tarjeta, flechas ← → e indicadores). Etiqueta `web-v1.2`.
 - **2026-10-19:** company: sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta `web-v1.3`.
+- **2026-10-19:** company: sitio web v1.3.1: ancla `#nosotros` → `#equipo`. Etiqueta `web-v1.3.1`.
 
 ## Próximos pasos
 

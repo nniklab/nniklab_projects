@@ -114,7 +114,7 @@ Tarjetas:
 6. **¿Usas otra herramienta?** (tarjeta lima): "Si tu empresa trabaja con otra plataforma, la evaluamos y la sumamos al flujo." Botón "Conversemos →" que baja al cierre.
 
 ### 7. Conoce a nuestro equipo (antes "Nosotros")
-- **Etiqueta:** `/conoce_a_nuestro_equipo` (antes `/nosotros`); en el menú, "Nuestro equipo". Por ahora agrupa al equipo técnico.
+- **Etiqueta:** `/conoce_a_nuestro_equipo` (antes `/nosotros`); en el menú, "Nuestro equipo"; ancla `#equipo` (antes `#nosotros`). Por ahora agrupa al equipo técnico.
 - Se presenta como empresa, con **Juan Heredia T.** como representante.
 - **Orden:** etiqueta y título arriba; debajo, la foto y al lado el perfil.
 - **Perfil resumido (v1.3):** Juan Heredia T. · Mgs. Business Intelligence & Analytics · +10 años en Proyectos de Arquitectura de Software y Datos. Luego la frase de nniklab, tres indicadores (Arquitectura, Liderazgo, Gestión ágil) y el enlace a LinkedIn.
