@@ -133,6 +133,9 @@ html { scroll-behavior: smooth; }
 .nk-menu-btn[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
 .nk-menu-btn[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
+/* Etiquetas de sección (/el_problema, /servicios…) */
+.nk-etiqueta { font-size: 16px; letter-spacing: 1.5px; }
+
 /* Celular */
 @media (max-width: 760px) {
   .nk-nav { flex-wrap: wrap; }
@@ -144,4 +147,5 @@ html { scroll-behavior: smooth; }
   .nk-flechas { transform: rotate(90deg); }
   .nk-flujo { flex-direction: column !important; align-items: stretch !important; }
   .nk-riel { display: none !important; }
+  .nk-etiqueta { font-size: 18px; }
 }

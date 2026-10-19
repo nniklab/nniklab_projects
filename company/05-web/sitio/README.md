@@ -5,7 +5,7 @@ HTML, CSS y JavaScript sin dependencias ni paso de compilación: se puede abrir 
 
 ## Versión
 
-**v1.0** (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
+**v1.1** (2026-10-19): etiquetas de sección más grandes y unificadas; `/ejemplos` pasa a `/soluciones`. v1.0 (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
 
 ## Estructura
 

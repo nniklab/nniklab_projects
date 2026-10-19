@@ -24,6 +24,7 @@
 - **2026-10-17:** design system "nniklab" de Claude actualizado: slogan oficial, líneas de servicio, reglas de fotografía y de marcas de terceros, rutas `company/` y landings de referencia marcadas como descartadas.
 - **2026-10-17:** sitio web v1.0 construido desde el diseño v1 en `05-web/sitio/` (HTML, CSS y JS sin dependencias, fuentes propias, imagen para redes), etiquetado `web-v1.0` y publicado en GitHub Pages: https://nniklab.github.io/nniklab_projects/
 - **2026-10-17:** cuatro fondos nuevos de Pexels para la web (portada, cierre, flujo y datos) en `06-publicidad/imagenes/fondos/`, registrados en el README de imágenes.
+- **2026-10-19:** sitio web v1.1: etiquetas de sección más grandes (16 px escritorio, 18 px celular, para que se lean en el celular) y unificadas con una sola barra; `/ejemplos` pasa a `/soluciones` (también en el menú y el ancla `#soluciones`); `// stack` pasa a `/tecnologías`. Etiqueta de git `web-v1.1`.
 
 ## Información base
 
@@ -57,7 +58,7 @@
 
 ## Próximos pasos
 
-1. Mejoras al sitio para la v1.1 y dominio propio (se configura en Settings → Pages del repositorio).
+1. Mejoras al sitio para la v1.2 y dominio propio (se configura en Settings → Pages del repositorio).
 2. Más adelante: formulario y conector de n8n para "Agenda una reunión".
 3. Pendientes: foto de Juan para "Nosotros" y redes sociales.
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.

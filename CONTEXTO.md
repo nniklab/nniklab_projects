@@ -40,9 +40,10 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-17:** company: cuatro fondos de Pexels para la web en `company/06-publicidad/imagenes/fondos/`.
 - **2026-10-17:** company: propuesta de diseño v1 del sitio en Claude Design (enlace en `company/05-web/README.md`).
 - **2026-10-17:** company: sitio web v1.0 construido en `company/05-web/sitio/`, etiquetado como `web-v1.0` y publicado en GitHub Pages: https://nniklab.github.io/nniklab_projects/ (se republica solo con cada push que cambie el sitio; `.github/workflows/publicar-web.yml`).
+- **2026-10-19:** company: sitio web v1.1 (etiquetas de sección más grandes (16 px escritorio, 18 px celular, para que se lean en el celular) y unificadas con una sola barra; `/ejemplos` pasa a `/soluciones` (también en el menú y el ancla `#soluciones`); `// stack` pasa a `/tecnologías`). Etiqueta `web-v1.1`. Los ajustes se hacen en el código; el lienzo de Claude Design queda como propuesta v1.
 
 ## Próximos pasos
 
-- company: mejoras al sitio (próxima versión v1.1), dominio propio, formulario de n8n y foto para "Nosotros".
+- company: mejoras al sitio (próxima versión v1.2), dominio propio, formulario de n8n y foto para "Nosotros".
 - company (más adelante): conector de n8n para el formulario y redes sociales.
 - company: detalle de cada servicio, misión, visión y valores, tarjeta de presentación final.

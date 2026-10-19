@@ -11,6 +11,7 @@ Sitio web de nniklab: una sola página con las secciones definidas en `estructur
 ## Diseño (Claude Design)
 
 - **Propuesta v1 (2026-10-17):** lienzo "nniklab · Sitio web" en Claude Design, con la página completa en escritorio (1440 px) y en celular (390 px), hecha con el design system "nniklab". Enlace: https://claude.ai/artifact/9wNc6RJRdcEi75acDfVkff (privado: solo lo abre la cuenta de Juan, salvo que se comparta desde el menú Compartir del lienzo).
+- Desde la v1.1 los cambios se hacen directo en el código de `sitio/`; el lienzo de Claude Design se queda como la propuesta v1 y no refleja los ajustes posteriores.
 - El diseño vive en Claude, no en este repositorio. Cuando se apruebe, se construye el sitio en código en esta carpeta, con las animaciones completas.
 
 ## Recursos que se reutilizan (no se copian aquí)
@@ -24,6 +25,7 @@ Sitio web de nniklab: una sola página con las secciones definidas en `estructur
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
 | **v1.0** | 2026-10-17 | Primera versión, construida desde la propuesta de diseño v1: portada con animación en tres escenas (datos, automatización, IA), flujos de datos y halo que sigue el mouse; "El problema" con fotos; servicios; "Cómo se conectan"; proceso; ejemplos; nosotros; tecnologías; cierre animado. Fuentes propias, menú de celular e imagen para compartir en redes. |
+| **v1.1** | 2026-10-19 | Etiquetas de sección: más grandes (16 px en escritorio, 18 px en celular) y unificadas con una sola barra (`/el_problema`, `/servicios`, `/cómo_se_conectan`, `/cómo_trabajamos`, `/soluciones`, `/nosotros`, `/tecnologías`). `/ejemplos` pasa a `/soluciones`, también en el menú. |
 
 Cada versión nueva se anota aquí y se marca con una etiqueta de git (por ejemplo `web-v1.0`).
 

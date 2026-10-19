@@ -8,6 +8,7 @@ Definida el 2026-10-17. Reemplaza a los borradores de landing anteriores (elimin
 - Más adelante se pueden sumar páginas propias por servicio.
 - Idioma: español. Solo el descriptor "AI, Data & Automation" va en inglés.
 - Identidad visual: ver `../01-marca/` (paleta grafito + lima, Space Grotesk + Inter + JetBrains Mono, logo Punto de dato).
+- Etiquetas de sección: en JetBrains Mono, lima, con una sola barra al inicio, como una ruta web: `/el_problema`, `/servicios`, `/cómo_se_conectan`, `/cómo_trabajamos`, `/soluciones`, `/nosotros`, `/tecnologías`. Tamaño: 16 px en escritorio y 18 px en celular (clase `.nk-etiqueta`). Unificadas el 2026-10-19 (antes mezclaban `//` y `/`).
 
 ## Recorrido del visitante
 
@@ -18,7 +19,7 @@ Entender qué hacemos → reconocer su problema → ver cómo lo resolvemos → 
 ### 0. Menú fijo
 
 - Logo (`nniklab-logo-oscuro.svg`).
-- Enlaces: Servicios · Cómo trabajamos · Ejemplos · Nosotros · Tecnologías.
+- Enlaces: Servicios · Cómo trabajamos · Soluciones · Nosotros · Tecnologías.
 - Botón: **Agenda una reunión** (ver "Llamado a la acción").
 - En celular, los enlaces van en un menú desplegable.
 
@@ -81,9 +82,11 @@ Sección clara (blanco hueso). Cuatro tarjetas con número grande, ícono, un ri
 
 Los textos de "Recibes" son un borrador para revisar.
 
-### 6. Ejemplos de lo que podemos hacer
+### 6. Soluciones (ejemplos de lo que podemos hacer)
 
 Todavía no hay casos de clientes: se muestran **procesos de ejemplo** que se pueden resolver con los servicios, presentados como ejemplos (no como casos reales). Cuando haya casos reales, esta sección pasa a llamarse "Casos".
+
+Etiqueta de la sección: `/soluciones` (antes `/ejemplos`, cambiada el 2026-10-19 para que sea más comercial). El subtítulo sigue aclarando que son procesos de ejemplo.
 
 | Línea | Ejemplo |
 |-------|---------|
