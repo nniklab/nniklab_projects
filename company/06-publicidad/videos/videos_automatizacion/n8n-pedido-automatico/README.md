@@ -132,7 +132,7 @@ n8n-pedido-automatico/
 | Recurso | Dónde | Estado |
 |---------|-------|--------|
 | Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | `recursos/iconos/` (Lucide v1.60.0, licencia ISC en `LICENSE.txt`) | ✅ Listo |
-| Efectos de sonido (tecla, pop, clic, tic-tac, golpe grave) | `recursos/efectos/` (enlaces de descarga en su `README.md`) | ⏳ Por descargar |
+| Efectos de sonido (tecla, pop, clic, tic-tac, golpe grave) | `recursos/efectos/` (MP3 de Pixabay; fuentes y licencias en su `README.md`) | ✅ Listo |
 | Animación del cierre | `recursos/animacion/cierre-logo-tecleado.html` | ✅ Prueba aprobada |
 | Logo con descriptor (oscuro) | `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | ✅ Compartido de la marca |
 | Tipografías Space Grotesk, Inter, JetBrains Mono | `01-marca/tipografia/` | ✅ Compartido de la marca |

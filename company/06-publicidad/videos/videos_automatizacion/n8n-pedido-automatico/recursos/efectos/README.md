@@ -4,11 +4,11 @@ Efectos del video "El pedido que se registra solo". Se descargan de Pixabay y se
 
 | Archivo | Efecto | Dónde suena | Pista | Autor | Fuente | Estado |
 |---------|--------|-------------|-------|-------|--------|--------|
-| `tecla.mp3` | Tecla | Escena 4: una por cada letra de "nniklab" (7) | Single Key Press | DRAGON-STUDIO | [Pixabay](https://pixabay.com/sound-effects/film-special-effects-single-key-press-393908/) | ⏳ Por descargar |
-| `pop.mp3` | Pop | Escena 2: el paquete llega a cada nodo (4) | Clean Minimal Pop | DRAGON-STUDIO | [Pixabay](https://pixabay.com/sound-effects/clean-minimal-pop-467466/) | ⏳ Por descargar |
-| `clic.mp3` | Clic | Escena 3: checks de la lista · Escena 4: el punto aterriza en la "i" | Mouse Click | Universfield | [Pixabay](https://pixabay.com/sound-effects/film-special-effects-mouse-click-351398/) | ⏳ Por descargar |
-| `tic-tac.mp3` | Tic-tac rápido | Escena 1: el reloj corre | Clock ticking fast | freesound_community | [Pixabay](https://pixabay.com/sound-effects/household-072047-clock-ticking-fast-43236/) | ⏳ Por descargar |
-| `golpe-grave.mp3` | Golpe grave | Escena 3: aparece "3 s" | Low Thumpy Kick Reverb Hit | Black_Kumizhi | [Pixabay](https://pixabay.com/sound-effects/technology-low-thumpy-kick-reverb-hit-494833/) | ⏳ Por descargar |
+| `tecla.mp3` | Tecla | Escena 4: una por cada letra de "nniklab" (7) | Single Key Press | DRAGON-STUDIO | [Pixabay](https://pixabay.com/sound-effects/film-special-effects-single-key-press-393908/) | ✅ Descargado |
+| `pop.mp3` | Pop | Escena 2: el paquete llega a cada nodo (4) | Clean Minimal Pop | DRAGON-STUDIO | [Pixabay](https://pixabay.com/sound-effects/clean-minimal-pop-467466/) | ✅ Descargado |
+| `clic.mp3` | Clic | Escena 3: checks de la lista · Escena 4: el punto aterriza en la "i" | Mouse Click | Universfield | [Pixabay](https://pixabay.com/sound-effects/film-special-effects-mouse-click-351398/) | ✅ Descargado |
+| `tic-tac.mp3` | Tic-tac rápido | Escena 1: el reloj corre | Clock ticking fast | freesound_community | [Pixabay](https://pixabay.com/sound-effects/household-072047-clock-ticking-fast-43236/) | ✅ Descargado |
+| `golpe-grave.mp3` | Golpe grave | Escena 3: aparece "3 s" | Low Thumpy Kick Reverb Hit | Black_Kumizhi | [Pixabay](https://pixabay.com/sound-effects/technology-low-thumpy-kick-reverb-hit-494833/) | ✅ Descargado |
 
 ## Alternativas
 
