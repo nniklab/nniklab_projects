@@ -11,4 +11,6 @@ Música y efectos de sonido para los videos de nniklab.
 
 Las dos pistas se conservan para usarlas en próximos videos.
 
+**Uso en videos:** `tech-explainer-background-loop.mp3` es la música de fondo del video `videos/videos_automatizacion/n8n-pedido-automatico/` (copia en su carpeta `recursos/musica/`).
+
 Licencia: Pixabay Content License (uso comercial permitido, sin atribución obligatoria). Verificar en la página de cada pista antes de publicar.

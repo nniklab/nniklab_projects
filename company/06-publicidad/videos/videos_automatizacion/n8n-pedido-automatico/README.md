@@ -2,7 +2,7 @@
 
 Video corto que muestra para qué sirve automatizar con n8n, usando un caso que cualquier negocio reconoce: llega un pedido y alguien tiene que copiarlo a mano en varios lugares. El video enseña el antes (trabajo manual) y el después (un flujo que lo hace solo), y termina con la marca nniklab.
 
-**Estado:** guion y especificación de animación. Todavía sin producir.
+**Estado:** listo para producir en Claude Design. Guion, tiempos, recursos y audio cerrados el 2026-10-20 (ver "Cómo producirlo en Claude Design").
 
 ## Objetivo
 
@@ -73,7 +73,7 @@ Un **cuadrado lima de 28 × 28 px** que representa el pedido. Es lo único que s
 
 | Tiempo | Acción |
 |--------|--------|
-| 5,0 – 5,6 s | Texto superior en Inter 500 gris: **"Con un flujo automático en n8n"** |
+| 5,0 – 5,6 s | Texto superior en Inter 500 gris: **"Con un flujo automático en n8n"**. Debajo, pequeño, en JetBrains Mono gris: `proceso de ejemplo` (regla de marca: sin casos inventados; los ejemplos se rotulan). |
 | 5,4 – 7,0 s | Los nodos aparecen de arriba abajo, uno cada 0,3 s: fade + subida de 20 px. Las líneas entre ellos se dibujan de arriba abajo (trazo punteado gris `#2A2E35`). |
 | 7,0 – 7,4 s | Aparece el paquete en el nodo 1 con un pop corto (escala de 0 a 1, sin pasar de 1,1). El nodo 1 se enciende. |
 | 7,4 – 12,6 s | El paquete viaja por las líneas: **≈ 0,9 s de viaje + 0,4 s de pausa** en cada nodo. En cada llegada: borde del nodo a lima, check lima en el ícono, y el dato aparece debajo de la etiqueta escribiéndose en JetBrains Mono (efecto máquina de escribir, 0,3 s). La línea recorrida queda en lima; la que falta, gris. |
@@ -103,21 +103,21 @@ Es la animación **"logo tecleado"** ya aprobada como prueba (`recursos/animacio
 4. Pulso del punto y revelado de "AI, Data & Automation".
 5. Logo quieto hasta el final.
 
-Es el **único** momento del video donde aparece la marca. Usa el SVG oficial `../../../../01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg`, con las letras separadas para animarlas.
+Es el **único** momento del video donde aparece la marca. Usa el SVG oficial `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg`, con las letras separadas para animarlas (la prueba ya las trae separadas).
 
 ## Audio
 
 | Momento | Sonido |
 |---------|--------|
-| Todo el video | Música de fondo: `tech-explainer-background-loop.mp3` (30 s, hace loop) desde `06-publicidad/audio/`. Volumen bajo en la escena 1 y sube al entrar el flujo. |
+| Todo el video | **Música de fondo elegida:** `recursos/musica/tech-explainer-background-loop.mp3` (Tech Explainer Background Loop, Vadim_Makes_Sound, Pixabay; 30 s, hace loop). Se usa desde el segundo 0 durante los 25 s. Volumen bajo (≈ 30 %) en la escena 1, sube a ≈ 50 % al entrar el flujo y baja con un fade de 2 s mientras se teclea el logo. Va siempre por debajo de los efectos. |
 | Escena 1 | Tic-tac acelerado del reloj, suave (`recursos/efectos/tic-tac.mp3`). |
-| Escena 2 | Un "pop" corto cuando el paquete llega a cada nodo (4 en total). |
-| Escena 3 | Clics rápidos de los checks; un golpe grave cuando aparece `3 s`. |
-| Escena 4 | Una tecla por letra (7) y un "clic" cuando el punto aterriza sobre la "i". La música baja en los últimos 2 s. |
+| Escena 2 | Un "pop" corto cuando el paquete llega a cada nodo (4 en total): `recursos/efectos/pop.mp3`, adelantado 0,16 s (trae silencio al inicio). |
+| Escena 3 | Clics rápidos de los checks (`clic.mp3`, adelantado 0,14 s); un golpe grave cuando aparece `3 s` (`golpe-grave.mp3`, al ≈ 60 % de volumen: es el efecto más fuerte). |
+| Escena 4 | Una tecla por letra (7, `tecla.mp3`) y un "clic" cuando el punto aterriza sobre la "i" (`clic.mp3`). La música baja en los últimos 2 s. |
 
 ## Recursos
 
-Todo lo propio de este video está en esta carpeta, en `recursos/`. Lo que es de la marca y se comparte entre videos (logo, tipografías, música) se usa desde su ubicación oficial, sin copiarlo.
+Todo lo propio de este video está en esta carpeta, en `recursos/`, incluida una copia de la música de fondo para tener el paquete completo. Lo que es de la marca (logo, tipografías) se usa desde su ubicación oficial, sin copiarlo.
 
 ```
 n8n-pedido-automatico/
@@ -125,6 +125,8 @@ n8n-pedido-automatico/
   recursos/
     iconos/                         ← íconos Lucide del video + licencia + muestra
     efectos/                        ← efectos de sonido (MP3) + README con fuentes y licencias
+    musica/
+      tech-explainer-background-loop.mp3   ← música de fondo elegida (copia de 06-publicidad/audio/)
     animacion/
       cierre-logo-tecleado.html     ← prueba aprobada del cierre de marca (escena 4)
 ```
@@ -133,21 +135,58 @@ n8n-pedido-automatico/
 |---------|-------|--------|
 | Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | `recursos/iconos/` (Lucide v1.60.0, licencia ISC en `LICENSE.txt`) | ✅ Listo |
 | Efectos de sonido (tecla, pop, clic, tic-tac, golpe grave) | `recursos/efectos/` (MP3 de Pixabay; fuentes y licencias en su `README.md`) | ✅ Listo |
+| Música de fondo | `recursos/musica/tech-explainer-background-loop.mp3` (Pixabay Content License, uso comercial; registrada en `06-publicidad/audio/README.md`) | ✅ Listo |
 | Animación del cierre | `recursos/animacion/cierre-logo-tecleado.html` | ✅ Prueba aprobada |
 | Logo con descriptor (oscuro) | `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | ✅ Compartido de la marca |
 | Tipografías Space Grotesk, Inter, JetBrains Mono | `01-marca/tipografia/` | ✅ Compartido de la marca |
-| Música de fondo | `06-publicidad/audio/tech-explainer-background-loop.mp3` (Pixabay, uso comercial) | ✅ Compartido de publicidad |
 
 **Sobre n8n:** se nombra en texto ("Con un flujo automático en n8n"), pero no se usa su logo. Los nodos se dibujan con el estilo de nniklab, no como capturas de n8n. Si en una versión futura se quiere mostrar su logo o interfaz, revisar antes la guía de marca de n8n.
 
-**Datos del pedido:** el pedido #1048, "Ana R." y la fila 214 son ficticios. No usar datos de clientes reales.
+**Datos del pedido:** el pedido #1048, "Ana R." y la fila 214 son ficticios, y el contraste "15 min → 3 s" es ilustrativo; por eso el flujo va rotulado como `proceso de ejemplo`. No usar datos de clientes reales.
 
-## Cómo se produce
+## Cómo producirlo en Claude Design
 
-1. **Animación en HTML + SVG:** una sola página de 1080 × 1920 con una función `render(t)` que dibuja cada instante del video a partir del tiempo, igual que las pruebas del cierre. Así se puede revisar cualquier cuadro (`?t=12.4`) y ajustar tiempos sin rehacer todo.
-2. **Exportar cuadros:** capturar los 750 cuadros (25 s × 30 fps) con un navegador sin interfaz (Playwright).
-3. **Montar el video:** unir cuadros y audio con `ffmpeg` en MP4 H.264 + AAC.
-4. **Recursos editables:** al publicar la v1, empaquetar `recursos/`, el HTML final y el script de exportación en `n8n-pedido-automatico-v1-recursos.zip`, como la intro.
+El video se arma en **Claude Design**, con el design system **nniklab** (que ya trae colores, tipografías, logos y las reglas de video y movimiento).
+
+**1. Crear el diseño.** Nuevo diseño en Claude Design con el design system nniklab, lienzo vertical 1080 × 1920.
+
+**2. Adjuntar estos archivos** (todos en esta carpeta, salvo el logo):
+
+| Archivo | Para qué |
+|---------|----------|
+| `README.md` (este instructivo) | Guion, tiempos y reglas de cada escena |
+| `recursos/iconos/*.svg` (6) | Íconos de los nodos, el reloj y los checks |
+| `recursos/animacion/cierre-logo-tecleado.html` | Escena 4 ya resuelta: se reutiliza tal cual |
+| `recursos/musica/tech-explainer-background-loop.mp3` | Música de fondo |
+| `recursos/efectos/*.mp3` (5) | Efectos sincronizados con la animación |
+| `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | Logo oficial para el cierre (si el diseño no lo toma del design system) |
+
+**3. Pedido sugerido** (copiar y pegar):
+
+```
+Crea un video animado vertical de 1080 × 1920 a 30 fps y unos 25 segundos para nniklab,
+siguiendo exactamente el instructivo adjunto (README.md): "El pedido que se registra solo".
+
+- Usa el design system nniklab: fondo grafito, lima solo como acento, Space Grotesk en
+  títulos, Inter en textos y JetBrains Mono en nodos y datos.
+- Cuatro escenas con los tiempos del instructivo: 1) el problema (lista de tareas y reloj),
+  2) el flujo (cuatro nodos en columna que recorre un cuadrado lima, "el paquete"),
+  3) el resultado (la lista se marca sola, 15 min → 3 s, frase final),
+  4) el cierre: reutiliza tal cual la animación de cierre-logo-tecleado.html.
+- La marca nniklab aparece SOLO en la escena 4.
+- Usa los íconos Lucide adjuntos, la música tech-explainer-background-loop.mp3 y los efectos
+  adjuntos en los momentos que indica la tabla de Audio.
+- Rotula el flujo como "proceso de ejemplo". Respeta la zona segura de redes
+  (120 px a los lados, 260 px arriba y abajo).
+```
+
+**4. Revisar escena por escena** contra las tablas de tiempos. Puntos clave: el paquete siempre cuadrado (sin redondear, estirar ni rotar), un solo acento lima por momento, la marca solo al final y el cuadro final limpio (logo recto, sin brillos).
+
+**5. Exportar y guardar.**
+
+- Video: MP4 H.264 + AAC, 1080 × 1920, 30 fps, como `n8n-pedido-automatico-v1.mp4` en esta carpeta. Si la exportación sale sin audio, se mezcla después la música y los efectos con `ffmpeg` (o se le pide a Claude).
+- Proyecto editable: exportar el proyecto de Claude Design y guardarlo como `n8n-pedido-automatico-v1-recursos.zip`, igual que la intro v3.
+- Anotar la versión en la tabla de abajo y en `../README.md`.
 
 ## Versiones
 

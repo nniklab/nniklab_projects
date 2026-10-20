@@ -30,6 +30,7 @@
 - **2026-10-19:** sitio web v1.3.1: el ancla de "Conoce a nuestro equipo" pasa de `#nosotros` a `#equipo`. Etiqueta de git `web-v1.3.1`.
 - **2026-10-19:** sitio web v1.4: "Servicios" con etiqueta `/lo_que_hacemos`, título "Te ayudamos en tres frentes: datos, automatización e IA." y textos de tarjetas más cortos; en celular, tarjetas de los carruseles más bajas. El menú sigue diciendo "Servicios". Etiqueta de git `web-v1.4`.
 - **2026-10-20:** videos promocionales organizados por servicio: `06-publicidad/videos/videos_automatizacion/` (n8n, integración de apps y recursos relacionados) y `06-publicidad/videos/videos_data/` (extracción, consumo, ETL, dashboards). Los videos de marca, como la intro, siguen en la raíz de `videos/`. Organización, nombres, versiones, logo, tipografía y colores en `videos/README.md`.
+- **2026-10-20:** primer video de automatización, "El pedido que se registra solo" (n8n), en `06-publicidad/videos/videos_automatizacion/n8n-pedido-automatico/`: instructivo de 4 escenas (vertical 1080 × 1920, ≈ 25 s) y recursos completos (íconos Lucide, 5 efectos y música de Pixabay, animación de cierre). Listo para producir en Claude Design.
 
 ## Información base
 
@@ -72,3 +73,6 @@
 4. Detallar cada servicio (alcance, entregables y precio) en `02-servicios/`.
 5. Misión, visión y valores (`03-comunicacion/`).
 6. Ajustar la tarjeta de presentación con el logo final y guardarla en `04-materiales/`.
+- **2026-10-20:** en los videos la marca aparece solo al final, con el cierre "logo tecleado": un cursor lima teclea nniklab y se convierte en el punto de la i.
+- **2026-10-20:** cada video guarda todo lo suyo en su carpeta (`README.md` instructivo + `recursos/`: íconos, efectos, música, animaciones); logo y tipografías se usan desde `01-marca/`.
+- **2026-10-20:** los videos se producen en Claude Design con el design system nniklab; íconos de Lucide (licencia ISC) y audio de Pixabay.
