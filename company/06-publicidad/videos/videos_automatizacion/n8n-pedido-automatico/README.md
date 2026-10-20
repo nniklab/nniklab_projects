@@ -122,7 +122,7 @@ Es el **único** momento del video donde aparece la marca. Usa el SVG oficial `.
 | Logo con descriptor (oscuro) | `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | ✅ En el repo |
 | Tipografías Space Grotesk, Inter, JetBrains Mono | `01-marca/tipografia/` | ✅ En el repo |
 | Música de fondo | `06-publicidad/audio/tech-explainer-background-loop.mp3` | ✅ En el repo (Pixabay, uso comercial) |
-| Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | [Lucide](https://lucide.dev) (licencia ISC, uso comercial libre) | ⏳ Por descargar |
+| Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | `06-publicidad/imagenes/iconos/lucide/` (Lucide v1.60.0, licencia ISC, uso comercial libre) | ✅ En el repo |
 | Efectos de sonido (tecla, pop, clic, tic-tac) | Pixabay Sound Effects u otra fuente con licencia comercial | ⏳ Por buscar y registrar en `06-publicidad/audio/README.md` |
 | Animación del cierre | `cierre-logo-tecleado.html` | ✅ Prueba aprobada; pasar a los recursos del video |
 
