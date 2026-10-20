@@ -46,6 +46,7 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-19:** company: sitio web v1.3: nuevo orden (lo que te frena → servicios → qué puedes lograr → cómo trabajamos → tecnologías → equipo → cierre); etiquetas `/lo_que_te_frena` (título "¿Te suena familiar? Esto te quita tiempo y dinero."), `/qué_puedes_lograr` y `/conoce_a_nuestro_equipo`; perfil de Juan resumido; carruseles en celular en cinco secciones; fondos que se alternan grafito / gris; en celular, portada sin animación y encabezado compacto. Etiqueta `web-v1.3`.
 - **2026-10-19:** company: sitio web v1.3.1: ancla `#nosotros` → `#equipo`. Etiqueta `web-v1.3.1`.
 - **2026-10-19:** company: sitio web v1.4: "Servicios" con etiqueta `/lo_que_hacemos`, título "Te ayudamos en tres frentes: datos, automatización e IA." y textos de tarjetas más cortos; en celular, tarjetas de los carruseles más bajas. El menú sigue diciendo "Servicios". Etiqueta `web-v1.4`.
+- **2026-10-20:** company: videos promocionales organizados por servicio en `company/06-publicidad/videos/`: `videos_automatizacion/` (n8n, integración de apps y recursos relacionados) y `videos_data/` (extracción, consumo, ETL, dashboards); los videos de marca quedan en la raíz. Guía de organización, versiones e identidad visual (logo, tipografía, colores) en `videos/README.md`.
 
 ## Próximos pasos
 

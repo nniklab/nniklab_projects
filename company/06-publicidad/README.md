@@ -4,6 +4,14 @@ Piezas publicitarias de nniklab: videos, anuncios y contenido para campañas y r
 
 ## Videos
 
+Los videos se organizan por servicio (ver `videos/README.md`):
+
+- `videos/` (raíz): videos de marca, como la intro.
+- `videos/videos_automatizacion/`: promoción de automatización (n8n, integración de apps y recursos relacionados).
+- `videos/videos_data/`: promoción de manejo de datos (extracción, consumo, ETL, dashboards).
+
+Todos usan el logo, la tipografía y los colores oficiales de `../01-marca/`.
+
 ### Intro nniklab
 
 Video de presentación de la marca. La versión vigente es siempre la de número más alto.
