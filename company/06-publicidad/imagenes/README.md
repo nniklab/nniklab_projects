@@ -44,21 +44,6 @@ Creados el 2026-10-11 con la paleta y la tipografía oficiales, 1920 × 1080, un
 - **Para el video usa los PNG.** Los SVG sirven para editar; sus textos usan las fuentes de la marca, así que se ven bien solo en equipos que las tienen instaladas.
 - **Para cambiar textos o cifras:** edita `graficos/generar-graficos.py` y vuelve a generarlos (`python3 generar-graficos.py <carpeta-de-salida>`), o pídeselo a Claude.
 
-## Íconos
-
-Íconos de línea en SVG para videos y web, en `iconos/`, separados por librería. Se usan tal cual vienen: el trazo es `currentColor`, así que toman el color del texto donde se insertan (blanco hueso `#F4F4F2` en reposo, lima `#C6F432` para lo activo o completado). Vista de referencia: `iconos/muestra-iconos-lucide.png`.
-
-| Archivo | Uso | Fuente | Licencia |
-|---------|-----|--------|----------|
-| `iconos/lucide/mail.svg` | Video n8n pedido: nodo "Nuevo pedido" | [Lucide](https://lucide.dev/icons/mail) v1.60.0 | ISC |
-| `iconos/lucide/table.svg` | Video n8n pedido: nodo "Guardar en hoja" | [Lucide](https://lucide.dev/icons/table) v1.60.0 | ISC |
-| `iconos/lucide/bell.svg` | Video n8n pedido: nodo "Avisar al equipo" | [Lucide](https://lucide.dev/icons/bell) v1.60.0 | ISC |
-| `iconos/lucide/send.svg` | Video n8n pedido: nodo "Confirmar al cliente" | [Lucide](https://lucide.dev/icons/send) v1.60.0 | ISC |
-| `iconos/lucide/clock.svg` | Video n8n pedido: reloj del tiempo perdido | [Lucide](https://lucide.dev/icons/clock) v1.60.0 | ISC |
-| `iconos/lucide/check.svg` | Video n8n pedido: casillas y nodos completados | [Lucide](https://lucide.dev/icons/check) v1.60.0 | ISC |
-
-La licencia ISC permite uso comercial y modificación; solo pide conservar su aviso, que está en `iconos/lucide/LICENSE.txt` (y en el comentario de cada SVG). Para añadir más íconos de Lucide, descargarlos de la misma versión desde [lucide.dev](https://lucide.dev) y registrarlos aquí.
-
 ## Fondos fotográficos
 
 Los tres primeros se eligieron el 2026-10-11 entre unas 330 imágenes de Pexels, Unsplash y Pixabay; los cuatro siguientes, el 2026-10-17 entre unas 110 de Pexels, para la web; y las cuatro escenas de oficina (con personas), también el 2026-10-17, para las tarjetas de "El problema" (versión web de 1600 px). Para usarlos detrás de texto o de los gráficos, oscurecerlos entre un 40 y un 60 %.

@@ -95,7 +95,7 @@ Un **cuadrado lima de 28 × 28 px** que representa el pedido. Es lo único que s
 
 ### Escena 4 · Cierre de marca (20,0 – 25,0 s)
 
-Es la animación **"logo tecleado"** ya aprobada como prueba (`cierre-logo-tecleado.html`), sin cambios:
+Es la animación **"logo tecleado"** ya aprobada como prueba (`recursos/animacion/cierre-logo-tecleado.html`), sin cambios:
 
 1. Cursor lima parpadeando en pantalla vacía (1 s).
 2. "nniklab" se teclea letra por letra con ritmo humano (≈ 0,9 s).
@@ -109,22 +109,34 @@ Es el **único** momento del video donde aparece la marca. Usa el SVG oficial `.
 
 | Momento | Sonido |
 |---------|--------|
-| Todo el video | Música de fondo: `tech-explainer-background-loop.mp3` (30 s, hace loop) desde `../../../audio/`. Volumen bajo en la escena 1 y sube al entrar el flujo. |
-| Escena 1 | Tic-tac acelerado del reloj, suave. |
+| Todo el video | Música de fondo: `tech-explainer-background-loop.mp3` (30 s, hace loop) desde `06-publicidad/audio/`. Volumen bajo en la escena 1 y sube al entrar el flujo. |
+| Escena 1 | Tic-tac acelerado del reloj, suave (`recursos/efectos/tic-tac.mp3`). |
 | Escena 2 | Un "pop" corto cuando el paquete llega a cada nodo (4 en total). |
 | Escena 3 | Clics rápidos de los checks; un golpe grave cuando aparece `3 s`. |
 | Escena 4 | Una tecla por letra (7) y un "clic" cuando el punto aterriza sobre la "i". La música baja en los últimos 2 s. |
 
 ## Recursos
 
+Todo lo propio de este video está en esta carpeta, en `recursos/`. Lo que es de la marca y se comparte entre videos (logo, tipografías, música) se usa desde su ubicación oficial, sin copiarlo.
+
+```
+n8n-pedido-automatico/
+  README.md                         ← este instructivo
+  recursos/
+    iconos/                         ← íconos Lucide del video + licencia + muestra
+    efectos/                        ← efectos de sonido (MP3) + README con fuentes y licencias
+    animacion/
+      cierre-logo-tecleado.html     ← prueba aprobada del cierre de marca (escena 4)
+```
+
 | Recurso | Dónde | Estado |
 |---------|-------|--------|
-| Logo con descriptor (oscuro) | `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | ✅ En el repo |
-| Tipografías Space Grotesk, Inter, JetBrains Mono | `01-marca/tipografia/` | ✅ En el repo |
-| Música de fondo | `06-publicidad/audio/tech-explainer-background-loop.mp3` | ✅ En el repo (Pixabay, uso comercial) |
-| Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | `06-publicidad/imagenes/iconos/lucide/` (Lucide v1.60.0, licencia ISC, uso comercial libre) | ✅ En el repo |
-| Efectos de sonido (tecla, pop, clic, tic-tac) | Pixabay Sound Effects u otra fuente con licencia comercial | ⏳ Por buscar y registrar en `06-publicidad/audio/README.md` |
-| Animación del cierre | `cierre-logo-tecleado.html` | ✅ Prueba aprobada; pasar a los recursos del video |
+| Íconos `mail`, `table`, `bell`, `send`, `clock`, `check` | `recursos/iconos/` (Lucide v1.60.0, licencia ISC en `LICENSE.txt`) | ✅ Listo |
+| Efectos de sonido (tecla, pop, clic, tic-tac, golpe grave) | `recursos/efectos/` (enlaces de descarga en su `README.md`) | ⏳ Por descargar |
+| Animación del cierre | `recursos/animacion/cierre-logo-tecleado.html` | ✅ Prueba aprobada |
+| Logo con descriptor (oscuro) | `01-marca/logo/final/svg/nniklab-logo-descriptor-oscuro.svg` | ✅ Compartido de la marca |
+| Tipografías Space Grotesk, Inter, JetBrains Mono | `01-marca/tipografia/` | ✅ Compartido de la marca |
+| Música de fondo | `06-publicidad/audio/tech-explainer-background-loop.mp3` (Pixabay, uso comercial) | ✅ Compartido de publicidad |
 
 **Sobre n8n:** se nombra en texto ("Con un flujo automático en n8n"), pero no se usa su logo. Los nodos se dibujan con el estilo de nniklab, no como capturas de n8n. Si en una versión futura se quiere mostrar su logo o interfaz, revisar antes la guía de marca de n8n.
 
@@ -135,7 +147,7 @@ Es el **único** momento del video donde aparece la marca. Usa el SVG oficial `.
 1. **Animación en HTML + SVG:** una sola página de 1080 × 1920 con una función `render(t)` que dibuja cada instante del video a partir del tiempo, igual que las pruebas del cierre. Así se puede revisar cualquier cuadro (`?t=12.4`) y ajustar tiempos sin rehacer todo.
 2. **Exportar cuadros:** capturar los 750 cuadros (25 s × 30 fps) con un navegador sin interfaz (Playwright).
 3. **Montar el video:** unir cuadros y audio con `ffmpeg` en MP4 H.264 + AAC.
-4. **Recursos editables:** guardar el HTML, los íconos, el audio usado y el script de exportación en `n8n-pedido-automatico-v1-recursos.zip`.
+4. **Recursos editables:** al publicar la v1, empaquetar `recursos/`, el HTML final y el script de exportación en `n8n-pedido-automatico-v1-recursos.zip`, como la intro.
 
 ## Versiones
 
