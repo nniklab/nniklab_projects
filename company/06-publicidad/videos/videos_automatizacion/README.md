@@ -8,4 +8,4 @@ Los videos de datos (extracción, ETL, dashboards…) van en `../videos_data/`. 
 
 | Video | Versión vigente | Formato | Fecha |
 |-------|-----------------|---------|-------|
-| _(todavía ninguno)_ | | | |
+| [`n8n-pedido-automatico/`](n8n-pedido-automatico/) · El pedido que se registra solo | En guion (sin producir) | Vertical 1080 × 1920 · ≈ 25 s | 2026-10-20 |
