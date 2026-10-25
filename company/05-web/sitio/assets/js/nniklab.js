@@ -28,8 +28,10 @@
     var pendiente = null;
     zona.addEventListener('mousemove', function (e) {
       var r = zona.getBoundingClientRect();
-      var x = e.clientX - r.left - halo.offsetWidth / 2;
-      var y = e.clientY - r.top - halo.offsetHeight / 2;
+      // Anclado detrás del panel: se acerca al mouse un 40 %, sin alejarse del panel
+      var ax = Math.min(r.width / 2 + 304, r.width * 0.75 + 4) - halo.offsetWidth / 2, ay = 40;
+      var x = ax + (e.clientX - r.left - halo.offsetWidth / 2 - ax) * 0.4;
+      var y = ay + (e.clientY - r.top - halo.offsetHeight / 2 - ay) * 0.4;
       if (pendiente) cancelAnimationFrame(pendiente);
       pendiente = requestAnimationFrame(function () {
         halo.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
