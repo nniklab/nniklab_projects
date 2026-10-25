@@ -12,3 +12,11 @@ Config.setPixelFormat('yuv420p'); // color estándar (evita el rango completo "y
 Config.setColorSpace('bt709'); // espacio de color de video HD
 Config.setAudioBitrate('320k');
 Config.setOverwriteOutput(true);
+
+// Fuentes y audios se importan desde fuera del proyecto (05-web, recursos/).
+// En Studio, Remotion los nombra con su ruta ('../../..'), y esas URLs no se sirven.
+// Con un hash, Studio los sirve igual que el render.
+Config.overrideWebpackConfig((config) => ({
+	...config,
+	output: {...config.output, assetModuleFilename: '[name]-[hash][ext]'},
+}));
