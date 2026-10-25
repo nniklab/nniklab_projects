@@ -89,20 +89,20 @@ const Sonido: React.FC = () => (
 
 		{/* El flujo: pop en cada nodo, clic en cada salida */}
 		{LLEGA.map((en) => (
-			<Efecto key={`pop-${en}`} src={sonidoPop} en={en} volumen={0.5} recorte={5} dura={30} />
+			<Efecto key={`pop-${en}`} src={sonidoPop} en={en} volumen={0.28} recorte={5} dura={30} />
 		))}
 		{RAMA_LLEGA.map((en) => (
-			<Efecto key={`rama-${en}`} src={sonidoClic} en={en} volumen={0.5} recorte={4} dura={20} />
+			<Efecto key={`rama-${en}`} src={sonidoClic} en={en} volumen={0.35} recorte={4} dura={20} />
 		))}
 
 		{/* Resultado y lema */}
-		<Efecto src={sonidoGolpe} en={FIJA_3S} volumen={0.45} dura={55} />
+		<Efecto src={sonidoGolpe} en={FIJA_3S} volumen={0.35} dura={55} />
 		<Efecto src={sonidoPop} en={g(CAJA_IMPORTANTE)} volumen={0.4} recorte={5} dura={30} />
 
 		{/* Cierre: una tecla por letra y un clic cuando el punto cae sobre la "i" */}
 		{TECLAS.map((k) => (
-			<Efecto key={`tecla-${k}`} src={sonidoTecla} en={g(k)} volumen={0.6} recorte={1} dura={20} />
+			<Efecto key={`tecla-${k}`} src={sonidoTecla} en={g(k)} volumen={0.4} recorte={1} dura={20} />
 		))}
-		<Efecto src={sonidoClic} en={g(SALTO_B)} volumen={0.6} recorte={4} dura={20} />
+		<Efecto src={sonidoClic} en={g(SALTO_B)} volumen={0.45} recorte={4} dura={20} />
 	</>
 );
