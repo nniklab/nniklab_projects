@@ -1,0 +1,22 @@
+{
+  "name": "nniklab-video-n8n-pedido",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Video n8n 'El pedido que se registra solo' hecho con Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render FlujoN8n out/flujo-n8n-prueba.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.538",
+    "@remotion/fonts": "^4.0.538",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

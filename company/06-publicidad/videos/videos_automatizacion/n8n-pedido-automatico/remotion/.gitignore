@@ -1,0 +1,5 @@
+# Dependencias (se descargan con npm install)
+node_modules/
+
+# Renders de prueba (el MP4 final se copia a la carpeta del video)
+out/
