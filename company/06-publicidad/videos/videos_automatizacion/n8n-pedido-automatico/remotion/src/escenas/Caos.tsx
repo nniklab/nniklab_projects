@@ -194,6 +194,8 @@ export const Caos: React.FC<{f: number}> = ({f}) => {
 						height: '100%',
 						objectFit: 'cover',
 						objectPosition: '34% 50%',
+						// la foto es la versión web de 1600 px: un desenfoque de profundidad evita que se note ampliada
+						filter: 'blur(3px)',
 						transform: `scale(${1.06 + 0.16 * tramo(f, ESCENA.caos, ESCENA.formaMejor)}) translate(${sx * 0.4}px, ${sy * 0.4}px)`,
 					}}
 				/>

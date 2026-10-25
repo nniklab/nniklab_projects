@@ -151,10 +151,10 @@ export const Acabado: React.FC<{f: number}> = ({f}) => (
 		<AbsoluteFill
 			style={{background: 'radial-gradient(ellipse 80% 65% at 50% 50%, transparent 55%, rgba(0,0,0,.6) 100%)'}}
 		/>
-		<AbsoluteFill style={{opacity: 0.07, mixBlendMode: 'overlay'}}>
+		<AbsoluteFill style={{opacity: 0.045, mixBlendMode: 'overlay'}}>
 			<svg width="1080" height="1920">
 				<filter id="grano">
-					<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={Math.floor(f / 2)} />
+					<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={Math.floor(f / 3)} />
 				</filter>
 				<rect width="100%" height="100%" filter="url(#grano)" />
 			</svg>
