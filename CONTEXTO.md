@@ -49,11 +49,12 @@ En una conversación nueva con Claude, pide: "conecta el repo nniklab/nniklab_pr
 - **2026-10-20:** company: videos promocionales organizados por servicio en `company/06-publicidad/videos/`: `videos_automatizacion/` (n8n, integración de apps y recursos relacionados) y `videos_data/` (extracción, consumo, ETL, dashboards); los videos de marca quedan en la raíz. Guía de organización, versiones e identidad visual (logo, tipografía, colores) en `videos/README.md`.
 - **2026-10-20:** company: primer video de automatización, "El pedido que se registra solo" (n8n), listo para producir en Claude Design. Todo en `company/06-publicidad/videos/videos_automatizacion/n8n-pedido-automatico/`: instructivo con 4 escenas (vertical 1080 × 1920, ≈ 25 s), íconos Lucide, efectos de sonido y música de fondo (`tech-explainer-background-loop.mp3`) de Pixabay, y la animación de cierre "logo tecleado" (la marca aparece solo al final). Reglas de video y movimiento añadidas al design system "nniklab" de Claude.
 - **2026-10-24:** company: sitio web v1.5: revisión de espacios superiores e inferiores en celular (secciones centrales en 64 px); el cierre baja de 112 a 80 px arriba y abajo solo en celular y se corrige la línea doble entre "Equipo" y el cierre. Commit y push hechos desde la sesión en la nube (hacer `git pull` en la copia local). Etiqueta `web-v1.5`.
+- **2026-10-24:** company: sitio web v1.6: "Lo que hacemos" con una escena animada por servicio, flujo entre tarjetas y entrada escalonada; "Cómo trabajamos" con línea de tiempo que se llena con el scroll y miniatura de cada entregable. Ambas secciones compactas en celular (tarjeta y flechas caben en pantalla en iPhone 13-16 y Android de 360 px). Lienzo de Claude Design actualizado. Commit y push desde la sesión en la nube (hacer `git pull` en la copia local). Etiqueta `web-v1.6`.
 
 ## Próximos pasos
 
 - company: producir en Claude Design el video `n8n-pedido-automatico` (v1) siguiendo su README y guardar el MP4 y sus recursos editables en su carpeta.
-- company: mejoras al sitio (próxima versión v1.6), dominio propio, formulario de n8n y foto para "Conoce a nuestro equipo".
+- company: mejoras al sitio (próxima versión v1.7), dominio propio, formulario de n8n y foto para "Conoce a nuestro equipo".
 - company (más adelante): conector de n8n para el formulario y redes sociales.
 - company (más adelante): video publicitario "Cómo se conectan" (ver `company/06-publicidad/ideas/video-como-se-conectan/`).
 - company: detalle de cada servicio, misión, visión y valores, tarjeta de presentación final.

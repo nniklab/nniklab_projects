@@ -220,7 +220,7 @@
 </section>
 
 <!-- 3. Lo que hacemos (servicios) -->
-<section id="servicios" class="nk-bg-chips" style="border-bottom: 1px solid #2e333b">
+<section id="servicios" class="nk-bg-chips nk-svc" style="border-bottom: 1px solid #2e333b">
 <div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
@@ -233,9 +233,10 @@
 <div class="nk-carrusel-riel" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px">
 
 <article class="nk-card" style="background: #1a1d22; border: 1px solid #2e333b; border-radius: 8px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
-<div style="display: flex; justify-content: space-between; align-items: start">
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#c6f432" stroke-width="1.6" aria-hidden="true"><ellipse cx="20" cy="9" rx="13" ry="4.5"></ellipse><path d="M7 9v11c0 2.5 5.8 4.5 13 4.5s13-2 13-4.5V9"></path><path d="M7 20v11c0 2.5 5.8 4.5 13 4.5s13-2 13-4.5V20"></path></svg>
-<span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 13px; color: #9ca3af">01</span>
+<div class="nk-svc-escena" aria-hidden="true">
+<span class="nk-svc-num">01</span>
+<div style="display: flex; flex-direction: column; gap: 2px"><span>ventas · 8 meses</span><span class="nk-svc-kpi">▲ <span class="nk-svc-cuenta"></span> %</span></div>
+<div class="nk-svc-barras"><span style="height: 34%"></span><span style="height: 42%"></span><span style="height: 38%"></span><span style="height: 55%"></span><span style="height: 50%"></span><span style="height: 68%"></span><span style="height: 76%"></span><span style="height: 100%"></span></div>
 </div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 500; font-size: 30px; line-height: 1.2; letter-spacing: -0.5px">Datos</h3>
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; color: #9ca3af; font-size: 16px">
@@ -244,14 +245,15 @@
 <li>Análisis de datos</li>
 <li>Dashboards para decidir</li>
 </ul>
-<p style="margin: 0; font-size: 14px; color: #9ca3af; border-left: 0; padding: 12px; background: #111418">Conectamos ERP, contabilidad, facturación electrónica, CRM, Excel y más.</p>
-<p style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Información centralizada y confiable para decidir.</p>
+<p class="nk-svc-nota" style="margin: 0; font-size: 14px; color: #9ca3af; border-left: 0; padding: 12px; background: #111418">Conectamos ERP, contabilidad, facturación electrónica, CRM, Excel y más.</p>
+<p class="nk-svc-logro" style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Información centralizada y confiable para decidir.</p>
 </article>
 
 <article class="nk-card" style="background: #1a1d22; border: 1px solid #2e333b; border-radius: 8px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
-<div style="display: flex; justify-content: space-between; align-items: start">
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#c6f432" stroke-width="1.6" aria-hidden="true"><rect x="3" y="6" width="10" height="10"></rect><rect x="27" y="6" width="10" height="10"></rect><rect x="15" y="25" width="10" height="10"></rect><path d="M13 11h14"></path><path d="M32 16v5H20v4"></path><path d="M8 16v5h12"></path></svg>
-<span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 13px; color: #9ca3af">02</span>
+<div class="nk-svc-escena" aria-hidden="true">
+<span class="nk-svc-num">02</span>
+<div class="nk-svc-nodos"><span class="nk-svc-nodo">pedido</span><span class="nk-svc-tramo"><i></i></span><span class="nk-svc-nodo">validar</span><span class="nk-svc-tramo"><i></i></span><span class="nk-svc-nodo">registrar</span></div>
+<div class="nk-svc-tiempo"><span>tiempo por pedido: <s>15 min</s></span><b>20 s</b></div>
 </div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 500; font-size: 30px; line-height: 1.2; letter-spacing: -0.5px">Automatización</h3>
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; color: #9ca3af; font-size: 16px">
@@ -259,20 +261,23 @@
 <li>Integración de aplicaciones: tus sistemas se hablan</li>
 <li>Flujos que generan resultados solos</li>
 </ul>
-<p style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Menos trabajo manual y menos errores.</p>
+<p class="nk-svc-logro" style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Menos trabajo manual y menos errores.</p>
 </article>
 
 <article class="nk-card" style="background: #1a1d22; border: 1px solid #2e333b; border-radius: 8px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
-<div style="display: flex; justify-content: space-between; align-items: start">
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#c6f432" stroke-width="1.6" aria-hidden="true"><circle cx="20" cy="20" r="5"></circle><circle cx="6" cy="8" r="3"></circle><circle cx="34" cy="8" r="3"></circle><circle cx="6" cy="32" r="3"></circle><circle cx="34" cy="32" r="3"></circle><path d="M8.5 10l7.5 6.5M31.5 10L24 16.5M8.5 30l7.5-6.5M31.5 30L24 23.5"></path></svg>
-<span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 13px; color: #9ca3af">03</span>
+<div class="nk-svc-escena" aria-hidden="true">
+<span class="nk-svc-num">03</span>
+<div class="nk-svc-ia">
+<div class="nk-svc-doc"><span></span><span></span><span></span><span></span><span></span><span></span><i></i></div>
+<div class="nk-svc-campos"><div class="nk-svc-campo"><span>proveedor</span><span>Andina S.A.</span></div><div class="nk-svc-campo"><span>total</span><span>$1 284,60</span></div><div class="nk-svc-campo"><span>destino</span><span>→ contabilidad</span></div></div>
+</div>
 </div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 500; font-size: 30px; line-height: 1.2; letter-spacing: -0.5px">IA</h3>
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; color: #9ca3af; font-size: 16px">
 <li>Agentes que gestionan tu información</li>
 <li>Agentes en tus automatizaciones: leen documentos, responden y deciden</li>
 </ul>
-<p style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Procesos que van más allá de las reglas fijas.</p>
+<p class="nk-svc-logro" style="margin: 0; margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; font-size: 16px"><span style="color: #c6f432">→</span> Procesos que van más allá de las reglas fijas.</p>
 </article>
 
 </div>
@@ -334,7 +339,7 @@
 </section>
 
 <!-- 5. Cómo trabajamos (sección clara) -->
-<section id="como-trabajamos" style="background: #f4f4f2; color: #111418">
+<section id="como-trabajamos" class="nk-ct" style="background: #f4f4f2; color: #111418">
 <div style="max-width: 1200px; margin: 0 auto; padding: clamp(64px, 8vw, 96px) 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
@@ -344,38 +349,62 @@
 <p style="margin: 0; max-width: 380px; color: #4b5563; font-size: 17px">Cuatro etapas. En cada una sabes qué hacemos y qué recibes.</p>
 </div>
 <div class="nk-carrusel nk-carrusel-claro" data-duracion="6000" style="--nk-dur: 6s" aria-roledescription="carrusel" aria-label="Cómo trabajamos">
-<ol class="nk-carrusel-riel" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px">
+<ol class="nk-carrusel-riel nk-ct-riel" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px">
 
 <li class="nk-card-claro" style="position: relative; background: #ffffff; border: 1px solid #d9dbd6; border-radius: 8px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
-<div aria-hidden="true" style="display: flex; align-items: center"><span style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-pulso nk-pulso-oscuro"></span></span></div>
-<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">01</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#5e7a0e" stroke-width="1.8" aria-hidden="true"><circle cx="14" cy="14" r="9"></circle><path d="M21 21l7 7"></path><path d="M10 14h8M14 10v8"></path></svg></div>
+<div aria-hidden="true" style="display: flex; align-items: center"><span class="nk-ct-paso" style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-ct-relleno"></span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">01</span></div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.5px; line-height: 1.2">Diagnóstico</h3>
 <p style="margin: 0; color: #4b5563; font-size: 16px">Entendemos tu negocio, tus procesos y tus datos.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span><span style="font-size: 15px; color: #111418">Un mapa de tus procesos y fuentes de datos, con las oportunidades priorizadas.</span></div>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span>
+<div class="nk-ct-prev" aria-hidden="true">
+<div class="nk-ct-fila nk-ct-ap"><span class="nk-ct-nodo"></span><span>registro de pedidos</span><span class="nk-ct-chip nk-alta">ALTA</span></div>
+<div class="nk-ct-fila nk-ct-ap nk-t2"><span class="nk-ct-nodo"></span><span>reporte de ventas</span><span class="nk-ct-chip nk-alta">ALTA</span></div>
+<div class="nk-ct-fila nk-ct-ap nk-t3"><span class="nk-ct-nodo"></span><span>conciliaciones</span><span class="nk-ct-chip">MEDIA</span></div>
+<div class="nk-ct-fila nk-ct-ap nk-t4"><span class="nk-ct-nodo"></span><span>archivo de facturas</span><span class="nk-ct-chip">BAJA</span></div>
+</div>
+<span style="font-size: 15px; color: #111418">Un mapa de tus procesos y fuentes de datos, con las oportunidades priorizadas.</span></div>
 </li>
 
 <li class="nk-card-claro" style="position: relative; background: #ffffff; border: 1px solid #d9dbd6; border-radius: 8px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
-<div aria-hidden="true" style="display: flex; align-items: center"><span style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-pulso nk-pulso-oscuro nk-d2"></span></span></div>
-<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">02</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#5e7a0e" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="24" height="24"></rect><path d="M4 12h24M12 12v16"></path></svg></div>
+<div aria-hidden="true" style="display: flex; align-items: center"><span class="nk-ct-paso" style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-ct-relleno"></span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">02</span></div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.5px; line-height: 1.2">Diseño</h3>
 <p style="margin: 0; color: #4b5563; font-size: 16px">Definimos la solución y la arquitectura a tu medida.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span><span style="font-size: 15px; color: #111418">La propuesta de solución: arquitectura, alcance y plan de trabajo.</span></div>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span>
+<div class="nk-ct-prev" aria-hidden="true">
+<div class="nk-ct-arq"><span>fuentes</span><i>→</i><span>flujos</span><i>→</i><span>tablero</span></div>
+<div class="nk-ct-gantt"><span>fase 1</span><b style="width: 45%"></b><span>fase 2</span><b class="nk-t2" style="width: 70%; margin-left: 30%"></b><span>fase 3</span><b class="nk-t3" style="width: 40%; margin-left: 60%"></b></div>
+</div>
+<span style="font-size: 15px; color: #111418">La propuesta de solución: arquitectura, alcance y plan de trabajo.</span></div>
 </li>
 
 <li class="nk-card-claro" style="position: relative; background: #ffffff; border: 1px solid #d9dbd6; border-radius: 8px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
-<div aria-hidden="true" style="display: flex; align-items: center"><span style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-pulso nk-pulso-oscuro nk-d4"></span></span></div>
-<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">03</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#5e7a0e" stroke-width="1.8" aria-hidden="true"><path d="M11 9l-7 7 7 7M21 9l7 7-7 7M18 6l-4 20"></path></svg></div>
+<div aria-hidden="true" style="display: flex; align-items: center"><span class="nk-ct-paso" style="width: 14px; height: 14px; background: #5e7a0e; flex: 0 0 auto"></span><span class="nk-riel" style="position: relative; flex: 1 1 auto; height: 2px; background: #d9dbd6; margin-right: -49px"><span class="nk-ct-relleno"></span></span></div>
+<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #111418">03</span></div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.5px; line-height: 1.2">Construcción</h3>
 <p style="margin: 0; color: #4b5563; font-size: 16px">Desarrollamos, probamos y entregamos.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span><span style="font-size: 15px; color: #111418">La solución funcionando, probada con tus datos reales.</span></div>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #e3e4e0; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #4b5563">RECIBES</span>
+<div class="nk-ct-prev" aria-hidden="true">
+<div class="nk-ct-fila nk-ct-ap"><span class="nk-ct-ok">✓</span><span>carga de datos</span></div>
+<div class="nk-ct-fila nk-ct-ap nk-t2"><span class="nk-ct-ok">✓</span><span>reglas del negocio</span></div>
+<div class="nk-ct-fila nk-ct-ap nk-t3"><span class="nk-ct-ok">✓</span><span>prueba con tus datos</span></div>
+<span class="nk-ct-listo nk-ct-ap nk-t4">listo para usar</span>
+</div>
+<span style="font-size: 15px; color: #111418">La solución funcionando, probada con tus datos reales.</span></div>
 </li>
 
 <li class="nk-card-claro" style="position: relative; background: #111418; color: #f4f4f2; border: 1px solid #111418; border-radius: 8px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px">
-<div aria-hidden="true" style="display: flex; align-items: center"><span class="nk-latido" style="width: 14px; height: 14px; background: #c6f432; flex: 0 0 auto"></span></div>
-<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #c6f432">04</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#c6f432" stroke-width="1.8" aria-hidden="true"><path d="M4 26l8-9 6 5 10-12"></path><path d="M21 10h7v7"></path></svg></div>
+<div aria-hidden="true" style="display: flex; align-items: center"><span class="nk-ct-meta" style="width: 14px; height: 14px; background: #c6f432; flex: 0 0 auto"></span></div>
+<div style="display: flex; justify-content: space-between; align-items: end"><span style="font-family: 'Space Grotesk', Arial, sans-serif; font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; color: #c6f432">04</span></div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.5px; line-height: 1.2">Acompañamiento</h3>
 <p style="margin: 0; color: #9ca3af; font-size: 16px">Medimos resultados y mejoramos.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #9ca3af">RECIBES</span><span style="font-size: 15px; color: #f4f4f2">Seguimiento de resultados y mejoras continuas.</span></div>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #2e333b; display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; letter-spacing: 1px; color: #9ca3af">RECIBES</span>
+<div class="nk-ct-prev nk-ct-prev-oscura" aria-hidden="true">
+<div style="display: flex; justify-content: space-between"><span>resultados · mes a mes</span><span class="nk-ct-sube">▲</span></div>
+<svg class="nk-ct-graf" viewBox="0 0 200 60" preserveAspectRatio="none" fill="none"><path d="M0 59.5H200" stroke="#2e333b"></path><polyline pathLength="1" points="0,52 30,48 60,44 90,38 120,34 150,22 180,14 200,6" stroke="#c6f432" stroke-width="2" vector-effect="non-scaling-stroke"></polyline></svg>
+</div>
+<span style="font-size: 15px; color: #f4f4f2">Seguimiento de resultados y mejoras continuas.</span></div>
 </li>
 
 </ol>

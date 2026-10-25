@@ -196,3 +196,150 @@ html { scroll-behavior: smooth; }
   /* Cierre: menos aire en celular (en escritorio sigue con 112-176 px) */
   .nk-cierre-contenido { padding-top: 80px !important; padding-bottom: 80px !important; }
 }
+
+/* Lo que hacemos: escenas vivas por servicio, flujo entre tarjetas y entrada escalonada (ciclo común de 4,8 s) */
+.nk-svc-escena { position: relative; height: 150px; box-sizing: border-box; padding: 14px; background: #111418; border: 1px solid #2e333b; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; line-height: 1.3; color: #9ca3af; transition: border-color .25s ease; }
+.nk-svc-escena::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(46, 51, 59, 0.45) 1px, transparent 1px), linear-gradient(to bottom, rgba(46, 51, 59, 0.45) 1px, transparent 1px); background-size: 24px 24px; pointer-events: none; }
+.nk-svc-escena > * { position: relative; }
+.nk-svc-num { position: absolute; top: 12px; right: 14px; font-size: 13px; color: #9ca3af; }
+.nk-svc .nk-card:hover .nk-svc-escena { border-color: rgba(198, 244, 50, 0.5); }
+@keyframes nk-svc-crece { 0% { transform: scaleY(0.06); } 28% { transform: scaleY(1); } 90% { transform: scaleY(1); } 100% { transform: scaleY(0.06); } }
+@keyframes nk-svc-enciende { 0% { opacity: 0.35; border-color: #2e333b; color: #9ca3af; } 4%, 92% { opacity: 1; border-color: #c6f432; color: #f4f4f2; } 100% { opacity: 0.35; border-color: #2e333b; color: #9ca3af; } }
+@keyframes nk-svc-aparece { 0% { opacity: 0; transform: translateY(4px); } 5%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; transform: none; } }
+@keyframes nk-svc-pasa { 0% { left: 0; opacity: 0; } 4% { opacity: 1; } 20% { left: calc(100% - 6px); opacity: 1; } 23%, 100% { left: calc(100% - 6px); opacity: 0; } }
+@keyframes nk-svc-escanea { 0% { top: 0; opacity: 1; } 50% { top: calc(100% - 2px); opacity: 1; } 56%, 100% { top: calc(100% - 2px); opacity: 0; } }
+@property --nk-n { syntax: "<integer>"; inherits: false; initial-value: 32; }
+@keyframes nk-svc-cuenta { 0% { --nk-n: 0; } 28%, 100% { --nk-n: 32; } }
+
+/* 01 Datos: barras que crecen e indicador que cuenta */
+.nk-svc-kpi { color: #c6f432; font-size: 13px; }
+.nk-svc-cuenta { counter-reset: nk-n var(--nk-n); animation: nk-svc-cuenta 4.8s ease-out infinite both; }
+.nk-svc-cuenta::after { content: counter(nk-n); }
+.nk-svc-barras { height: 72px; display: flex; align-items: flex-end; gap: 6px; }
+.nk-svc-barras span { flex: 1; background: #2e333b; transform-origin: bottom; animation: nk-svc-crece 4.8s cubic-bezier(.2, .7, .2, 1) infinite both; }
+.nk-svc-barras span:last-child { background: #c6f432; }
+.nk-svc-barras span:nth-child(2) { animation-delay: .06s; } .nk-svc-barras span:nth-child(3) { animation-delay: .12s; } .nk-svc-barras span:nth-child(4) { animation-delay: .18s; }
+.nk-svc-barras span:nth-child(5) { animation-delay: .24s; } .nk-svc-barras span:nth-child(6) { animation-delay: .3s; } .nk-svc-barras span:nth-child(7) { animation-delay: .36s; } .nk-svc-barras span:nth-child(8) { animation-delay: .42s; }
+
+/* 02 Automatización: el pedido recorre tres nodos */
+.nk-svc-nodos { display: flex; align-items: center; margin-top: 18px; }
+.nk-svc-nodo { flex: 0 0 auto; padding: 7px 8px; border: 1px solid #c6f432; border-radius: 4px; background: #1a1d22; color: #f4f4f2; animation: nk-svc-enciende 4.8s ease-out infinite both; }
+.nk-svc-nodo:nth-child(3) { animation-delay: 1.2s; } .nk-svc-nodo:nth-child(5) { animation-delay: 2.4s; }
+.nk-svc-tramo { position: relative; flex: 1; min-width: 14px; height: 1px; background: #2e333b; }
+.nk-svc-tramo i { position: absolute; top: -3px; left: 0; width: 6px; height: 6px; background: #c6f432; opacity: 0; animation: nk-svc-pasa 4.8s linear infinite both; animation-delay: .2s; }
+.nk-svc-tramo:nth-child(4) i { animation-delay: 1.4s; }
+.nk-svc-tiempo { display: flex; justify-content: space-between; align-items: center; }
+.nk-svc-tiempo b { font-weight: 400; color: #111418; background: #c6f432; padding: 3px 6px; animation: nk-svc-aparece 4.8s ease-out 2.6s infinite both; }
+
+/* 03 IA: lee un documento y extrae sus datos */
+.nk-svc-ia { display: flex; gap: 14px; align-items: stretch; height: 100%; }
+.nk-svc-doc { position: relative; flex: 0 0 72px; background: #f4f4f2; border-radius: 3px; padding: 10px 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
+.nk-svc-doc span { display: block; height: 4px; background: #c9ccc4; }
+.nk-svc-doc span:nth-child(1) { width: 60%; height: 6px; background: #111418; } .nk-svc-doc span:nth-child(3) { width: 80%; } .nk-svc-doc span:nth-child(5) { width: 70%; }
+.nk-svc-doc span:nth-child(6) { margin-top: auto; height: 6px; background: #5e7a0e; }
+.nk-svc-doc i { position: absolute; left: 0; right: 0; top: 0; height: 2px; background: #c6f432; box-shadow: 0 0 10px 2px rgba(198, 244, 50, 0.6); opacity: 0; animation: nk-svc-escanea 4.8s ease-in-out infinite both; }
+.nk-svc-campos { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; padding-top: 14px; }
+.nk-svc-campo { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 6px; border-bottom: 1px solid #2e333b; animation: nk-svc-aparece 4.8s ease-out infinite both; }
+.nk-svc-campo span:last-child { color: #f4f4f2; white-space: nowrap; }
+.nk-svc-campo:nth-child(1) { animation-delay: .7s; } .nk-svc-campo:nth-child(2) { animation-delay: 1.4s; }
+.nk-svc-campo:nth-child(3) { animation-delay: 2.1s; border-bottom: 0; padding-bottom: 0; }
+.nk-svc-campo:nth-child(3) span:last-child { color: #c6f432; }
+
+/* Flujo entre tarjetas (escritorio, tres columnas): datos → automatización → IA */
+@media (min-width: 1024px) {
+  .nk-svc .nk-carrusel-riel { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .nk-svc .nk-carrusel-riel > article { position: relative; }
+  .nk-svc .nk-carrusel-riel > article:not(:last-child)::after { content: ""; position: absolute; top: 107px; right: -25px; width: 24px; height: 1px; background: rgba(198, 244, 50, 0.35); }
+  .nk-svc .nk-carrusel-riel > article:not(:last-child)::before { content: ""; position: absolute; z-index: 1; top: 104px; right: -25px; width: 6px; height: 6px; background: #c6f432; opacity: 0; animation: nk-svc-salto 4.8s linear infinite both; }
+  .nk-svc .nk-carrusel-riel > article:nth-child(2)::before { animation-delay: 1.6s; }
+}
+@keyframes nk-svc-salto { 0% { transform: translateX(-24px); opacity: 0; } 6% { opacity: 1; } 18% { transform: translateX(18px); opacity: 1; } 22%, 100% { transform: translateX(18px); opacity: 0; } }
+
+/* Entrada escalonada al bajar (escritorio, navegadores con animaciones por scroll) */
+@keyframes nk-svc-entra { from { opacity: 0; translate: 0 32px; } to { opacity: 1; translate: 0 0; } }
+@supports (animation-timeline: view()) {
+  @media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+    .nk-svc .nk-carrusel-riel > article { animation: nk-svc-entra linear both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+    .nk-svc .nk-carrusel-riel > article:nth-child(2) { animation-range: entry 10% entry 75%; }
+    .nk-svc .nk-carrusel-riel > article:nth-child(3) { animation-range: entry 20% entry 90%; }
+  }
+}
+/* Movimiento reducido: los pseudoelementos no los cubre la regla general */
+@media (prefers-reduced-motion: reduce) { .nk-svc .nk-carrusel-riel > article:not(:last-child)::before { animation: none; opacity: 0; } }
+.nk-quieto .nk-svc .nk-carrusel-riel > article:not(:last-child)::before { animation: none; opacity: 0; }
+/* Celular: tarjeta compacta para que quepa entera con los controles (iPhone 13-16 y Android de 360 px) */
+@media (max-width: 760px) {
+  .nk-svc-escena { height: 104px; padding: 12px; }
+  .nk-svc-num { display: none; }
+  .nk-svc-barras { height: 46px; gap: 5px; }
+  .nk-svc-nodos { margin-top: 2px; }
+  .nk-svc-ia { gap: 12px; }
+  .nk-svc-doc { flex-basis: 58px; padding: 8px 7px; gap: 5px; }
+  .nk-svc-campos { padding-top: 0; gap: 5px; }
+  .nk-svc-campo { padding-bottom: 4px; }
+  #servicios .nk-carrusel-riel > article { padding: 20px !important; gap: 12px !important; }
+  #servicios .nk-carrusel-riel ul { gap: 4px !important; }
+  #servicios .nk-carrusel-riel .nk-svc-nota { font-size: 13px !important; line-height: 1.45; padding: 10px 12px !important; }
+  #servicios .nk-carrusel-riel .nk-svc-logro { padding-top: 12px !important; }
+}
+
+/* Cómo trabajamos: línea de tiempo que se llena con el scroll y vista previa de cada entregable */
+.nk-ct .nk-carrusel-riel { view-timeline-name: --nk-ct; }
+.nk-ct-relleno { position: absolute; inset: 0; background: #5e7a0e; transform-origin: left; }
+@keyframes nk-ct-llena { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes nk-ct-activa { from { background: #c9ccc4; } to { background: #5e7a0e; } }
+@keyframes nk-ct-meta { from { background: #4b5563; box-shadow: 0 0 0 0 rgba(198, 244, 50, 0); } to { background: #c6f432; box-shadow: 0 0 0 6px rgba(198, 244, 50, 0.18); } }
+@supports (animation-timeline: view()) {
+  @media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+    .nk-ct-relleno, .nk-ct-paso, .nk-ct-meta { animation-timing-function: linear; animation-fill-mode: both; animation-timeline: --nk-ct; }
+    .nk-ct-relleno { animation-name: nk-ct-llena; }
+    .nk-ct-paso { animation-name: nk-ct-activa; }
+    .nk-ct-meta { animation-name: nk-ct-meta; animation-range: contain 0% contain 10%; }
+    .nk-ct-riel > li:nth-child(1) .nk-ct-paso { animation-range: entry 20% entry 30%; }
+    .nk-ct-riel > li:nth-child(1) .nk-ct-relleno { animation-range: entry 30% entry 55%; }
+    .nk-ct-riel > li:nth-child(2) .nk-ct-paso { animation-range: entry 53% entry 58%; }
+    .nk-ct-riel > li:nth-child(2) .nk-ct-relleno { animation-range: entry 55% entry 80%; }
+    .nk-ct-riel > li:nth-child(3) .nk-ct-paso { animation-range: entry 78% entry 83%; }
+    .nk-ct-riel > li:nth-child(3) .nk-ct-relleno { animation-range: entry 80% entry 100%; }
+  }
+}
+
+/* Vista previa del entregable (ciclo de 4,8 s) */
+.nk-ct-prev { position: relative; height: 112px; box-sizing: border-box; margin: 6px 0 10px; padding: 12px; background: #f4f4f2; border: 1px solid #e3e4e0; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; gap: 6px; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; line-height: 1.3; color: #4b5563; }
+.nk-ct-prev-oscura { background: #1a1d22; border-color: #2e333b; color: #9ca3af; }
+@keyframes nk-ct-aparece { 0% { opacity: 0; transform: translateX(-4px); } 6%, 90% { opacity: 1; transform: none; } 100% { opacity: 0; transform: none; } }
+@keyframes nk-ct-ancho { 0% { transform: scaleX(0); } 22%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+@keyframes nk-ct-traza { 0% { stroke-dashoffset: 1; } 45%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+.nk-ct-ap { animation: nk-ct-aparece 4.8s ease-out infinite both; }
+.nk-ct-ap.nk-t2 { animation-delay: .5s; } .nk-ct-ap.nk-t3 { animation-delay: 1s; } .nk-ct-ap.nk-t4 { animation-delay: 1.6s; }
+.nk-ct-fila { display: flex; align-items: center; gap: 8px; }
+.nk-ct-fila > span:nth-child(2) { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #111418; }
+.nk-ct-nodo { flex: 0 0 auto; width: 8px; height: 8px; border: 1.5px solid #5e7a0e; box-sizing: border-box; }
+.nk-ct-chip { flex: 0 0 auto; padding: 2px 6px; font-size: 10px; letter-spacing: .5px; background: #e3e4e0; color: #4b5563; }
+.nk-ct-chip.nk-alta { background: #c6f432; color: #111418; }
+/* 02: arquitectura y cronograma */
+.nk-ct-arq { display: flex; align-items: center; gap: 4px; }
+.nk-ct-arq span { flex: 1; text-align: center; padding: 4px 2px; background: #ffffff; border: 1px solid #c9ccc4; color: #111418; }
+.nk-ct-arq i { flex: 0 0 auto; font-style: normal; color: #5e7a0e; }
+.nk-ct-gantt { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 5px 8px; margin-top: 4px; }
+.nk-ct-gantt b { display: block; height: 6px; background: #5e7a0e; transform-origin: left; animation: nk-ct-ancho 4.8s cubic-bezier(.2, .7, .2, 1) infinite both; }
+.nk-ct-gantt b.nk-t2 { animation-delay: .4s; background: #8fae1f; } .nk-ct-gantt b.nk-t3 { animation-delay: .8s; background: #c6f432; }
+/* 03: pruebas */
+.nk-ct-ok { flex: 0 0 auto; width: 14px; height: 14px; display: inline-flex; align-items: center; justify-content: center; background: #5e7a0e; color: #ffffff; font-size: 10px; }
+.nk-ct-listo { align-self: flex-start; margin-top: 2px; padding: 3px 8px; background: #111418; color: #c6f432; }
+/* 04: resultados */
+.nk-ct-graf { flex: 1; min-height: 0; }
+.nk-ct-graf polyline { stroke-dasharray: 1; stroke-dashoffset: 0; animation: nk-ct-traza 4.8s ease-out infinite both; }
+.nk-ct-sube { color: #c6f432; }
+
+
+/* Celular: sección compacta (tarjeta + controles caben en pantalla) */
+@media (max-width: 760px) {
+  #como-trabajamos .nk-carrusel-riel > li span[style*="font-size: 56px"] { font-size: 36px !important; }
+  .nk-ct-prev { height: auto; min-height: 76px; padding: 8px 10px; gap: 3px; margin: 2px 0 4px; }
+  .nk-ct-chip { padding: 1px 5px; }
+  .nk-ct-ok { width: 13px; height: 13px; }
+  .nk-ct-graf { height: 40px; flex: 0 0 auto; }
+  .nk-ct-gantt { gap: 3px 8px; margin-top: 2px; }
+  .nk-ct-arq span { padding: 3px 2px; }
+}
