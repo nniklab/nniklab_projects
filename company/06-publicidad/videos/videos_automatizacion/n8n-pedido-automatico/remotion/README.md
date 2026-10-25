@@ -43,7 +43,7 @@ Todo el video está programado sobre los golpes de la música **Future Bass Hot 
 
 | Sonido | Cuándo |
 |--------|--------|
-| Música (85 %, sube al inicio y se apaga al final) | Todo el video |
+| Música (60 %: la pista viene muy fuerte; sube al inicio y se apaga al final) | Todo el video |
 | Tic-tac | El caos (sube con la tensión) |
 | Clic suave | Cada fila pegada a mano y cada salida del flujo |
 | Tecla | `> automatízalo_` y cada letra del logo |

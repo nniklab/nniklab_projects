@@ -54,12 +54,12 @@ const Efecto: React.FC<{src: string; en: number; volumen: number; recorte?: numb
 
 const Sonido: React.FC = () => (
 	<>
-		{/* Música: Future Bass Hot Night (alexgrohl, Pixabay) desde el segundo 66,17 */}
+		{/* Música: Future Bass Hot Night (alexgrohl, Pixabay) desde el segundo 66,17. Viene muy fuerte: 60 % evita saturar. */}
 		<Audio
 			src={musica}
 			trimBefore={MUSICA_DESDE}
 			volume={(f) =>
-				interpolate(f, [0, 4, g(ESCENA.fin - 4), DURACION], [0, 0.85, 0.85, 0], {
+				interpolate(f, [0, 4, g(ESCENA.fin - 4), DURACION], [0, 0.6, 0.6, 0], {
 					extrapolateLeft: 'clamp',
 					extrapolateRight: 'clamp',
 				})
@@ -85,7 +85,7 @@ const Sonido: React.FC = () => (
 		))}
 
 		{/* Drop: golpe grave que refuerza la entrada del flujo */}
-		<Efecto src={sonidoGolpe} en={g(ESCENA.flujo)} volumen={0.4} dura={55} />
+		<Efecto src={sonidoGolpe} en={g(ESCENA.flujo)} volumen={0.3} dura={55} />
 
 		{/* El flujo: pop en cada nodo, clic en cada salida */}
 		{LLEGA.map((en) => (
@@ -96,7 +96,7 @@ const Sonido: React.FC = () => (
 		))}
 
 		{/* Resultado y lema */}
-		<Efecto src={sonidoGolpe} en={FIJA_3S} volumen={0.6} dura={55} />
+		<Efecto src={sonidoGolpe} en={FIJA_3S} volumen={0.45} dura={55} />
 		<Efecto src={sonidoPop} en={g(CAJA_IMPORTANTE)} volumen={0.4} recorte={5} dura={30} />
 
 		{/* Cierre: una tecla por letra y un clic cuando el punto cae sobre la "i" */}
