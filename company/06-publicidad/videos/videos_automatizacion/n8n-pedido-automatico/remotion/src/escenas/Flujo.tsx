@@ -1,20 +1,11 @@
-// Escena de prueba: "El flujo" del video n8n · El pedido que se registra solo.
-// Mismo contenido que la v3, con cámara, profundidad y efectos nuevos.
+// Golpes 32–74: "el flujo". Entra en el drop de la música: el título golpea, la cámara sigue
+// al pedido nodo por nodo (un compás por nodo), se divide en cuatro salidas y se aleja para
+// mostrar el flujo completo. Desde el golpe 62 se hunde al fondo detrás del resultado.
 import React from 'react';
-import {
-	AbsoluteFill,
-	Audio,
-	Easing,
-	interpolate,
-	Sequence,
-	spring,
-	useCurrentFrame,
-	useVideoConfig,
-} from 'remotion';
+import {AbsoluteFill, interpolate, spring, useVideoConfig} from 'remotion';
 import {
 	Bell,
 	Check,
-	Clock,
 	Database,
 	Mail,
 	MessageCircle,
@@ -24,15 +15,13 @@ import {
 	Users,
 	type LucideIcon,
 } from 'lucide-react';
-import {COLOR, FUENTE} from './marca';
-import {barajar, bezier, decodificar, type Punto} from './efectos';
+import {COLOR, FUENTE} from '../marca';
+import {bezier, decodificar, type Punto} from '../efectos';
+import {ESCENA, g} from '../ritmo';
+import {Palabras, suave} from '../comun';
 
-import musica from '../../recursos/musica/tech-explainer-background-loop.mp3';
-import sonidoPop from '../../recursos/efectos/pop.mp3';
-import sonidoClic from '../../recursos/efectos/clic.mp3';
-import sonidoGolpe from '../../recursos/efectos/golpe-grave.mp3';
-
-export const DURACION = 14 * 30; // 14 s a 30 fps
+// Golpes contados desde el drop (golpe 32 del video).
+const D = (k: number) => g(ESCENA.flujo + k);
 
 // ─── Contenido (el mismo de la v3; datos ficticios, rotulados como ejemplo) ───
 type Nodo = {icono: LucideIcon; nombre: string; sub: string; dato: string};
@@ -59,17 +48,15 @@ const ALTO = 150;
 const RAMA_ANCHO = 200;
 const RAMA_ALTO = 210;
 
-// ─── Tiempos (en fotogramas) ───
-const LLEGA = [80, 115, 150, 185]; // el paquete activa cada nodo principal
+// ─── Tiempos (en fotogramas, calculados desde los golpes de la música) ───
+// Un nodo por compás (4 golpes); las cuatro salidas, una por medio golpe.
+export const LLEGA = [6, 10, 14, 18].map(D); // el paquete activa cada nodo principal
 const APARECE = LLEGA.map((f) => f - 28);
-const SALE = (i: number) => LLEGA[i] + 12; // pausa de 12 fotogramas en cada nodo
-const RAMA_APARECE = 178;
-const RAMA_LLEGA = RAMAS.map((_, i) => 222 + i * 3);
-const ALEJA = [242, 288]; // la cámara se aleja y muestra todo el flujo
-const RESULTADO = 300;
-const FIJA_3S = 362;
-
-const suave = Easing.bezier(0.65, 0, 0.35, 1);
+const SALE = (i: number) => LLEGA[i] + 12; // pausa en cada nodo
+const RAMA_APARECE = D(17.2);
+export const RAMA_LLEGA = [22, 22.5, 23, 23.5].map(D);
+const ALEJA = [D(24), D(28)]; // la cámara se aleja y muestra todo el flujo
+const HUNDE = g(ESCENA.resultado); // el flujo pasa al fondo
 
 // Posición del paquete en el tramo principal (centro a centro, por debajo de las tarjetas).
 const paqueteY = (f: number) => {
@@ -120,7 +107,7 @@ const camara = (f: number) => {
 		zoom: z1 + (0.74 - z1) * alejar,
 		// punto de la pantalla donde se centra la cámara (baja un poco en la vista completa)
 		centro: 1010 + 70 * alejar,
-		inclinacion: interpolate(f, [40, 200, ALEJA[0], ALEJA[1]], [16, 9, 9, 0], {
+		inclinacion: interpolate(f, [D(0.5), D(16.5), ALEJA[0], ALEJA[1]], [16, 9, 9, 0], {
 			extrapolateLeft: 'clamp',
 			extrapolateRight: 'clamp',
 		}),
@@ -268,10 +255,9 @@ const Icono: React.FC<{icono: LucideIcon; a: number; lado: number; tam: number}>
 	</div>
 );
 
-// ─── Escena ───
-export const FlujoN8n: React.FC = () => {
-	const f = useCurrentFrame();
+export const Flujo: React.FC<{f: number}> = ({f}) => {
 	const {fps} = useVideoConfig();
+	if (f < D(-0.2) || f > g(ESCENA.lema + 0.5)) return null;
 	const cam = camara(f);
 
 	// Pulso final cuando el flujo completo está encendido.
@@ -281,7 +267,7 @@ export const FlujoN8n: React.FC = () => {
 	});
 
 	// Paso al resultado: el flujo se hunde al fondo.
-	const fondoFlujo = interpolate(f, [RESULTADO, RESULTADO + 24], [0, 1], {
+	const fondoFlujo = interpolate(f, [HUNDE, HUNDE + 24], [0, 1], {
 		easing: suave,
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
@@ -290,7 +276,7 @@ export const FlujoN8n: React.FC = () => {
 	const nacePaquete = spring({frame: f - (LLEGA[0] - 6), fps, config: {damping: 14}});
 
 	return (
-		<AbsoluteFill style={{background: COLOR.grafito, overflow: 'hidden'}}>
+		<AbsoluteFill style={{overflow: 'hidden'}}>
 			{/* Rejilla de puntos con paralaje (se mueve más lento que el flujo: da profundidad) */}
 			<AbsoluteFill
 				style={{
@@ -299,7 +285,7 @@ export const FlujoN8n: React.FC = () => {
 					backgroundPosition: `0px ${-cam.y * 0.35}px`,
 					maskImage: 'radial-gradient(ellipse 70% 55% at 50% 52%, #000 20%, transparent 80%)',
 					WebkitMaskImage: 'radial-gradient(ellipse 70% 55% at 50% 52%, #000 20%, transparent 80%)',
-					opacity: 1 - fondoFlujo * 0.6,
+					opacity: (1 - fondoFlujo) * 0.6,
 				}}
 			/>
 
@@ -308,7 +294,7 @@ export const FlujoN8n: React.FC = () => {
 				style={{
 					perspective: 1700,
 					perspectiveOrigin: '50% 45%',
-					opacity: 1 - fondoFlujo * 0.82,
+					opacity: (1 - fondoFlujo * 0.85) * interpolate(f, [D(-0.2), D(0)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
 					// el flujo se desvanece bajo el encabezado en vez de taparlo
 					maskImage: 'linear-gradient(transparent 0px, transparent 470px, #000 610px)',
 					WebkitMaskImage: 'linear-gradient(transparent 0px, transparent 470px, #000 610px)',
@@ -538,72 +524,16 @@ export const FlujoN8n: React.FC = () => {
 				</div>
 			</AbsoluteFill>
 
+
 			<Encabezado f={f} />
-			<Resultado f={f} />
-
-			{/* Viñeta y grano: acabado cinematográfico */}
-			<AbsoluteFill
-				style={{background: 'radial-gradient(ellipse 80% 65% at 50% 50%, transparent 55%, rgba(0,0,0,.6) 100%)'}}
-			/>
-			<AbsoluteFill style={{opacity: 0.07, mixBlendMode: 'overlay'}}>
-				<svg width="1080" height="1920">
-					<filter id="grano">
-						<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={Math.floor(f / 2)} />
-					</filter>
-					<rect width="100%" height="100%" filter="url(#grano)" />
-				</svg>
-			</AbsoluteFill>
-
-			{/* Fundido final */}
-			<AbsoluteFill
-				style={{
-					background: COLOR.grafito,
-					opacity: interpolate(f, [DURACION - 14, DURACION], [0, 1], {extrapolateLeft: 'clamp'}),
-				}}
-			/>
-
-			<Sonido />
 		</AbsoluteFill>
-	);
-};
-
-// Título: palabra por palabra con desenfoque, y luego sube a encabezado.
-const Palabras: React.FC<{texto: string; f: number; inicio: number; acento?: string[]; paso?: number}> = ({
-	texto,
-	f,
-	inicio,
-	acento = [],
-	paso = 4,
-}) => {
-	const {fps} = useVideoConfig();
-	return (
-		<>
-			{texto.split(' ').map((p, i) => {
-				const e = spring({frame: f - inicio - i * paso, fps, config: {damping: 18, stiffness: 140}});
-				return (
-					<span
-						key={i}
-						style={{
-							display: 'inline-block',
-							marginRight: '0.26em',
-							opacity: Math.min(1, e),
-							filter: `blur(${(1 - Math.min(1, e)) * 14}px)`,
-							transform: `translateY(${(1 - e) * 30}px)`,
-							color: acento.includes(p) ? COLOR.lima : undefined,
-						}}
-					>
-						{p}
-					</span>
-				);
-			})}
-		</>
 	);
 };
 
 const Encabezado: React.FC<{f: number}> = ({f}) => {
 	const {fps} = useVideoConfig();
-	const sube = spring({frame: f - 34, fps, config: {damping: 20, stiffness: 90}});
-	const sale = interpolate(f, [RESULTADO - 4, RESULTADO + 10], [1, 0], {
+	const sube = spring({frame: f - D(2.2), fps, config: {damping: 20, stiffness: 90}});
+	const sale = interpolate(f, [HUNDE - 4, HUNDE + 10], [1, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
@@ -620,7 +550,7 @@ const Encabezado: React.FC<{f: number}> = ({f}) => {
 			}}
 		>
 			<div style={{fontFamily: FUENTE.titulo, fontWeight: 700, fontSize: 96, color: COLOR.hueso, lineHeight: 1.05, letterSpacing: -1.5}}>
-				<Palabras texto="Con un flujo automático en n8n" f={f} inicio={2} acento={['n8n']} />
+				<Palabras texto="Con un flujo automático en n8n" f={f} desde={ESCENA.flujo} paso={0.25} acento={['n8n']} />
 			</div>
 			<div
 				style={{
@@ -628,112 +558,11 @@ const Encabezado: React.FC<{f: number}> = ({f}) => {
 					fontSize: 36,
 					color: COLOR.gris,
 					marginTop: 22,
-					opacity: interpolate(f, [52, 64], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
+					opacity: interpolate(f, [D(2.6), D(3.6)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
 				}}
 			>
-				{decodificar('// proceso de ejemplo', f, 52, 1.8, 5)}
+				{decodificar('// proceso de ejemplo', f, D(2.6), 1.8, 5)}
 			</div>
 		</div>
 	);
 };
-
-// Remate: "Ahora se hace solo." y el contador 15 min → 3 s.
-const Resultado: React.FC<{f: number}> = ({f}) => {
-	const {fps} = useVideoConfig();
-	if (f < RESULTADO) return null;
-	const tachado = interpolate(f, [338, 350], [0, 1], {easing: suave, extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-	const minutos = spring({frame: f - 326, fps, config: {damping: 18}});
-	const tres = spring({frame: f - 348, fps, config: {damping: 9, stiffness: 160}});
-	const golpe = spring({frame: f - FIJA_3S, fps, config: {damping: 8, stiffness: 220}});
-	const escala = f < FIJA_3S ? tres : 1 + 0.18 * (1 - golpe);
-	return (
-		<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 80}}>
-			<div style={{fontFamily: FUENTE.titulo, fontWeight: 700, fontSize: 104, color: COLOR.hueso, letterSpacing: -2}}>
-				<Palabras texto="Ahora se hace solo." f={f} inicio={RESULTADO + 8} acento={['solo.']} paso={5} />
-			</div>
-			<div style={{display: 'flex', alignItems: 'center', gap: 44, marginTop: 70, height: 280}}>
-				<div
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						gap: 18,
-						opacity: minutos,
-						transform: `translateX(${(1 - minutos) * -40}px)`,
-						position: 'relative',
-					}}
-				>
-					<Clock size={54} color={COLOR.gris} strokeWidth={1.8} />
-					<span style={{fontFamily: FUENTE.mono, fontSize: 64, color: COLOR.gris}}>15 min</span>
-					<div
-						style={{
-							position: 'absolute',
-							left: -6,
-							top: '50%',
-							height: 6,
-							width: `calc(${tachado * 100}% + 12px)`,
-							background: COLOR.lima,
-							boxShadow: '0 0 14px rgba(198,244,50,.8)',
-						}}
-					/>
-				</div>
-				<div
-					style={{
-						fontFamily: FUENTE.titulo,
-						fontWeight: 700,
-						fontSize: 250,
-						color: COLOR.lima,
-						lineHeight: 1,
-						letterSpacing: -6,
-						opacity: Math.min(1, tres),
-						transform: `scale(${escala})`,
-						textShadow: `0 0 ${f >= FIJA_3S ? 60 * (1.4 - golpe * 0.6) : 30}px rgba(198,244,50,.45)`,
-					}}
-				>
-					{barajar('3', f, FIJA_3S)}
-					<span style={{fontSize: 150, marginLeft: 16}}>s</span>
-				</div>
-			</div>
-			<div
-				style={{
-					position: 'absolute',
-					bottom: 300,
-					fontFamily: FUENTE.mono,
-					fontSize: 26,
-					color: COLOR.acero,
-					opacity: interpolate(f, [372, 386], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
-				}}
-			>
-				proceso de ejemplo · tiempos ilustrativos
-			</div>
-		</AbsoluteFill>
-	);
-};
-
-// Audio sincronizado al fotograma. Los efectos traen silencio al inicio:
-// pop ≈ 0,16 s (5 fotogramas) y clic ≈ 0,14 s (4 fotogramas), por eso se recortan.
-const Sonido: React.FC = () => (
-	<>
-		<Audio
-			src={musica}
-			volume={(f) =>
-				interpolate(f, [0, 60, DURACION - 30, DURACION], [0.3, 0.5, 0.5, 0], {
-					extrapolateLeft: 'clamp',
-					extrapolateRight: 'clamp',
-				})
-			}
-		/>
-		{LLEGA.map((f) => (
-			<Sequence key={`pop-${f}`} from={f} durationInFrames={30}>
-				<Audio src={sonidoPop} trimBefore={5} volume={0.55} />
-			</Sequence>
-		))}
-		{RAMA_LLEGA.map((f) => (
-			<Sequence key={`clic-${f}`} from={f} durationInFrames={20}>
-				<Audio src={sonidoClic} trimBefore={4} volume={0.55} />
-			</Sequence>
-		))}
-		<Sequence from={FIJA_3S} durationInFrames={60}>
-			<Audio src={sonidoGolpe} volume={0.6} />
-		</Sequence>
-	</>
-);

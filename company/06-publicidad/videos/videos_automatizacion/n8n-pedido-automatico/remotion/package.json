@@ -5,7 +5,7 @@
   "description": "Video n8n 'El pedido que se registra solo' hecho con Remotion",
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render FlujoN8n out/flujo-n8n-prueba.mp4"
+    "render": "remotion render PedidoAutomatico out/n8n-pedido-automatico.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.538",

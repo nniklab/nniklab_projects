@@ -1,16 +1,17 @@
 import React from 'react';
 import {Composition} from 'remotion';
-import {DURACION, FlujoN8n} from './FlujoN8n';
+import {DURACION, PedidoAutomatico} from './PedidoAutomatico';
+import {FPS} from './ritmo';
 import {cargarFuentes} from './marca';
 
 cargarFuentes();
 
 export const RemotionRoot: React.FC = () => (
 	<Composition
-		id="FlujoN8n"
-		component={FlujoN8n}
+		id="PedidoAutomatico"
+		component={PedidoAutomatico}
 		durationInFrames={DURACION}
-		fps={30}
+		fps={FPS}
 		width={1080}
 		height={1920}
 	/>

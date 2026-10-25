@@ -9,7 +9,7 @@ Música y efectos de sonido para los videos de nniklab.
 | `minimal-technology.mp3` | Minimal Technology | NastelBom | 1:59 | [Pixabay](https://pixabay.com/music/beats-minimal-technology-345194/) | ✅ MP3 256 kbps |
 | `tech-explainer-background-loop.mp3` | Tech Explainer Background Loop | Vadim_Makes_Sound | 0:30 | [Pixabay](https://pixabay.com/music/electro-tech-explainer-background-loop-551261/) | ✅ MP3 256 kbps · loop |
 | `alexgrohl-corporate-technology-dreamer-112176.mp3` | Corporate Technology Dreamer | alexgrohl | — | Pixabay | ✅ MP3 |
-| `alexgrohl-future-bass-hot-night-111447.mp3` | Future Bass Hot Night | alexgrohl | — | Pixabay | ✅ MP3 |
+| `alexgrohl-future-bass-hot-night-111447.mp3` | Future Bass Hot Night | alexgrohl | 2:20 | Pixabay | ✅ MP3 · 176 BPM · usada en `n8n-pedido-automatico` v4 (desde 66,17 s; drop en 77,1 s) |
 | `aurec-tech-house-612630.mp3` | Tech House | aurec | — | Pixabay | ✅ MP3 |
 | `elijah_k-glitter-ball-283593.mp3` | Glitter Ball | elijah_k | — | Pixabay | ✅ MP3 |
 | `jonasblakewood-lofi-beat-lofi-beat-music-583361.mp3` | Lofi Beat | jonasblakewood | — | Pixabay | ✅ MP3 |

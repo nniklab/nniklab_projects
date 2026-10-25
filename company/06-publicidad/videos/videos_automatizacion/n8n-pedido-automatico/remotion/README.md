@@ -1,73 +1,109 @@
 # Video n8n en Remotion
 
-Versión en código del video **"El pedido que se registra solo"**, hecha con [Remotion](https://www.remotion.dev) (videos con React). Es la primera prueba para comparar con la v3 hecha en Claude Design: por ahora contiene solo **la escena del flujo y el remate "15 min → 3 s"** (14 s).
+Versión en código del video **"El pedido que se registra solo"**, hecha con [Remotion](https://www.remotion.dev) (videos con React). Produce la **v4**: `../n8n_Pedido_Automatico_v4.mp4` (1080 × 1920 · 30 fps · ≈ 34,5 s).
 
-**Estado:** prueba para comparar con `../n8n_Pedido_Automatico_v3.mp4`. Render de muestra: `../n8n_Flujo_Remotion_prueba.mp4`.
+La primera prueba (solo la escena del flujo, 14 s) quedó como `../n8n_Flujo_Remotion_prueba.mp4`.
 
-## Qué mejora frente a la v3
+## La música manda
 
-| Efecto | Qué hace |
-|--------|----------|
-| Escala | Los nodos ocupan casi todo el ancho; los textos se leen bien en el celular. |
-| Cámara | Sigue al paquete nodo por nodo, baja a la bifurcación y al final se aleja para mostrar el flujo completo. |
-| Profundidad | El plano del flujo va inclinado en 3D y se endereza en la vista completa; la rejilla del fondo se mueve más lento (paralaje). |
-| Paquete | Estela de movimiento; en "¿Hay stock?" se divide en cuatro paquetes, uno por salida. |
-| Activación | Resorte con rebote, borde y brillo lima, onda que se expande y check que salta. |
-| Datos | Se escriben "decodificándose" (signos al azar que se asientan). |
-| Título | Palabra por palabra, del desenfoque al foco, y luego sube a encabezado. |
-| Remate | El flujo se hunde desenfocado, "15 min" se tacha y el "3" baraja dígitos antes de fijarse con un golpe. |
-| Acabado | Viñeta, grano de película y luz ambiental lima que acompaña al paquete. |
-| Audio | Música + pop en cada nodo + clic en cada salida + golpe en "3 s", sincronizados al fotograma. |
+Todo el video está programado sobre los golpes de la música **Future Bass Hot Night** (alexgrohl, Pixabay; `06-publicidad/audio/alexgrohl-future-bass-hot-night-111447.mp3`):
 
-Se respetan las reglas de marca: colores y fuentes oficiales, n8n solo nombrado en texto (sin su logo) y datos ficticios rotulados como `proceso de ejemplo`.
+- La pista va a **176 golpes por minuto** (un golpe cada 0,341 s ≈ 10,2 fotogramas).
+- Se usa desde el segundo **66,17**, para que el *build-up* acompañe el problema y el **drop** (77,1 s de la pista) caiga en el **golpe 32** del video (≈ 10,9 s), justo cuando entra el flujo.
+- Las escenas, las animaciones y los efectos de sonido se definen en golpes (`src/ritmo.ts`). Si se cambia un tiempo, la animación y su sonido se mueven juntos.
+
+| Golpes | Tiempo | Escena | Música |
+|--------|--------|--------|--------|
+| 0–4 | 0–1,4 s | "¿Te suena familiar?" | build-up |
+| 4–24 | 1,4–8,2 s | El caos: copiar y pegar, notificaciones, reloj, sacudida creciente | build-up (el bajo sube) |
+| 24–32 | 8,2–10,9 s | El caos se hunde · "Hay una forma mejor." · `> automatízalo_` · negro | riser y silencio previo |
+| 32 | 10,9 s | Destello lima y golpe grave | **drop** |
+| 32–62 | 10,9–21,1 s | El flujo: un nodo por compás, 4 salidas en medios golpes, la cámara se aleja | drop |
+| 62–74 | 21,1–25,2 s | "Ahora se hace solo." · 15 min → **3 s** | drop |
+| 74–82 | 25,2–28 s | "Automatiza lo repetitivo. Dedícate a lo importante." | drop |
+| 82–101 | 28–34,5 s | Logo tecleado: una letra por medio golpe, el punto cae en un golpe | baja y se apaga |
+
+## Efectos
+
+| Efecto | Dónde |
+|--------|-------|
+| Texto palabra por palabra, del desenfoque al foco | Todos los titulares |
+| Salidas "a través de la cámara" (escala + desenfoque) | Cambios de escena |
+| Sacudida y acercamiento que crecen con la música | El caos |
+| Implosión (el caos se encoge, gira y se desenfoca) | Antes de "Hay una forma mejor." |
+| Destello lima en el drop | Golpe 32 |
+| Cámara que sigue al pedido, plano inclinado en 3D, vista completa al final | El flujo |
+| Estela de movimiento, bifurcación en 4 paquetes, ondas y checks con rebote | El flujo |
+| Datos que se "decodifican" y números que se barajan | Flujo y resultado |
+| Luz lima que late con los golpes | Ganchos, resultado, lema, cierre |
+| Partículas (foto de Pexels) con motas lima | Del drop al lema |
+| Viñeta y grano de película | Todo el video |
+
+## Sonidos
+
+| Sonido | Cuándo |
+|--------|--------|
+| Música (85 %, sube al inicio y se apaga al final) | Todo el video |
+| Tic-tac | El caos (sube con la tensión) |
+| Clic suave | Cada fila pegada a mano y cada salida del flujo |
+| Tecla | `> automatízalo_` y cada letra del logo |
+| Golpe grave | El drop y cuando el "3" se fija |
+| Pop | Cada nodo del flujo y la caja "importante." |
+| Clic | El punto cae sobre la "i" del logo |
+
+Los MP3 de efectos traen silencio al inicio y se recortan (`pop` 5 fotogramas, `clic` 4, `tecla` y `tic-tac` 1–4) para que suenen justo en su golpe.
 
 ## Cómo usarlo (Windows)
 
-La forma más fácil: ejecutar `instalar-remotion.bat` desde la terminal de VS Code, estando en esta carpeta:
-
-```powershell
-.\instalar-remotion.bat
-```
-
-Hace todo: verifica Node y Git, permite los scripts de npm en PowerShell, trae los cambios (`git pull`), instala (`npm install`) y deja elegir entre abrir el editor o renderizar.
+La forma más fácil: ejecutar `instalar-remotion.bat` desde la terminal de VS Code. Verifica Node y Git, trae los cambios (`git pull`), instala (`npm install`) y deja elegir entre abrir el editor o renderizar.
 
 A mano, desde esta carpeta:
 
 ```powershell
-npm install          # solo la primera vez o si cambian las dependencias
-npm run studio       # editor en el navegador para previsualizar
-npm run render       # exporta out/flujo-n8n-prueba.mp4
+npm.cmd install        # solo la primera vez o si cambian las dependencias
+npm.cmd run studio     # editor en el navegador para previsualizar
+npm.cmd run render     # exporta out/n8n-pedido-automatico.mp4
 ```
 
-La primera vez, `npm run render` descarga el navegador interno de Remotion (dentro de `node_modules\.remotion\`).
+La primera vez, el render descarga el navegador interno de Remotion (dentro de `node_modules\.remotion\`). El MP4 final se copia a la carpeta del video con el nombre de la versión.
 
 ## Estructura
 
 ```
 remotion/
-  package.json          ← dependencias y comandos (studio, render)
-  remotion.config.ts    ← calidad de render (H.264, CRF 18)
-  instalar-remotion.bat ← instalación y uso en un paso (Windows)
+  package.json             ← dependencias y comandos (studio, render)
+  remotion.config.ts       ← calidad de render (H.264, CRF 18)
+  instalar-remotion.bat    ← instalación y uso en un paso (Windows)
   src/
-    index.ts            ← punto de entrada
-    Root.tsx            ← composición FlujoN8n: 1080 × 1920, 30 fps, 14 s
-    FlujoN8n.tsx        ← la escena: contenido, tiempos, cámara, piezas y audio
-    marca.ts            ← colores y fuentes oficiales de nniklab
-    efectos.ts          ← efectos reutilizables: decodificar, barajar, curvas
+    index.ts               ← punto de entrada
+    Root.tsx               ← composición PedidoAutomatico: 1080 × 1920, 30 fps
+    PedidoAutomatico.tsx   ← une las escenas y programa todos los sonidos
+    ritmo.ts               ← la cuadrícula de golpes y el mapa de escenas
+    comun.tsx              ← piezas compartidas: palabras, partículas, resplandor, acabado
+    marca.ts               ← colores y fuentes oficiales de nniklab
+    efectos.ts             ← decodificar, barajar, curvas
+    logo.ts                ← trazos del logo con las letras separadas
+    escenas/
+      Ganchos.tsx          ← "¿Te suena familiar?", "Hay una forma mejor.", destello
+      Caos.tsx             ← el problema
+      Flujo.tsx            ← el flujo de n8n
+      Resultado.tsx        ← "Ahora se hace solo.", 15 min → 3 s y el lema
+      Cierre.tsx           ← logo tecleado
 ```
 
-- **No se suben a GitHub:** `node_modules/` (se descarga con `npm install`) y `out/` (renders de prueba). Están en `.gitignore`.
-- **Recursos compartidos, sin copiar:** las fuentes se leen de `05-web/sitio/assets/fonts/` y los audios de `../recursos/`.
+- **No se suben a GitHub:** `node_modules/` y `out/` (están en `.gitignore`).
+- **Recursos compartidos, sin copiar:** fuentes de `05-web/sitio/assets/fonts/`, música de `06-publicidad/audio/`, fotos de `06-publicidad/imagenes/fondos/` y efectos de `../recursos/efectos/`.
 
 ## Cómo ajustar
 
-Todo está al inicio de `src/FlujoN8n.tsx`:
+- **Mover una escena o cambiar el ritmo:** `src/ritmo.ts` (`ESCENA`, en golpes).
+- **Textos y datos del flujo:** `PRINCIPALES` y `RAMAS` en `escenas/Flujo.tsx`; filas y mensajes del caos en `escenas/Caos.tsx`.
+- **Cuándo se activa cada nodo:** `LLEGA` y `RAMA_LLEGA` en `escenas/Flujo.tsx` (en golpes desde el drop).
+- **Volúmenes y sonidos:** componente `Sonido` en `PedidoAutomatico.tsx`.
+- **Cambiar la música:** reemplazar el archivo en `PedidoAutomatico.tsx`, medir su tempo y su drop, y ajustar `GOLPE` y `MUSICA_DESDE` en `ritmo.ts`.
 
-- **Textos y datos de los nodos:** `PRINCIPALES` y `RAMAS`.
-- **Tiempos:** `LLEGA` (cuándo el paquete activa cada nodo), `RAMA_LLEGA`, `ALEJA`, `RESULTADO`, `FIJA_3S`. Están en fotogramas (30 = 1 segundo).
-- **Cámara:** función `camara` (zoom, inclinación y punto de enfoque).
-- **Volúmenes:** componente `Sonido` al final del archivo.
+## Licencias
 
-## Licencia de Remotion
-
-Gratis para personas y empresas pequeñas; las empresas grandes pagan licencia. Ver [remotion.dev/license](https://www.remotion.dev/docs/license) antes de publicar.
+- **Remotion:** gratis para personas y empresas pequeñas; las empresas grandes pagan licencia. Ver [remotion.dev/license](https://www.remotion.dev/docs/license).
+- **Música y efectos:** Pixabay Content License (uso comercial permitido).
+- **Fotos:** Pexels License (uso comercial permitido).
