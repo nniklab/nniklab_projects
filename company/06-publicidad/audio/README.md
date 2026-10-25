@@ -8,8 +8,15 @@ Música y efectos de sonido para los videos de nniklab.
 |---------|-------|---------|----------|--------|--------|
 | `minimal-technology.mp3` | Minimal Technology | NastelBom | 1:59 | [Pixabay](https://pixabay.com/music/beats-minimal-technology-345194/) | ✅ MP3 256 kbps |
 | `tech-explainer-background-loop.mp3` | Tech Explainer Background Loop | Vadim_Makes_Sound | 0:30 | [Pixabay](https://pixabay.com/music/electro-tech-explainer-background-loop-551261/) | ✅ MP3 256 kbps · loop |
+| `alexgrohl-corporate-technology-dreamer-112176.mp3` | Corporate Technology Dreamer | alexgrohl | — | Pixabay | ✅ MP3 |
+| `alexgrohl-future-bass-hot-night-111447.mp3` | Future Bass Hot Night | alexgrohl | — | Pixabay | ✅ MP3 |
+| `aurec-tech-house-612630.mp3` | Tech House | aurec | — | Pixabay | ✅ MP3 |
+| `elijah_k-glitter-ball-283593.mp3` | Glitter Ball | elijah_k | — | Pixabay | ✅ MP3 |
+| `jonasblakewood-lofi-beat-lofi-beat-music-583361.mp3` | Lofi Beat | jonasblakewood | — | Pixabay | ✅ MP3 |
+| `pumpupthemind-upbeat-technology-263469.mp3` | Upbeat Technology | pumpupthemind | — | Pixabay | ✅ MP3 |
+| `zephiramusic-lofi-beat-613823.mp3` | Lofi Beat | zephiramusic | — | Pixabay | ✅ MP3 |
 
-Las dos pistas se conservan para usarlas en próximos videos.
+Todas las pistas se conservan para usarlas en próximos videos.
 
 **Uso en videos:** `tech-explainer-background-loop.mp3` es la música de fondo del video `videos/videos_automatizacion/n8n-pedido-automatico/` (copia en su carpeta `recursos/musica/`).
 
