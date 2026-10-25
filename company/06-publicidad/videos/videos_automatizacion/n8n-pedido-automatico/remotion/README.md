@@ -1,6 +1,20 @@
 # Video n8n en Remotion
 
-Versión en código del video **"El pedido que se registra solo"**, hecha con [Remotion](https://www.remotion.dev) (videos con React). Produce la **v4**: `../n8n_Pedido_Automatico_v4.mp4` (1080 × 1920 · 30 fps · ≈ 34,5 s).
+Versión en código del video **"El pedido que se registra solo"**, hecha con [Remotion](https://www.remotion.dev) (videos con React). Produce la **v4**: `../n8n_Pedido_Automatico_v4_redes.mp4` (1080 × 1920 · 30 fps · ≈ 34,5 s), lista para subir a redes.
+
+## Calidad para redes
+
+Las redes vuelven a comprimir todo lo que se sube, así que el render sale con mucha calidad para que pierda lo mínimo (`remotion.config.ts`):
+
+| Ajuste | Valor | Por qué |
+|--------|-------|---------|
+| Fotogramas | PNG | sin pérdida antes de codificar |
+| Video | H.264, CRF 12, preset `slow` | ≈ 11 Mbps; por debajo de los 30 Mbps de LinkedIn |
+| Color | `yuv420p`, BT.709 | el estándar que todas las redes leen bien |
+| Audio | AAC 320 kbps, pico ≈ −1 dB | sin saturar |
+| Peso | ≈ 48 MB | bajo el límite de 72 MB de TikTok en Android |
+
+Sirve tal cual para Reels, TikTok, Shorts, historias y LinkedIn (vertical 9:16). Para que se vea bien: subirlo desde el archivo original (no reenviado por WhatsApp, que lo comprime mucho) y, en Instagram, activar "Subir con la máxima calidad" en Configuración → Calidad de los archivos multimedia.
 
 La primera prueba (solo la escena del flujo, 14 s) quedó como `../n8n_Flujo_Remotion_prueba.mp4`.
 
@@ -29,7 +43,7 @@ Todo el video está programado sobre los golpes de la música **Future Bass Hot 
 |--------|-------|
 | Texto palabra por palabra, del desenfoque al foco | Todos los titulares |
 | Salidas "a través de la cámara" (escala + desenfoque) | Cambios de escena |
-| Sacudida y acercamiento que crecen con la música | El caos |
+| Sacudida y acercamiento que crecen con la música; foto de fondo con desenfoque de profundidad | El caos |
 | Implosión (el caos se encoge, gira y se desenfoca) | Antes de "Hay una forma mejor." |
 | Destello lima en el drop | Golpe 32 |
 | Cámara que sigue al pedido, plano inclinado en 3D, vista completa al final | El flujo |
@@ -37,7 +51,7 @@ Todo el video está programado sobre los golpes de la música **Future Bass Hot 
 | Datos que se "decodifican" y números que se barajan | Flujo y resultado |
 | Luz lima que late con los golpes | Ganchos, resultado, lema, cierre |
 | Partículas (foto de Pexels) con motas lima | Del drop al lema |
-| Viñeta y grano de película | Todo el video |
+| Viñeta y grano de película (sutil, para que no se pixele al recomprimir) | Todo el video |
 
 ## Sonidos
 
