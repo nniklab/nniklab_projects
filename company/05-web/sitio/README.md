@@ -5,7 +5,7 @@ HTML, CSS y JavaScript sin dependencias ni paso de compilación: se puede abrir 
 
 ## Versión
 
-**v1.4** (2026-10-19): sección de servicios con etiqueta `/lo_que_hacemos` y título nuevo; tarjetas de los carruseles más bajas en celular. v1.3.1 (2026-10-19): ancla `#nosotros` → `#equipo`. v1.3 (2026-10-19): nuevo orden de secciones, etiquetas más comerciales, carruseles en celular en cinco secciones y fondos alternados. v1.2 (2026-10-19): sin la sección "Cómo se conectan"; "Tecnologías" en tarjetas, con carrusel en celular. v1.1 (2026-10-19): etiquetas de sección más grandes y unificadas; `/ejemplos` pasa a `/soluciones`. v1.0 (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
+**v1.5** (2026-10-24): en celular, el cierre pasa de 112 a 80 px de espacio arriba y abajo; una sola línea entre "Equipo" y el cierre. v1.4 (2026-10-19): sección de servicios con etiqueta `/lo_que_hacemos` y título nuevo; tarjetas de los carruseles más bajas en celular. v1.3.1 (2026-10-19): ancla `#nosotros` → `#equipo`. v1.3 (2026-10-19): nuevo orden de secciones, etiquetas más comerciales, carruseles en celular en cinco secciones y fondos alternados. v1.2 (2026-10-19): sin la sección "Cómo se conectan"; "Tecnologías" en tarjetas, con carrusel en celular. v1.1 (2026-10-19): etiquetas de sección más grandes y unificadas; `/ejemplos` pasa a `/soluciones`. v1.0 (2026-10-17): primera versión, fiel al diseño v1. Historial de cambios en `../README.md`.
 
 ## Estructura
 

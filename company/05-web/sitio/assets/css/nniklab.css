@@ -193,4 +193,6 @@ html { scroll-behavior: smooth; }
   #como-trabajamos .nk-carrusel-riel > li span[style*="font-size: 56px"] { font-size: 44px !important; }
   #tecnologias .nk-carrusel-riel > article { padding: 22px !important; gap: 12px !important; }
   #tecnologias .nk-carrusel-riel h3 { font-size: 22px !important; }
+  /* Cierre: menos aire en celular (en escritorio sigue con 112-176 px) */
+  .nk-cierre-contenido { padding-top: 80px !important; padding-bottom: 80px !important; }
 }
