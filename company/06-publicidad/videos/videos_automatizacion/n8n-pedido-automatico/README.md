@@ -193,3 +193,4 @@ siguiendo exactamente el instructivo adjunto (README.md): "El pedido que se regi
 | Versión | Archivo | Cambios | Formato | Fecha |
 |---------|---------|---------|---------|-------|
 | _(por producir)_ | `n8n-pedido-automatico-v1.mp4` | Primera versión | 1080 × 1920 · 30 fps · ≈ 25 s | |
+| prueba Remotion | `n8n_Flujo_Remotion_prueba.mp4` | Escena del flujo + remate "15 min → 3 s" rehecha en Remotion (cámara, 3D, estelas, decodificado, audio al fotograma). Código en `remotion/` | 1080 × 1920 · 30 fps · 14 s | 2026-10-25 |
