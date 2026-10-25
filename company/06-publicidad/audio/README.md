@@ -15,6 +15,9 @@ Música y efectos de sonido para los videos de nniklab.
 | `jonasblakewood-lofi-beat-lofi-beat-music-583361.mp3` | Lofi Beat | jonasblakewood | — | Pixabay | ✅ MP3 |
 | `pumpupthemind-upbeat-technology-263469.mp3` | Upbeat Technology | pumpupthemind | — | Pixabay | ✅ MP3 |
 | `zephiramusic-lofi-beat-613823.mp3` | Lofi Beat | zephiramusic | — | Pixabay | ✅ MP3 |
+| `alex-morgan-future-bass-545515.mp3` | Future Bass | alex-morgan | — | Pixabay | ✅ MP3 |
+| `bombinsound-future-bass-59-second-499607.mp3` | Future Bass (59 s) | bombinsound | — | Pixabay | ✅ MP3 |
+| `prettyjohn1-future-bass-523169.mp3` | Future Bass | prettyjohn1 | — | Pixabay | ✅ MP3 |
 
 Todas las pistas se conservan para usarlas en próximos videos.
 
